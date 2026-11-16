@@ -1,0 +1,31 @@
+name: Check
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    solutions:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+            - name: Every solution passes its tests
+              run: npm run test:solutions
+
+    reading-list:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: 21-our-first-project/reading-list
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+            - run: npm ci
+            - run: npm run lint
+            - run: npm test
+            - run: npm run build
