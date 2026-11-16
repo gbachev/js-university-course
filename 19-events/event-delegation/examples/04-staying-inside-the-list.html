@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Staying inside the list</title>
+        <script src="04-staying-inside-the-list.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. closest() walks past the list to the shelf.</p>
+        <ul id="shelves">
+            <li class="shelf">
+                <h2>To Read</h2>
+                <ul id="book-list">
+                    <li data-key="dune">
+                        <span class="title">Dune</span>
+                        <button data-action="toggle">Mark read</button>
+                        <button data-action="remove">
+                            <span class="icon">×</span> Remove
+                        </button>
+                    </li>
+                    <li data-key="emma">
+                        <span class="title">Emma</span>
+                        <button data-action="toggle">Mark read</button>
+                        <button data-action="remove">
+                            <span class="icon">×</span> Remove
+                        </button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

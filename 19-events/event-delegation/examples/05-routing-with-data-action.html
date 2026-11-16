@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Routing actions with data-action</title>
+        <script src="05-routing-with-data-action.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console, or click the buttons: one listener handles both actions.</p>
+        <ul id="shelves">
+            <li class="shelf">
+                <h2>To Read</h2>
+                <ul id="book-list">
+                    <li data-key="dune">
+                        <span class="title">Dune</span>
+                        <button data-action="toggle">Mark read</button>
+                        <button data-action="remove">
+                            <span class="icon">×</span> Remove
+                        </button>
+                    </li>
+                    <li data-key="emma">
+                        <span class="title">Emma</span>
+                        <button data-action="toggle">Mark read</button>
+                        <button data-action="remove">
+                            <span class="icon">×</span> Remove
+                        </button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

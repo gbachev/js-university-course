@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: The cart buttons</title>
+</head>
+<!--
+    Task 2: The cart buttons
+    Our code goes in 02-cart-actions.js, the checks are in 02-cart-actions.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: The cart buttons</h1>
+    <p>Finish setUpCart() in 02-cart-actions.js, then reload this page.</p>
+
+    <ul id="shop">
+        <li class="cart-panel">
+            <h2>Your cart</h2>
+            <ul id="cart">
+                <li data-key="mug" data-price="12.50">
+                    <span class="name">Mug</span>
+                    <button data-action="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button data-action="increase">+</button>
+                    <button data-action="remove">Remove</button>
+                </li>
+                <li data-key="notebook" data-price="4.20">
+                    <span class="name">Notebook</span>
+                    <button data-action="decrease">-</button>
+                    <span class="quantity">2</span>
+                    <button data-action="increase">+</button>
+                    <button data-action="remove">Remove</button>
+                </li>
+            </ul>
+            <p>Total: <output id="total">20.90</output></p>
+        </li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-cart-actions.js'));
+        await import('./02-cart-actions.check.js');
+    </script>
+</body>
+</html>
