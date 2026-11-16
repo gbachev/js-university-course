@@ -10,11 +10,11 @@ function fn(obj, primitive) {
     primitive = 'Goodbye, World!';
 }
 
-console.log('Before calling the function fn: ', obj.name, primitive);
-// Before calling the function fn:  John Doe Hello, World!
+console.log('Before calling the function fn:', obj.name, primitive);
+// Before calling the function fn: John Doe Hello, World!
 
 fn(obj, primitive);
 
-console.log('After calling the function fn: ', obj.name, primitive);
-// After calling the function fn:  Jane Doe Hello, World!
-// you can see that the object was modified, but the primitive was not
+console.log('After calling the function fn:', obj.name, primitive);
+// After calling the function fn: Jane Doe Hello, World!
+// we can see that the object was modified, but the primitive was not
