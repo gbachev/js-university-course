@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazy below the fold, never the LCP image</title>
+    <style>
+        img { display: block; max-width: 100%; height: auto; }
+        .later { margin-top: 3000px; }
+    </style>
+</head>
+<body>
+    <h1>Lazy below the fold, never the LCP image</h1>
+    <p>Open the Network panel of DevTools and reload. The sale banner starts at High
+        priority right away, and the Walden cover far below loads only when we scroll near
+        it. (The images are SVG files here, so the example needs no photos.)</p>
+
+    <!-- better: an eager LCP image, lazy covers with a size -->
+    <img src="images/sale.svg" alt="Summer sale on classics"
+        width="1280" height="540" fetchpriority="high">
+    <img class="later" src="covers/walden.svg" alt="Cover of Walden"
+        width="200" height="300" loading="lazy">
+</body>
+</html>
