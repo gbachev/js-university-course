@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A bug to hunt</title>
+</head>
+<body>
+    <h1>A bug to hunt</h1>
+    <p>Open DevTools. The console shows 1540 instead of 55. In the Sources panel, open
+        01-cart.js, click line number 14 to set a breakpoint and reload the page.</p>
+    <p>Try a conditional breakpoint with <code>typeof item.price !== "number"</code> and a
+        logpoint with <code>item.name, total</code> on the same line.</p>
+
+    <script src="./01-cart.js"></script>
+</body>
+</html>

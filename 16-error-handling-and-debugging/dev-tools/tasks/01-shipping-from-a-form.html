@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shipping from a form</title>
+</head>
+<body>
+    <h1>Shipping from a form</h1>
+    <p>Open DevTools. The console shows the total of one order. In the Sources panel, open
+        01-shipping-from-a-form.js, set a breakpoint in orderTotal and reload the page.</p>
+
+    <script type="module">
+        import { orderTotal } from './01-shipping-from-a-form.js';
+
+        const order = { lines: [{ price: 10, quantity: 2 }], shipping: '5.5' };
+        console.log(orderTotal(order)); // should be 25.5
+    </script>
+</body>
+</html>

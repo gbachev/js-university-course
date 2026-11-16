@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One step too far</title>
+</head>
+<body>
+    <h1>One step too far</h1>
+    <p>Open DevTools. Until the task is solved, the console shows an uncaught TypeError. In
+        the Sources panel, check "Pause on uncaught exceptions" and reload the page.</p>
+
+    <script type="module">
+        import { averageRating } from './02-one-step-too-far.js';
+
+        const reviews = [{ stars: 4 }, { stars: 5 }, { stars: 3 }];
+        console.log(averageRating(reviews)); // should be 4
+    </script>
+</body>
+</html>
