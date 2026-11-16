@@ -7,7 +7,7 @@ function outer() {
     function inner() {
         let innerVar = 'inner';
         console.log(globalVar); // global
-        console.log(outerVar);  // outer
+        console.log(outerVar); // outer
     }
 
     console.log(globalVar); // global

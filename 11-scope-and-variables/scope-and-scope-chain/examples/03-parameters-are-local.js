@@ -1,12 +1,12 @@
-function greet(name) {
-    console.log('Hello, ' + name);
+function greet(userName) {
+    console.log('Hello, ' + userName);
 }
 
 greet('John'); // Hello, John
 
 try {
-    console.log(name); // ReferenceError
+    console.log(userName); // ReferenceError
 } catch (error) {
     console.log(error.name + ': ' + error.message);
-    // ReferenceError: name is not defined
+    // ReferenceError: userName is not defined
 }
