@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keep the LCP image eager</title>
+    <style>
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Keep the LCP image eager</h1>
+    <p>Open the Network panel of DevTools and reload. With Big request rows on, the
+        Priority column shows the book of the month starting at High. Its width and height
+        reserve the space, so the text below does not jump.</p>
+
+    <img src="images/month.svg" alt="Book of the month: Dune"
+        width="1200" height="600" fetchpriority="high">
+
+    <p>The text under the image stays where it is while the image loads.</p>
+</body>
+</html>

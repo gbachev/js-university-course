@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Lazy covers</title>
+    <style>
+        .cover { display: block; margin-bottom: 1200px; background: #eee; }
+    </style>
+</head>
+<!--
+    Task 3: Lazy covers
+    Our code goes in 03-lazy-covers.js, the checks are in 03-lazy-covers.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    The checks scroll the page by themselves, so we wait a moment for them to finish.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Lazy covers</h1>
+    <p>Finish lazyLoad() in 03-lazy-covers.js, then reload this page. The checks at the
+        bottom of the page tell us what still fails.</p>
+
+    <img class="cover" data-src="../examples/covers/emma.svg" alt="Cover of Emma"
+        width="200" height="300">
+    <img class="cover" data-src="../examples/covers/ulysses.svg" alt="Cover of Ulysses"
+        width="200" height="300">
+    <img class="cover" data-src="../examples/covers/hamlet.svg" alt="Cover of Hamlet"
+        width="200" height="300">
+    <img class="cover" data-src="../examples/covers/walden.svg" alt="Cover of Walden"
+        width="200" height="300">
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-lazy-covers.js'));
+        await import('./03-lazy-covers.check.js');
+    </script>
+</body>
+</html>

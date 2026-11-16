@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazy images and iframes</title>
+    <style>
+        img, iframe { display: block; margin-bottom: 400px; }
+    </style>
+</head>
+<body>
+    <h1>Lazy images and iframes</h1>
+    <p>Open the Network panel of DevTools, reload and scroll down slowly. The covers and the
+        map load only when they get near the screen. Chrome starts about 1250 pixels ahead,
+        so the first covers load right away. (The covers are SVG files here, so the
+        example needs no photos.)</p>
+
+    <img src="covers/emma.svg" alt="Cover of Emma"
+        width="200" height="300" loading="lazy">
+    <img src="covers/ulysses.svg" alt="Cover of Ulysses"
+        width="200" height="300" loading="lazy">
+    <img src="covers/hamlet.svg" alt="Cover of Hamlet"
+        width="200" height="300" loading="lazy">
+    <img src="covers/beloved.svg" alt="Cover of Beloved"
+        width="200" height="300" loading="lazy">
+    <img src="covers/walden.svg" alt="Cover of Walden"
+        width="200" height="300" loading="lazy">
+    <img src="covers/dracula.svg" alt="Cover of Dracula"
+        width="200" height="300" loading="lazy">
+
+    <iframe src="store-map.html" title="Map of our bookstore"
+        width="600" height="400" loading="lazy"></iframe>
+</body>
+</html>
