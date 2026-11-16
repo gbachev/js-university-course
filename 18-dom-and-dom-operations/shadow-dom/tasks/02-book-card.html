@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: The book-card element</title>
+    <style>
+        p { color: red; }
+        .price { font-size: 40px; }
+    </style>
+</head>
+<!--
+    Task 2: The book-card element
+    Our code goes in 02-book-card.js, the checks are in 02-book-card.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: The book-card element</h1>
+    <p>Write the book-card element in 02-book-card.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <book-card name="Clean Code" author="Robert C. Martin"></book-card>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-book-card.js'));
+        await import('./02-book-card.check.js');
+    </script>
+</body>
+</html>
