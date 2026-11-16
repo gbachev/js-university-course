@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>this in event handlers</title>
+</head>
+<body>
+    <h1>this in event handlers</h1>
+    <p>Open the console, then click the button. The regular function logs the button,
+        the arrow function logs the window.</p>
+    <button type="button">Click me</button>
+
+    <script>
+        let button = document.querySelector('button');
+
+        button.addEventListener('click', function () {
+            console.log(this); // button element
+        });
+
+        button.addEventListener('click', () => {
+            console.log(this); // window - the this of the code around it
+        });
+    </script>
+</body>
+</html>
