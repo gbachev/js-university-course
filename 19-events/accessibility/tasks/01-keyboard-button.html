@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: A div that works like a button</title>
+</head>
+<!--
+    Task 1: A div that works like a button
+    Our code goes in 01-keyboard-button.js, the checks are in 01-keyboard-button.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: A div that works like a button</h1>
+    <p>Finish makeKeyboardButton() in 01-keyboard-button.js, then reload this page and try it with Tab and Enter.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+    </ul>
+    <div id="clear">Clear list</div>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-keyboard-button.js'));
+        await import('./01-keyboard-button.check.js');
+    </script>
+</body>
+</html>

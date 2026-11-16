@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Focus after removing a row</title>
+        <script src="04-focus-after-remove.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. Tab to the first "Remove" and press Enter, then press Enter again.</p>
+        <h1 id="list-heading" tabindex="-1">To Read</h1>
+        <ul id="books">
+            <li>Dune <button>Remove</button></li>
+            <li>Emma <button>Remove</button></li>
+        </ul>
+        <div id="clear">Clear list</div>
+        <button id="add">Add a book</button>
+        <p id="status" aria-live="polite"></p>
+    </body>
+</html>

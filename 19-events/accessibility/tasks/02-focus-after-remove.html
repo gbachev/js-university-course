@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Keep the focus in place</title>
+</head>
+<!--
+    Task 2: Keep the focus in place
+    Our code goes in 02-focus-after-remove.js, the checks are in 02-focus-after-remove.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Keep the focus in place</h1>
+    <p>Fix setUpRemove() in 02-focus-after-remove.js, then reload this page.</p>
+
+    <h2 id="list-heading">To Read</h2>
+    <ul id="books">
+        <li>Dune <button>Remove</button></li>
+        <li>Emma <button>Remove</button></li>
+        <li>Neuromancer <button>Remove</button></li>
+        <li>Hyperion <button>Remove</button></li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-focus-after-remove.js'));
+        await import('./02-focus-after-remove.check.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>hidden vs aria-hidden</title>
+    </head>
+    <body>
+        <p>Open DevTools and turn on "Show accessibility tree" in the Elements panel. The form is not there at all, and the button is just "Favorite".</p>
+
+        <!-- hidden from everyone: not shown, not read, not focusable -->
+        <form id="add-form" hidden></form>
+
+        <!-- shown, but not read: the star is decoration -->
+        <button>
+            <span aria-hidden="true">★</span>
+            Favorite
+        </button>
+    </body>
+</html>

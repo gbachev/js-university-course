@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Accessible names</title>
+    </head>
+    <body>
+        <p>Open DevTools, select each control in the Elements panel and read its name in the Accessibility tab, under "Computed Properties".</p>
+
+        <!-- name: "Title" -->
+        <label for="title">Title</label>
+        <input id="title" name="title">
+
+        <!-- name: "Close", the button has no words to use -->
+        <button aria-label="Close">×</button>
+
+        <!-- name: "Remove Dune", starts with the visible text -->
+        <button aria-label="Remove Dune">Remove</button>
+
+        <!-- considered bad practice: shows "Remove", says "Delete" -->
+        <button aria-label="Delete Dune">Remove</button>
+    </body>
+</html>

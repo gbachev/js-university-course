@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Native elements first</title>
+        <script src="01-native-elements.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. Press Tab a few times: it stops on "Add a book" but never on "Clear list". Press Enter on "Add a book".</p>
+        <h1 id="list-heading" tabindex="-1">To Read</h1>
+        <ul id="books">
+            <li>Dune <button>Remove</button></li>
+            <li>Emma <button>Remove</button></li>
+        </ul>
+        <div id="clear">Clear list</div>
+        <button id="add">Add a book</button>
+        <p id="status" aria-live="polite"></p>
+    </body>
+</html>

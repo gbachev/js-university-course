@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>A div that works like a button</title>
+        <script src="02-div-as-button.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. Press Tab until "Clear list" has the focus, then press Enter or Space.</p>
+        <h1 id="list-heading" tabindex="-1">To Read</h1>
+        <ul id="books">
+            <li>Dune <button>Remove</button></li>
+            <li>Emma <button>Remove</button></li>
+        </ul>
+        <div id="clear">Clear list</div>
+        <button id="add">Add a book</button>
+        <p id="status" aria-live="polite"></p>
+    </body>
+</html>

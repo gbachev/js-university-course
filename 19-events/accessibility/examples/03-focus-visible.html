@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>A visible focus</title>
+        <style>
+            /* considered bad practice: the focus ring is gone */
+            .no-ring button:focus {
+                outline: none;
+            }
+
+            /* a clear ring when the keyboard moves the focus */
+            .clear-ring button:focus-visible {
+                outline: 3px solid #1d4ed8;
+                outline-offset: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Press Tab through the buttons. In the first group we cannot see where the focus is. In the second group the ring shows after Tab, but usually not after a mouse click.</p>
+        <div class="no-ring">
+            <h2>outline: none</h2>
+            <button>Remove Dune</button>
+            <button>Remove Emma</button>
+        </div>
+        <div class="clear-ring">
+            <h2>:focus-visible</h2>
+            <button>Remove Dune</button>
+            <button>Remove Emma</button>
+        </div>
+    </body>
+</html>
