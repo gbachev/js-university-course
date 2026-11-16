@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>A library in an IIFE</h1>
-    <p>Open the console. Like jQuery before modules, the IIFE exposes only $.</p>
+    <p>Open the console. Like jQuery before modules, the IIFE exposes jQuery and its short alias $.</p>
 
     <script>
-        var jQuery = (function () {
+        window.jQuery = window.$ = (function () {
             function $(selector) {
                 return document.querySelector(selector);
             }
@@ -18,6 +18,7 @@
         })();
 
         console.log(jQuery('h1').textContent); // A library in an IIFE
+        console.log($ === jQuery); // true
     </script>
 </body>
 </html>
