@@ -18,3 +18,10 @@ let trueValues = [
 
 console.log(falseValues); // an array of 7 wrapper objects, each one [Boolean: false]
 console.log(trueValues); // an array of 5 wrapper objects, each one [Boolean: true]
+
+// In practice we convert to a boolean primitive with Boolean() or !!, without new.
+console.log(Boolean('')); // false
+console.log(Boolean('0')); // true, a non-empty string
+console.log(Boolean('false')); // true, a non-empty string
+console.log(!!0); // false
+console.log(!!'hello'); // true
