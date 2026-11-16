@@ -3,3 +3,7 @@ const reversed = [...original].reverse();
 
 console.log(reversed); // [ 3, 2, 1 ]
 console.log(original); // [ 1, 2, 3 ]
+
+// ES2023: toReversed() returns a reversed copy in one call.
+console.log(original.toReversed()); // [ 3, 2, 1 ]
+console.log(original); // [ 1, 2, 3 ]

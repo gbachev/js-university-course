@@ -5,3 +5,6 @@ const obj = entries.reduce((acc, [key, value]) => {
 }, {});
 
 console.log(obj); // { a: 1, b: 2 }
+
+// Object.fromEntries() builds the same object in one call.
+console.log(Object.fromEntries(entries)); // { a: 1, b: 2 }
