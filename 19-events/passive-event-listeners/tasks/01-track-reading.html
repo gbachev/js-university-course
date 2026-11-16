@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Track reading, smoothly</title>
+</head>
+<!--
+    Task 1: Track reading, smoothly
+    Our code goes in 01-track-reading.js, the checks are in 01-track-reading.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Track reading, smoothly</h1>
+    <p>Fix trackReading() in 01-track-reading.js, then reload this page.</p>
+
+    <style>
+        #reader { height: 200px; overflow: auto; border: 1px solid #ccc; }
+        #reader p { height: 2000px; }
+    </style>
+    <div id="reader">
+        <p>Dune, chapter one</p>
+    </div>
+    <p>Status: <output id="status">Idle</output></p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-track-reading.js'));
+        await import('./01-track-reading.check.js');
+    </script>
+</body>
+</html>

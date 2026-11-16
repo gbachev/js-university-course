@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>touch-action instead of preventDefault()</title>
+        <style>
+            #reader { height: 200px; overflow: auto; }
+            #reader p { height: 2000px; }
+            #gallery { touch-action: pan-y; }
+        </style>
+        <script src="05-touch-action.js" defer></script>
+    </head>
+    <body>
+        <p>Open DevTools, turn on the device toolbar (touch), then swipe the list of books sideways and look at the console.</p>
+        <div id="reader">
+            <p>Dune, chapter one</p>
+        </div>
+        <ul id="gallery">
+            <li>Dune</li>
+            <li>Emma</li>
+        </ul>
+    </body>
+</html>

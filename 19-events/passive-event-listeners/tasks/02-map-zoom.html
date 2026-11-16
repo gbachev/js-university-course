@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: A zoom that zooms</title>
+</head>
+<!--
+    Task 2: A zoom that zooms
+    Our code goes in 02-map-zoom.js, the checks are in 02-map-zoom.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: A zoom that zooms</h1>
+    <p>Fix setUpZoom() in 02-map-zoom.js, then reload this page. Open this page in Chrome or
+        Firefox. Safari does not make wheel listeners on document passive, so the starter
+        already passes there.</p>
+
+    <style>
+        #map { height: 300px; background: #dfe9d8; display: grid; place-items: center; }
+    </style>
+    <div id="map">Map of the bookshops in town</div>
+    <p>Zoom: <output id="zoom">1</output></p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-map-zoom.js'));
+        await import('./02-map-zoom.check.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scroll events cannot be canceled</title>
+        <style>
+            #reader { height: 200px; overflow: auto; }
+            #reader p { height: 2000px; }
+        </style>
+        <script src="03-scroll-not-cancelable.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. The script scrolls the reader from code.</p>
+        <div id="reader">
+            <p>Dune, chapter one</p>
+        </div>
+        <ul id="gallery">
+            <li>Dune</li>
+            <li>Emma</li>
+        </ul>
+    </body>
+</html>
