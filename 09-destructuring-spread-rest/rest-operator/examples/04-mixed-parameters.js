@@ -3,5 +3,5 @@ function greet(greeting, ...names) {
     console.log(greeting + ' ' + names.join(', '));
 }
 
-greet('Hello', 'John', 'Jane', 'Jack');
-// Hello John, Jane, Jack
+greet('Hello', 'John', 'Jane');
+// Hello John, Jane
