@@ -6,7 +6,7 @@ form.addEventListener("submit", (event) => {
     const data = new FormData(form);
     const book = {
         title: data.get("title"),
-        tags: data.getAll("tags"),
+        tags: data.getAll("tags")
     };
     console.log(book);
 });
@@ -14,4 +14,4 @@ form.addEventListener("submit", (event) => {
 form.elements.title.value = "Dune";
 form.elements.tags[1].checked = true;
 form.requestSubmit();
-// { title: "Dune", tags: ["sci-fi"] }
+// { title: 'Dune', tags: ['sci-fi'] }
