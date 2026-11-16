@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Read more, in place</title>
+</head>
+<!--
+    Task 1: Read more, in place
+    Our code goes in 01-read-more.js, the checks are in 01-read-more.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Read more, in place</h1>
+    <p>Fix setUpReadMore() in 01-read-more.js, then reload this page.</p>
+
+    <article>
+        <h2>Dune</h2>
+        <p>A desert planet, a noble family and the spice everyone wants.</p>
+        <a id="read-more" href="#description">Read more</a>
+        <p id="description" hidden>Frank Herbert's novel follows Paul Atreides after his family
+            takes over Arrakis, the only source of the spice melange.</p>
+    </article>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-read-more.js'));
+        await import('./01-read-more.check.js');
+    </script>
+</body>
+</html>

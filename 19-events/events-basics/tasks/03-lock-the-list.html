@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Lock the list</title>
+</head>
+<!--
+    Task 3: Lock the list
+    Our code goes in 03-lock-the-list.js, the checks are in 03-lock-the-list.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Lock the list</h1>
+    <p>Finish setUpEditing() in 03-lock-the-list.js, then reload this page.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+    </ul>
+    <button id="add">Add a book</button>
+    <button id="clear">Clear the list</button>
+    <button id="lock">Lock the list</button>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-lock-the-list.js'));
+        await import('./03-lock-the-list.check.js');
+    </script>
+</body>
+</html>
