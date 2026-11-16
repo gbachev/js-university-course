@@ -30,7 +30,7 @@ function sendWelcomeEmail(user) {
     });
 }
 
-function handleUserRegistration(formData, database) {
+function handleUserRegistration(formData) {
     validateUserInput(formData);
 
     const user = createUser(formData);
@@ -39,15 +39,12 @@ function handleUserRegistration(formData, database) {
     sendWelcomeEmail(user);
 }
 
-handleUserRegistration(
-    { username: 'anna', email: 'anna@example.com', password: 'secret' },
-    database
-);
+handleUserRegistration({ username: 'anna', email: 'anna@example.com', password: 'secret' });
 // Saved user anna
 // Email to anna@example.com: Welcome!
 
 try {
-    handleUserRegistration({ username: 'kai' }, database);
+    handleUserRegistration({ username: 'kai' });
 } catch (error) {
     console.log(error.name + ': ' + error.message); // Error: Missing fields
 }
