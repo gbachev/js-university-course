@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The global object</title>
+</head>
+<body>
+    <h1>The global object</h1>
+    <p>Open the console. The page logs which globals are also properties of window.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var language = 'JavaScript';
+        let version = 'ES2023';
+        const releaseYear = 2015;
+
+        // Only the var global becomes a property of window.
+        console.log(window.language); // JavaScript
+        console.log(window.version); // undefined
+        console.log(window.releaseYear); // undefined
+
+        // Built-in APIs live on the global object.
+        console.log(Math === window.Math); // true
+        console.log(setTimeout === globalThis.setTimeout); // true
+
+        var greeting = 'hello';
+        console.log(window.greeting); // hello
+    </script>
+</body>
+</html>

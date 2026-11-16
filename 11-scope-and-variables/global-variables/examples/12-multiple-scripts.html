@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiple scripts share one global scope</title>
+</head>
+<body>
+    <h1>Multiple scripts share one global scope</h1>
+    <p>Open the console. The last script sees the let globals of the two files before
+        it.</p>
+
+    <!-- Classic scripts, not modules: all of them share the global scope of the page. -->
+    <script src="./12-file1.js"></script>
+    <script src="./12-file2.js"></script>
+    <script>
+        console.log(a); // 1
+        console.log(b); // 2
+    </script>
+</body>
+</html>

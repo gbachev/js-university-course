@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>var globals are duplicated</title>
+</head>
+<body>
+    <h1>var globals are duplicated</h1>
+    <p>Open the console. The var global is a variable and a property of globalThis at the
+        same time.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var theme = 'dark';
+        console.log(theme); // dark
+        console.log(globalThis.theme); // dark
+        console.log(Object.hasOwn(globalThis, 'theme')); // true
+    </script>
+</body>
+</html>

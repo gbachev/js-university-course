@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A var global overwrites alert</title>
+</head>
+<body>
+    <h1>A var global overwrites alert</h1>
+    <p>Open the console. A top-level var named alert replaces the alert() function of the
+        page.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var alert = 'oops';
+
+        try {
+            alert('Hi'); // TypeError: alert is not a function
+        } catch (error) {
+            console.log(error.name + ': ' + error.message);
+            // TypeError: alert is not a function
+        }
+
+        console.log(window.alert); // oops
+    </script>
+</body>
+</html>

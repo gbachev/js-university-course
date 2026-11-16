@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>var, let and const on window</title>
+</head>
+<body>
+    <h1>var, let and const on window</h1>
+    <p>Open the console. Only the var global is a property of window.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var x = 1;
+        let y = 2;
+        const z = 3;
+
+        console.log(window.x); // 1
+        console.log(window.y); // undefined
+        console.log(window.z); // undefined
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How the two parts work together</title>
+</head>
+<body>
+    <h1>How the two parts work together</h1>
+    <p>Open the console. Every name resolves, but only the var global is on
+        globalThis.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var x = 1;
+        let y = 2;
+
+        console.log(Math.random()); // from global object, a random number like 0.3141
+        console.log(y);             // from global lexical environment: 2
+        console.log(x);             // from lexical environment, also via global object: 1
+        console.log(globalThis.x);  // 1
+        console.log(globalThis.y);  // undefined
+    </script>
+</body>
+</html>

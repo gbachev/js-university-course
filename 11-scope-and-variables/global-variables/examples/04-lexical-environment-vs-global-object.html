@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lexical environment vs global object</title>
+</head>
+<body>
+    <h1>Lexical environment vs global object</h1>
+    <p>Open the console. The let global is not a property of window, the var global
+        is.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        let a = 10;
+        var b = 20;
+
+        console.log(window.a); // undefined
+        console.log(window.b); // 20
+    </script>
+</body>
+</html>

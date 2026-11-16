@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A var global overwrites Math</title>
+</head>
+<body>
+    <h1>A var global overwrites Math</h1>
+    <p>Open the console. A top-level var named Math replaces the built-in Math object for
+        the whole page.</p>
+
+    <!-- A classic script, not a module: its top-level var declarations end up on window,
+         which is what this example is about. -->
+    <script>
+        var Math = 'oops';
+
+        try {
+            Math.sqrt(4); // TypeError: Math.sqrt is not a function
+        } catch (error) {
+            console.log(error.name + ': ' + error.message);
+            // TypeError: Math.sqrt is not a function
+        }
+
+        console.log(window.Math); // oops
+    </script>
+</body>
+</html>
