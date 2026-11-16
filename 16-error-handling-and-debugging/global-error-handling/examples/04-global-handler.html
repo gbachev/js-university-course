@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A global error handler</title>
+</head>
+<body>
+    <h1>A global error handler</h1>
+    <p>Open DevTools, then click the buttons. Every error is sent to /api/errors (see the
+        Network panel; our small server answers 404, which is fine here) and still shows
+        in the console, but the message at the top appears only once.</p>
+    <button type="button" id="pay">Pay (throws an error)</button>
+    <button type="button" id="reject">Pay later (rejects a promise)</button>
+
+    <script src="./04-global-handler.js"></script>
+</body>
+</html>
