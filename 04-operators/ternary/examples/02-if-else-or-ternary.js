@@ -1,17 +1,17 @@
-const condition = true;
+const score = 85;
 
 // With if ... else
-let a;
+let result;
 
-if (condition) {
-    a = 'value 1';
+if (score >= 50) {
+    result = 'pass';
 } else {
-    a = 'value 2';
+    result = 'fail';
 }
 
-console.log(a); // value 1
+console.log(result); // pass
 
 // The same with the ternary operator
-let b = condition ? 'value 1' : 'value 2';
+const ternaryResult = score >= 50 ? 'pass' : 'fail';
 
-console.log(b); // value 1
+console.log(ternaryResult); // pass
