@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Count the elements</title>
+</head>
+<!--
+    Task 1: Count the elements
+    Our code goes in 01-count-elements.js, the checks are in 01-count-elements.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Count the elements</h1>
+    <p>Finish countElements() in 01-count-elements.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="to-read">
+        <!-- top picks -->
+        <li>Dune</li>
+        <li>Emma</li>
+        <li>Neuromancer</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-count-elements.js'));
+        await import('./01-count-elements.check.js');
+    </script>
+</body>
+</html>

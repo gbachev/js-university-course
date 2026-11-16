@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Table without tbody</title>
+        <!-- The instruction comes from CSS, so the table stays the first child of the body. -->
+        <style>
+            body::before { content: "Open the console. We never wrote a tbody, yet the DOM has one."; display: block; color: #555; }
+        </style>
+        <script defer src="03-table-tbody.js"></script>
+    </head>
+    <body><table><tr><td>Dune</td></tr></table></body>
+</html>
