@@ -1,0 +1,6 @@
+const items = ['a', 'b', 'c'];
+
+for (const item of items) {
+    console.log(item);
+}
+// Logs: a, b, c
