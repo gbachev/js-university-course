@@ -1,4 +1,4 @@
-var userName;
+var userName; // declaration
 userName = 'John'; // assignment
 
 let score; // declaration
