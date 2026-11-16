@@ -5,7 +5,7 @@ Code for the lecture *Passive Event Listeners* (section 19, Events) of the JavaS
 ## Examples
 - `examples/01-passive-ignores-prevent-default.html` - a passive listener cannot cancel the wheel
 - `examples/02-passive-by-default.html` - a `wheel` listener on `window` is passive without being asked
-- `examples/03-scroll-not-cancelable.html` - the `scroll` event cannot be canceled
+- `examples/03-scroll-not-cancelable.html` - the `scroll` event cannot be cancelled
 - `examples/04-swipe-gallery.html` - a swipe gallery with a `{ passive: false }` `touchmove` listener
 - `examples/05-touch-action.html` - the same gallery with `touch-action: pan-y` and passive listeners only
 

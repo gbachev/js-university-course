@@ -26,7 +26,7 @@ check('the wheel listener is passive', () => {
     equal(added.find((listener) => listener.type === 'wheel')?.passive, true);
 });
 
-check('a wheel turn updates the status and is not canceled', () => {
+check('a wheel turn updates the status and is not cancelled', () => {
     const wheel = new WheelEvent('wheel', { cancelable: true, deltaY: 100 });
     reader.dispatchEvent(wheel);
     equal(status.textContent, 'Reading (wheel)');

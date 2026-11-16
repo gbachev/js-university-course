@@ -12,8 +12,8 @@
 // document passive, so the starter already passes there.
 //
 // Examples:
-//   Ctrl + wheel up      zoom 2, the event is canceled
-//   wheel up, no Ctrl    zoom stays, the event is not canceled
+//   Ctrl + wheel up      zoom 2, the event is cancelled
+//   wheel up, no Ctrl    zoom stays, the event is not cancelled
 //
 // Open the page: npm run serve, then 19-events/passive-event-listeners/tasks/02-map-zoom.html
 

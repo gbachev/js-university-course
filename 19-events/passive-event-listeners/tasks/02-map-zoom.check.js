@@ -17,7 +17,7 @@ check('Ctrl + wheel up zooms in', () => {
     equal(zoom.textContent, '2');
 });
 
-check('Ctrl + wheel is canceled, so the browser does not zoom the page', () => {
+check('Ctrl + wheel is cancelled, so the browser does not zoom the page', () => {
     equal(turnWheel(-100, true).defaultPrevented, true);
     equal(zoom.textContent, '3');
 });
@@ -36,7 +36,7 @@ check('Ctrl + wheel down zooms out, down to 1', () => {
     equal(zoom.textContent, '1');
 });
 
-check('a wheel turn without Ctrl scrolls: no zoom, not canceled', () => {
+check('a wheel turn without Ctrl scrolls: no zoom, not cancelled', () => {
     const wheel = turnWheel(-100, false);
     equal(zoom.textContent, '1');
     equal(wheel.defaultPrevented, false);
