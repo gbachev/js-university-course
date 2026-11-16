@@ -14,7 +14,7 @@ for (let i = 0; i < array3D.length; i++) {
 }
 // Logs: 1, 2, 3, 4, 5, 6, 7, 8
 
-console.log('\n');
+console.log('');
 
 console.log('Iterating through 4D array:');
 for (let i = 0; i < array4D.length; i++) {
