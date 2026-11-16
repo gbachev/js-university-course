@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: A component for a book</title>
+    <style>
+        .is-read .title {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<!--
+    Task 1: A component for a book
+    Our code goes in 01-book-item.js, the checks are in 01-book-item.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: A component for a book</h1>
+    <p>Write BookItem() in 01-book-item.js, then reload this page. The checks draw a few
+        rows with it below and tell us at the bottom of the page what still fails.</p>
+
+    <h2>My list</h2>
+    <ul id="books"></ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-book-item.js'));
+        await import('./01-book-item.check.js');
+    </script>
+</body>
+</html>
