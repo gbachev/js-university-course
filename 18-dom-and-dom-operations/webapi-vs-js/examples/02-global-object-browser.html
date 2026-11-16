@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The global object in a browser</title>
+</head>
+<body>
+    <h1>The global object in a browser</h1>
+    <p>Open the console. In a browser the global object is window, and there is no global.</p>
+
+    <script>
+        // In a browser
+        console.log(globalThis === window); // true
+        console.log(typeof global); // undefined
+    </script>
+</body>
+</html>
