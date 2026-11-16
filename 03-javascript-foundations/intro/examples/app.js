@@ -1,1 +1,2 @@
-console.log("Hello World! Printed out from a script in a referenced js file.");
+// app.js
+console.log('Hello from app.js!'); // Hello from app.js!
