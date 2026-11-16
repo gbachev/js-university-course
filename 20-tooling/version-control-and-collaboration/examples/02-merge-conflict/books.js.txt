@@ -1,0 +1,11 @@
+// src/books.js during the conflict
+<<<<<<< HEAD
+export const PAGE_SIZE = 25;
+=======
+export const PAGE_SIZE = 20;
+>>>>>>> bigger-pages
+
+export const books = [
+    { title: 'Dune', read: true },
+    { title: 'Emma', read: false },
+];

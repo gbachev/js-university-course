@@ -1,0 +1,24 @@
+{
+    "name": "reading-list",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "prepare": "husky",
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
+    "lint-staged": {
+        "*.js": ["eslint --fix", "prettier --write"],
+        "*.{json,md,css,html}": "prettier --write"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.15.0",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^17.14.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.6.1",
+        "prettier": "^3.10.1"
+    }
+}
