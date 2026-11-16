@@ -5,4 +5,4 @@ weakSet.add(obj);
 
 console.log(weakSet.has(obj)); // true
 
-obj = null; // The object can be garbage collected, and removed from the set
+obj = null; // The object and its entry can now be collected

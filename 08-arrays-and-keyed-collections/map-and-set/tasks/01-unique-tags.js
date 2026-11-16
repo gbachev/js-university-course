@@ -1,5 +1,5 @@
 // Task 1: Unique tags
-// Lecture: Keyed Collections and Typed Arrays
+// Lecture: Map and Set
 //
 // Our blog collects the tags of all posts into one array, so the same tag shows up many
 // times. The function getUniqueTags(tags) returns a new array with every tag only once,
@@ -10,7 +10,7 @@
 //   getUniqueTags(['js', 'css', 'js', 'html', 'css'])   // [ 'js', 'css', 'html' ]
 //   getUniqueTags([])                                   // []
 //
-// Run the tests: npm test -- 08-arrays-and-keyed-collections/keyed-collections-typed-arrays
+// Run the tests: npm test -- 08-arrays-and-keyed-collections/map-and-set
 
 export function getUniqueTags(tags) {
     // Your code here

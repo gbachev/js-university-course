@@ -1,5 +1,5 @@
 // Task 3: Orders sent twice
-// Lecture: Keyed Collections and Typed Arrays
+// Lecture: Map and Set
 //
 // A glitch in the checkout sent some orders more than once. The function
 // findDuplicates(orderIds) gets the array of order ids we received and returns a new
@@ -11,7 +11,7 @@
 //   findDuplicates([101, 102, 101, 103, 102, 101])   // [ 101, 102 ]
 //   findDuplicates([101, 102])                       // []
 //
-// Run the tests: npm test -- 08-arrays-and-keyed-collections/keyed-collections-typed-arrays
+// Run the tests: npm test -- 08-arrays-and-keyed-collections/map-and-set
 
 export function findDuplicates(orderIds) {
     // Your code here
