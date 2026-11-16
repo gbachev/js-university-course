@@ -8,7 +8,7 @@ let original = {
         name: 'John Doe',
         age: undefined,
         [sym]: 'unique',
-        lastModified: new Date('2023-03-15T12:00:00.000Z'),
+        lastModified: new Date('2025-03-15T12:00:00.000Z'),
         RegExp: new RegExp('abc')
     }
 };
@@ -20,7 +20,7 @@ console.log(original);
 //     greet: [Function: greet],
 //     name: 'John Doe',
 //     age: undefined,
-//     lastModified: 2023-03-15T12:00:00.000Z,
+//     lastModified: 2025-03-15T12:00:00.000Z,
 //     RegExp: /abc/,
 //     [Symbol(unique)]: 'unique'
 //   }
@@ -29,7 +29,7 @@ console.log(copy);
 // {
 //   person: {
 //     name: 'John Doe',
-//     lastModified: '2023-03-15T12:00:00.000Z',
+//     lastModified: '2025-03-15T12:00:00.000Z',
 //     RegExp: {}
 //   }
 // }
