@@ -5,9 +5,9 @@ let b = true;
 let n = 123;
 let str = 'some string';
 let un;
+let nl = null; // a primitive, although typeof null returns 'object'
 
 // Objects
-let nl = null;
 let obj = {};
 let b_obj = new Boolean(true);
 let n_obj = new Number(123);
@@ -24,10 +24,10 @@ console.log('typeof boolean (primitive value):', typeof b); // boolean
 console.log('typeof number (primitive value):', typeof n); // number
 console.log('typeof string (primitive value):', typeof str); // string
 console.log('typeof undefined (primitive value):', typeof un); // undefined
-
-console.log('\n');
-console.log('Objects:');
 console.log('typeof null:', typeof nl); // object
+
+console.log('');
+console.log('Objects:');
 console.log('typeof Object:', typeof obj); // object
 console.log('typeof Boolean:', typeof b_obj); // object
 console.log('typeof Number:', typeof n_obj); // object

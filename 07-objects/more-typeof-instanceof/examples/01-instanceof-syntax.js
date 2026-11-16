@@ -2,9 +2,8 @@
 console.log(new Number(123) instanceof Number); // true
 
 try {
-    console.log(new Number(123) instanceof number);
+    console.log(new Number(123) instanceof 'number');
 } catch (error) {
     console.log(error.name + ': ' + error.message);
-    // ReferenceError: number is not defined - there is no constructor called number,
-    // the constructor is Number
+    // TypeError: Right-hand side of 'instanceof' is not an object
 }
