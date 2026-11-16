@@ -1,8 +1,8 @@
-let str1 = 'My favourite ';
+let str1 = 'My favorite ';
 let str2 = 'scripting language is ';
 let str3 = 'JavaScript';
 
-console.log(str1 + str2 + str3); // My favourite scripting language is JavaScript
+console.log(str1 + str2 + str3); // My favorite scripting language is JavaScript
 
 // The number in age is converted into a string.
 let age = 10000;

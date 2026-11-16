@@ -12,8 +12,8 @@ console.log(result); // The quick red fox jumps over the lazy dog.
 let index = text.search(/\blazy\b/);
 console.log(index); // 35
 
-// \t is a tab character, so this pattern looks for a tab followed by "est".
-index = text.search(/\test\b/);
+// There is no word "test" in the text.
+index = text.search(/\btest\b/);
 console.log(index); // -1
 
 // split(): split on one or more spaces (Node prints the 9 words in columns)
