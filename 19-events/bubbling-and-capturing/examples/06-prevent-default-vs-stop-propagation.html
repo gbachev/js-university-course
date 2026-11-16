@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>preventDefault() does not stop propagation</title>
+        <script src="06-prevent-default-vs-stop-propagation.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. The checkbox shows the difference.</p>
+        <input id="search" placeholder="Search">
+        <div id="menu" class="open">Sort by title</div>
+        <ul id="books">
+            <li class="book">
+                <span class="title">Dune</span>
+                <button>Remove</button>
+            </li>
+            <li class="book">
+                <span class="title">Emma</span>
+                <button>Remove</button>
+            </li>
+        </ul>
+        <label>
+            <input type="checkbox" id="hide-read"> Hide read
+        </label>
+    </body>
+</html>

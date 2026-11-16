@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: The click trail</title>
+</head>
+<!--
+    Task 2: The click trail
+    Our code goes in 02-click-trail.js, the checks are in 02-click-trail.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: The click trail</h1>
+    <p>Fix setUpTrail() in 02-click-trail.js, then reload this page.</p>
+
+    <ul id="books">
+        <li>
+            <span class="title">Dune</span>
+            <button>Mark read</button>
+        </li>
+    </ul>
+    <h2>Trail</h2>
+    <ol id="trail"></ol>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-click-trail.js'));
+        await import('./02-click-trail.check.js');
+    </script>
+</body>
+</html>

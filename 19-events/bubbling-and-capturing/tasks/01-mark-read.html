@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Mark read, and count it</title>
+</head>
+<!--
+    Task 1: Mark read, and count it
+    Our code goes in 01-mark-read.js, the checks are in 01-mark-read.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Mark read, and count it</h1>
+    <p>Fix setUpList() in 01-mark-read.js, then reload this page.</p>
+
+    <style>
+        .selected { background: #fff3c4; }
+        .is-read .title { text-decoration: line-through; }
+    </style>
+    <p>Clicks on this page: <output id="clicks">0</output></p>
+    <ul id="books">
+        <li>
+            <span class="title">Dune</span>
+            <button>Mark read</button>
+        </li>
+        <li>
+            <span class="title">Emma</span>
+            <button>Mark read</button>
+        </li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-mark-read.js'));
+        await import('./01-mark-read.check.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>One click, many listeners</title>
+        <script src="01-one-click-many-listeners.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. The script clicks a Remove button and a title from code.</p>
+        <input id="search" placeholder="Search">
+        <div id="menu" class="open">Sort by title</div>
+        <ul id="books">
+            <li class="book">
+                <span class="title">Dune</span>
+                <button>Remove</button>
+            </li>
+            <li class="book">
+                <span class="title">Emma</span>
+                <button>Remove</button>
+            </li>
+        </ul>
+        <label>
+            <input type="checkbox" id="hide-read"> Hide read
+        </label>
+    </body>
+</html>

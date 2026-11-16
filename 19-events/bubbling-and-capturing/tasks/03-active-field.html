@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: The active field</title>
+</head>
+<!--
+    Task 3: The active field
+    Our code goes in 03-active-field.js, the checks are in 03-active-field.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: The active field</h1>
+    <p>Fix highlightFields() in 03-active-field.js, then reload this page.</p>
+
+    <style>
+        .field { padding: 0.5rem; }
+        .field.active { background: #e8f0fe; }
+    </style>
+    <form id="add-book">
+        <div class="field">
+            <label for="title">Title</label>
+            <input id="title" name="title">
+        </div>
+        <div class="field">
+            <label for="author">Author</label>
+            <input id="author" name="author">
+        </div>
+        <button>Add</button>
+    </form>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-active-field.js'));
+        await import('./03-active-field.check.js');
+    </script>
+</body>
+</html>
