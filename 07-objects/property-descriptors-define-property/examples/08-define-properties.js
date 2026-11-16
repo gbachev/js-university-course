@@ -7,15 +7,15 @@ Object.defineProperties(user, {
         writable: true
     },
     email: {
-        value: 'bob@example.com',
+        value: 'john.doe@example.com',
         writable: false
     }
 });
 
-console.log(user.age, user.email); // 30 bob@example.com
+console.log(user.age, user.email); // 30 john.doe@example.com
 console.log(Object.getOwnPropertyDescriptor(user, 'email'));
 // {
-//   value: 'bob@example.com',
+//   value: 'john.doe@example.com',
 //   writable: false,
 //   enumerable: false,
 //   configurable: false

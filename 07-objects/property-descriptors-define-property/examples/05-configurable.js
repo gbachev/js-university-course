@@ -2,7 +2,7 @@
 const user = {};
 
 Object.defineProperty(user, 'name', {
-    value: 'Bob',
+    value: 'John',
     writable: false,
     enumerable: true,
     configurable: false
@@ -19,11 +19,11 @@ try {
 // Redefining the property throws, in strict mode or not.
 try {
     Object.defineProperty(user, 'name', {
-        value: 'Dan'
+        value: 'Jane'
     });
 } catch (error) {
     console.log(error.name + ': ' + error.message);
     // TypeError: Cannot redefine property: name
 }
 
-console.log(user.name); // Bob
+console.log(user.name); // John

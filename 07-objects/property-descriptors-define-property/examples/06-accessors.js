@@ -16,5 +16,5 @@ Object.defineProperty(account, 'fullName', {
 });
 
 console.log(account.fullName); // John Doe
-account.fullName = 'Jane Smith';
+account.fullName = 'Jane Doe';
 console.log(account.firstName); // Jane

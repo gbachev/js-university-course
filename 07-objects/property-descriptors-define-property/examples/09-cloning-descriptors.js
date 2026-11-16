@@ -2,7 +2,7 @@
 const user = {};
 
 Object.defineProperty(user, 'name', {
-    value: 'Bob',
+    value: 'John',
     writable: false,
     enumerable: true,
     configurable: false
@@ -10,7 +10,7 @@ Object.defineProperty(user, 'name', {
 
 const clone = Object.defineProperties({}, Object.getOwnPropertyDescriptors(user));
 
-console.log(clone.name); // Bob
+console.log(clone.name); // John
 console.log(Object.getOwnPropertyDescriptor(clone, 'name').writable); // false
 
 // A spread copy gets only the values, with the default attributes.

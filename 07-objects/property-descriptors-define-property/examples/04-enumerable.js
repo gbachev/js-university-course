@@ -2,7 +2,7 @@
 const user = {};
 
 Object.defineProperty(user, 'name', {
-    value: 'Bob',
+    value: 'John',
     writable: false,
     enumerable: true,
     configurable: false
@@ -14,5 +14,5 @@ Object.defineProperty(user, 'hidden', {
 });
 
 console.log(Object.keys(user)); // [ 'name' ]
-console.log(JSON.stringify(user)); // {"name":"Bob"}
+console.log(JSON.stringify(user)); // {"name":"John"}
 console.log(user.hidden); // secret - it is still there when we ask for it

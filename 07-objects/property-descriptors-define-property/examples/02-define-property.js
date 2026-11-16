@@ -2,16 +2,16 @@
 const user = {};
 
 Object.defineProperty(user, 'name', {
-    value: 'Bob',
+    value: 'John',
     writable: false,
     enumerable: true,
     configurable: false
 });
 
-console.log(user.name); // Bob
+console.log(user.name); // John
 console.log(Object.getOwnPropertyDescriptor(user, 'name'));
 // {
-//   value: 'Bob',
+//   value: 'John',
 //   writable: false,
 //   enumerable: true,
 //   configurable: false
