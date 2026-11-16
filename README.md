@@ -36,7 +36,15 @@ npm run serve
 
 ## Solving the tasks
 
-Every task file starts with a comment that explains the task. We write our code in the file, then run the tests:
+Every task file starts with a comment that explains the task, followed by a function for us to finish:
+
+```js
+export function addToCart(total, price, quantity) {
+    // Your code here
+}
+```
+
+The tests call the function with some values and check what it gives back, so we write our code between the curly braces and give the answer back with `return`. The word `export` only lets the test file use our function: functions get their own section (10) and `export` its lecture in the Modules section (12). Then we run the tests:
 
 ```bash
 npm test -- 04-operators/comparison      # the tasks of one lecture
