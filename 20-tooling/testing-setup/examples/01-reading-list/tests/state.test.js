@@ -23,7 +23,7 @@ describe('addBook', () => {
     });
 });
 
-const emma = { key: '/works/OL66554W', title: 'Emma' };
+const emma = { key: '/works/OL66513W', title: 'Emma' };
 
 test('removeBook keeps every other book', () => {
     const books = addBook(addBook([], dune), emma);
