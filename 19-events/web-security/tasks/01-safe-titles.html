@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Titles stay text</title>
+</head>
+<!--
+    Task 1: Titles stay text
+    Our code goes in 01-safe-titles.js, the checks are in 01-safe-titles.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Titles stay text</h1>
+    <p>Fix addBook() in 01-safe-titles.js, then reload this page.</p>
+
+    <ul id="books"></ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-safe-titles.js'));
+        await import('./01-safe-titles.check.js');
+    </script>
+</body>
+</html>

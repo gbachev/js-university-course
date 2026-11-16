@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy"
+            content="script-src 'self'">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reading List</title>
+        <script src="04-csp-blocks-inline-code.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console. Our code puts John Doe's title into the list with innerHTML. The image lands in the page, but no alert appears: the policy blocks its onerror code.</p>
+        <ul id="books"></ul>
+    </body>
+</html>
