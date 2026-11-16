@@ -5,9 +5,8 @@ Code for the lecture *Synchronous vs Asynchronous Code* (section 17, Asynchronou
 ## Examples
 - `examples/01-blocking-wait.js` - a busy loop blocks the thread for three seconds
 - `examples/02-set-timeout.js` - `setTimeout()` returns at once, and its callback runs later
-- `examples/03-reading-vs-execution-order.js` - even a 0 ms timer runs after the code below it
-- `examples/04-return-too-early.js` - returning a value set in a timer gives `undefined`
-- `examples/05-callback.js` - passing a callback that gets the user when it is ready
+- `examples/03-return-too-early.js` - returning a value set in a timer gives `undefined`
+- `examples/04-callback.js` - passing a callback that gets the user when it is ready
 
 Run one with `node 17-asynchronous-javascript/synchronous-vs-asynchronous/examples/01-blocking-wait.js` from the repository folder.
 
