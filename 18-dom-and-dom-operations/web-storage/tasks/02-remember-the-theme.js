@@ -1,5 +1,5 @@
 // Task 2: Remember the theme
-// Lecture: Web Storage (localStorage, sessionStorage)
+// Lecture: Web Storage: localStorage and sessionStorage
 //
 // John Doe picks a theme, and our page should remember it after a reload. Write
 // saveTheme(theme), which saves theme in localStorage under the key "theme", and

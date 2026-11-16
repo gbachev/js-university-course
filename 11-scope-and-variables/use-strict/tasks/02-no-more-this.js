@@ -1,5 +1,5 @@
 // Task 2: No more this
-// Lecture: 'use strict'
+// Lecture: Strict Mode (use strict)
 //
 // fullName(user) should return the first and the last name of a user with a space
 // between them. It calls formatName() on its own, without an object before the dot. In

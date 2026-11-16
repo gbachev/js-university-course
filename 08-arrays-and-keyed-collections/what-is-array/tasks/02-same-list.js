@@ -1,5 +1,5 @@
 // Task 2: The same shopping list?
-// Lecture: What is an Array?
+// Lecture: What Is an Array?
 //
 // Two people wrote a shopping list and we want to know if they wrote the same one.
 // The function isSameList(listA, listB) returns true when both arrays have the same

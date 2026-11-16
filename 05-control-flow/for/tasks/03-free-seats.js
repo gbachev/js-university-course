@@ -1,5 +1,5 @@
 // Task 3: Free seats
-// Lecture: The "for" loop
+// Lecture: The for Loop
 //
 // A cinema hall is an array of rows and every row is an array of seats: true for a
 // taken seat, false for a free one. countFreeSeats(hall) should return how many

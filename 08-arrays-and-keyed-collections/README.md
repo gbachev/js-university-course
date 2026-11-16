@@ -3,7 +3,7 @@
 Lists of values in JavaScript: creating and changing arrays, their methods, loops and transformations, and the keyed collections `Map`, `Set`, `WeakMap` and `WeakSet`, with typed arrays.
 
 1. Section Overview (no code)
-2. [What is an Array?](what-is-array) - indexed lists that grow, sparse arrays and comparison by reference
+2. [What Is an Array?](what-is-array) - indexed lists that grow, sparse arrays and comparison by reference
 3. [Creating Arrays](creation) - literals, the `Array` constructor, `Array.of()`, `Array.from()` and spread
 4. [Accessing and Modifying Array Elements](access-modify) - indexes, `push()`, `pop()`, `shift()` and the `length` property
 5. [Array Methods](methods) - `unshift()`, `splice()`, `slice()`, `concat()`, `join()`, `indexOf()` and `includes()`

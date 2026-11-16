@@ -1,6 +1,6 @@
-# Node and NVM
+# Node.js and nvm
 
-Code for the lecture *Node and NVM* (section 20, Tooling) of the JavaScript course at gbachev.com.
+Code for the lecture *Node.js and nvm* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
 Example 01 is the version pinning of the lecture. Examples 02-06 demonstrate the module rules from the Modules section in Node; the ES module ones have their own `package.json` with `"type": "module"`.

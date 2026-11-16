@@ -1,5 +1,5 @@
 // Task 1: The last item in the cart
-// Lecture: What is an Array?
+// Lecture: What Is an Array?
 //
 // Our shop shows the item we added last to the cart. The function getLastItem(cart)
 // gets an array of product names and returns the last one. The index of the last

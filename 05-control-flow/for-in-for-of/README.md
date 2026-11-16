@@ -1,6 +1,6 @@
-# The "for ... in" and "for ... of" loops
+# The for...in and for...of Loops
 
-Code for the lecture *The "for ... in" and "for ... of" loops* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *The for...in and for...of Loops* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-for-of-array.js` - `for...of` over the values of an array

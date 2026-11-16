@@ -1,6 +1,6 @@
-# Real-world Questions
+# Real-World Questions
 
-Code for the lecture *Real-world Questions* (section 24, How to Prepare for an Interview) of the JavaScript course at gbachev.com.
+Code for the lecture *Real-World Questions* (section 24, How to Prepare for an Interview) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-event-delegation.html` - one click listener on the list handles the buttons of every item (browser)

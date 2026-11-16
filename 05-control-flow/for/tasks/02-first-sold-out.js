@@ -1,5 +1,5 @@
 // Task 2: First sold-out product
-// Lecture: The "for" loop
+// Lecture: The for Loop
 //
 // Our warehouse keeps two arrays of the same length: products holds the names and
 // stock holds how many of each we have left, so stock[0] belongs to products[0].

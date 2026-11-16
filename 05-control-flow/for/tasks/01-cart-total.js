@@ -1,5 +1,5 @@
 // Task 1: Cart total
-// Lecture: The "for" loop
+// Lecture: The for Loop
 //
 // Write getCartTotal(prices): it takes an array with the prices of the products in
 // a shopping cart and returns their sum. Use a for loop over the indexes of the

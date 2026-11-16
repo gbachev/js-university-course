@@ -4,7 +4,7 @@ The types of JavaScript: the primitives one by one, wrapper objects, the `typeof
 
 1. Section Overview (no code)
 2. [Types in JavaScript](types) - a loosely typed language, where a variable can change its type
-3. [Primitive types](primitives) - immutability, copy by value, and why primitives seem to have methods
+3. [Primitive Types](primitives) - immutability, copy by value, and why primitives seem to have methods
 4. [Boxing and Wrapper Objects](wrapper-objects) - the objects that wrap a primitive, and how they compare
 5. [Boolean](boolean) - `true` and `false`, and why a `Boolean` wrapper object is always truthy
 6. [Number](number) - parsing, special values, limits, floating-point errors and the `Math` object

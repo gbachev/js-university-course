@@ -1,6 +1,6 @@
-# The "for" loop
+# The for Loop
 
-Code for the lecture *The "for" loop* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *The for Loop* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-count-to-five.js` - a first `for` loop from 0 to 4

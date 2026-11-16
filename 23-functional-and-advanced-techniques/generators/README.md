@@ -1,4 +1,4 @@
-# Generators (function*)
+# Generators: function* and yield
 
 Code for the lecture *Generators (function\*)* (section 23, Functional and Advanced Techniques) of the JavaScript course at gbachev.com.
 

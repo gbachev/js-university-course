@@ -1,5 +1,5 @@
 // Task 1: A price mixin
-// Lecture: Multiple Inheritance / Mixins
+// Lecture: Mixins and Multiple Inheritance
 //
 // Books and courses in our shop have nothing in common except a price, so they do not
 // share a parent class. Write the object mixin priced with two methods.

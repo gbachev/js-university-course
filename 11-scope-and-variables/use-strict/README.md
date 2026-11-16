@@ -1,6 +1,6 @@
-# 'use strict'
+# Strict Mode (use strict)
 
-Code for the lecture *'use strict'* (section 11, Scope and Variables) of the JavaScript course at gbachev.com.
+Code for the lecture *Strict Mode (use strict)* (section 11, Scope and Variables) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-strict-mode-on.cjs` - the directive at the top of a script turns strict mode on

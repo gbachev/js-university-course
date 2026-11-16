@@ -1,5 +1,5 @@
 // Task 2: Where does the proxy send it?
-// Lecture: Development Servers & Live Reload
+// Lecture: Development Servers and Live Reload
 //
 // server.proxy in vite.config.js maps a path prefix to a backend, like
 // { '/api': 'http://localhost:3000' }. Write proxyTarget(path, proxy): when path

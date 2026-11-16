@@ -1,5 +1,5 @@
 // Task 2: The book titles
-// Lecture: What is the DOM
+// Lecture: What Is the DOM?
 //
 // Write bookTitles(list), which returns the titles in our reading list as an array of
 // strings, in page order. The text of a book is not part of its li element: it sits one

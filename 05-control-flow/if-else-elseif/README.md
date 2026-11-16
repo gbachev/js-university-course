@@ -1,6 +1,6 @@
-# The "if", "else" and "else if" statements
+# The if, else and else if Statements
 
-Code for the lecture *The "if", "else" and "else if" statements* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *The if, else and else if Statements* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-if-statement.js` - an `if` whose condition is true

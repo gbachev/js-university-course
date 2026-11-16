@@ -1,5 +1,5 @@
 // Task 2: Add the quantities
-// Lecture: Primitive types
+// Lecture: Primitive Types
 //
 // A shop page has two quantity fields, and the values of form fields reach our code
 // as strings. addQuantities(first, second) should return the total number of items

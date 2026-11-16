@@ -3,7 +3,7 @@
 How functions really behave: `this` and `call`, `apply` and `bind`, IIFEs, recursion, callbacks, higher-order and pure functions, and the properties of a function object.
 
 1. Section Overview (no code)
-2. [This in Functions: call(), apply() and bind()](this-in-functions) - the binding rules, lost `this` in callbacks, borrowing methods and partial application
+2. [this in Functions: call(), apply() and bind()](this-in-functions) - the binding rules, lost `this` in callbacks, borrowing methods and partial application
 3. [IIFE (Immediately Invoked Function Expressions)](iife) - functions that run the moment we define them, private state and namespaces
 4. [Recursive Functions](recursive) - base cases, the call stack, stack overflow and nested data
 5. [Callback Functions](callbacks) - passing functions to functions, callback arguments and `fn` versus `fn()`

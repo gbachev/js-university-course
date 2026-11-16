@@ -1,6 +1,6 @@
-# What is a Function?
+# What Is a Function?
 
-Code for the lecture *What is a Function?* (section 10, Functions) of the JavaScript course at gbachev.com.
+Code for the lecture *What Is a Function?* (section 10, Functions) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-greet.js` - a function with a parameter that returns a greeting

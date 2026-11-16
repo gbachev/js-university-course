@@ -1,5 +1,5 @@
 // Task 2: Add them all
-// Lecture: This in Functions: call(), apply() and bind()
+// Lecture: this in Functions: call(), apply() and bind()
 //
 // Our Cart class has an add(product) method, and addAll(products) should add every
 // product of the list in one go. Right now addAll throws a TypeError, because it

@@ -1,5 +1,5 @@
 // Task 3: Count the booked seats
-// Lecture: What is an Array?
+// Lecture: What Is an Array?
 //
 // A cinema row is an array where the index is the seat number. When someone books a
 // seat, we store their name at that index, so the row has empty slots for the free

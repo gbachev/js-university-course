@@ -3,7 +3,7 @@
 How to write and use functions: declarations, expressions and arrow functions, names, calls and return values, parameters and arguments.
 
 1. Section Overview (no code)
-2. [What is a Function?](what-is-function) - a reusable block of code that takes input and gives back a result
+2. [What Is a Function?](what-is-function) - a reusable block of code that takes input and gives back a result
 3. [Declaring Functions](declaring) - function declarations, function expressions and arrow functions, and which ones are hoisted
 4. [Named vs Anonymous Functions](named-vs-anonymous) - function names, where a name is visible, and names inferred from variables
 5. [Calling Functions and Return Values](calling-return) - calling a function, `return`, `undefined` and `void`, and functions passed around as values

@@ -1,6 +1,6 @@
-# The "switch" statement
+# The switch Statement
 
-Code for the lecture *The "switch" statement* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *The switch Statement* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-switch-fruit.js` - a first `switch` with `case`, `break` and `default`

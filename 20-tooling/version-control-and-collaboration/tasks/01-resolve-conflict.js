@@ -1,5 +1,5 @@
 // Task 1: Resolve a merge conflict
-// Lecture: Version Control & Collaboration
+// Lecture: Version Control and Collaboration
 //
 // After a conflict, Git writes both versions into the file between marker lines:
 // '<<<<<<< HEAD', then our version, '=======', the incoming version, and

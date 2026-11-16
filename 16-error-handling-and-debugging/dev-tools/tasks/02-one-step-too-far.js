@@ -1,5 +1,5 @@
 // Task 2: One step too far
-// Lecture: Dev Tools (Features, Debugging, Breakpoints)
+// Lecture: DevTools: Breakpoints and Debugging
 //
 // averageRating(reviews) should return the average of the stars of a product's
 // reviews, but every call throws a TypeError. Start npm run serve, open

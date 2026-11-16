@@ -1,6 +1,6 @@
-# What is JavaScript
+# What Is JavaScript?
 
-Code for the lecture *What is JavaScript* (section 3, JavaScript Foundations) of the JavaScript course at gbachev.com.
+Code for the lecture *What Is JavaScript?* (section 3, JavaScript Foundations) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-inline-script.html` - JavaScript written straight inside a `script` tag

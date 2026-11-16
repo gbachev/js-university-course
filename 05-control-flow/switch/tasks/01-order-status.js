@@ -1,5 +1,5 @@
 // Task 1: Order status
-// Lecture: The "switch" statement
+// Lecture: The switch Statement
 //
 // Our shop shows a message next to every order. Write getOrderStatusMessage(status)
 // with a switch: 'pending' returns 'We received your order.', 'shipped' returns

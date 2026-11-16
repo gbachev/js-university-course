@@ -1,5 +1,5 @@
 // Task 2: Greet the customer
-// Lecture: What is a Function?
+// Lecture: What Is a Function?
 //
 // After login our shop greets the customer by name. Write greetCustomer(name): it
 // returns 'Hello, ' followed by the name and '!'. Customers type their names in many

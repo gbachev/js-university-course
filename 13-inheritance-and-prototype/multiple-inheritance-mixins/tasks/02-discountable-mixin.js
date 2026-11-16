@@ -1,5 +1,5 @@
 // Task 2: A discount mixin factory
-// Lecture: Multiple Inheritance / Mixins
+// Lecture: Mixins and Multiple Inheritance
 //
 // Some of our products can go on sale, and they come from different classes. Finish
 // the mixin factory Discountable(Base): it returns a class that extends Base and adds

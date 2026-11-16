@@ -1,5 +1,5 @@
 // Task 1: Tidy up package.json
-// Lecture: Package Management & npm
+// Lecture: Package Management and npm
 //
 // A teammate set up our reading list in a hurry. The object packageJson below is the
 // project's package.json. Fix it: nanoid is the only package our code needs when it

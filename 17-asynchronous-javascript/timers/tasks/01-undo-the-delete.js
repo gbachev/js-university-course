@@ -1,5 +1,5 @@
 // Task 1: Undo the delete
-// Lecture: Timers (setTimeout, setInterval, clearTimeout, clearInterval)
+// Lecture: Timers: setTimeout and setInterval
 //
 // Write scheduleDelete(orderId, onDelete). It waits 5 seconds (5000 ms) and then calls
 // onDelete with the order id. It returns an undo function: calling undo() before the

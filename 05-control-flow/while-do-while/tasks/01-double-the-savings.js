@@ -1,5 +1,5 @@
 // Task 1: Double the savings
-// Lecture: The "while" and "do ... while" loops
+// Lecture: The while and do...while Loops
 //
 // We put our savings in an account that adds rate percent of what is in the account
 // every year. Write yearsToDouble(savings, rate): with a while loop, grow the

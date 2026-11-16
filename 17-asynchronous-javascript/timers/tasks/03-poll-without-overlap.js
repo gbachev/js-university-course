@@ -1,5 +1,5 @@
 // Task 3: Poll without overlap
-// Lecture: Timers (setTimeout, setInterval, clearTimeout, clearInterval)
+// Lecture: Timers: setTimeout and setInterval
 //
 // pollUntilShipped(checkStatus, onShipped) asks the server for the status of an order
 // until it is 'shipped'. checkStatus(onAnswer) is a slow request: it calls onAnswer

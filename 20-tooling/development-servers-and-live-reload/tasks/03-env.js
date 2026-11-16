@@ -1,5 +1,5 @@
 // Task 3: What reaches our code from .env
-// Lecture: Development Servers & Live Reload
+// Lecture: Development Servers and Live Reload
 //
 // Vite reads .env and exposes only the names that start with VITE_ in
 // import.meta.env. Write exposedEnv(text), which takes the text of a .env file and

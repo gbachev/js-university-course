@@ -1,5 +1,5 @@
 // Task 2: Does Git ignore it?
-// Lecture: Version Control & Collaboration
+// Lecture: Version Control and Collaboration
 //
 // Write isIgnored(path, patterns), a small version of what Git does with .gitignore.
 // path is a file path from the project root, like 'node_modules/vite/package.json'.

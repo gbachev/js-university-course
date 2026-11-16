@@ -1,5 +1,5 @@
 // Task 3: One formatter per currency
-// Lecture: This in Functions: call(), apply() and bind()
+// Lecture: this in Functions: call(), apply() and bind()
 //
 // formatPrice(currency, amount) writes a price with two decimals and its currency.
 // Our price lists are in one currency each, so we want a function that already knows

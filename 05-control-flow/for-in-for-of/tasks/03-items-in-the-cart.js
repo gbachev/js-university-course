@@ -1,5 +1,5 @@
 // Task 3: Items in the cart
-// Lecture: The "for ... in" and "for ... of" loops
+// Lecture: The for...in and for...of Loops
 //
 // The cart icon in our shop shows how many items the cart holds. The cart is an
 // object: each key is a product and each value is its quantity. getTotalQuantity(cart)

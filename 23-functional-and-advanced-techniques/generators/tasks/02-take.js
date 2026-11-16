@@ -1,5 +1,5 @@
 // Task 2: Take only what we need
-// Lecture: Generators (function*)
+// Lecture: Generators: function* and yield
 //
 // Write the generator function take(iterable, count). It yields the first count values
 // of any iterable, an array, a Set or an endless generator, and then stops. It reads no

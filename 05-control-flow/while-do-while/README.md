@@ -1,6 +1,6 @@
-# The "while" and "do ... while" loops
+# The while and do...while Loops
 
-Code for the lecture *The "while" and "do ... while" loops* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *The while and do...while Loops* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-while.js` - a `while` loop from 0 to 4

@@ -1,5 +1,5 @@
 // Task 3: Does the version fit the range?
-// Lecture: Package Management & npm
+// Lecture: Package Management and npm
 //
 // Write satisfies(version, range), the check npm makes before it installs a version.
 // version is 'MAJOR.MINOR.PATCH', range is one of three forms: '^5.1.10' accepts

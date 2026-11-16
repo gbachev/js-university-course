@@ -1,5 +1,5 @@
 // Task 2: Is this Node supported?
-// Lecture: Node and NVM
+// Lecture: Node.js and nvm
 //
 // npm compares our Node version with the engines field and warns with EBADENGINE when
 // it does not fit. Write isSupported(nodeVersion, engine). nodeVersion is what

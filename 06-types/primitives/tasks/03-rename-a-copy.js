@@ -1,5 +1,5 @@
 // Task 3: Rename a copy
-// Lecture: Primitive types
+// Lecture: Primitive Types
 //
 // On the profile page a user can preview a new name before saving it. A colleague
 // wrote previewName(user, newName), which should return a new user object with the

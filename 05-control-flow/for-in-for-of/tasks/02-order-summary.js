@@ -1,5 +1,5 @@
 // Task 2: Order summary
-// Lecture: The "for ... in" and "for ... of" loops
+// Lecture: The for...in and for...of Loops
 //
 // The order confirmation email lists every field of the order on one line. Write
 // describeOrder(order): it goes through the order object with for...in and returns

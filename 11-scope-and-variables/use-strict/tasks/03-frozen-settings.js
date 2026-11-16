@@ -1,5 +1,5 @@
 // Task 3: Frozen settings
-// Lecture: 'use strict'
+// Lecture: Strict Mode (use strict)
 //
 // Our app keeps its settings in a frozen object. withTheme(settings, theme) should
 // return settings with the new theme. Right now it assigns to the frozen object: in

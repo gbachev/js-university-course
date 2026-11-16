@@ -1,6 +1,6 @@
 # Best Practices
 
-Code for the lecture *Best Practices* (section 9, Destructuring, Spread, Rest) of the JavaScript course at gbachev.com.
+Code for the lecture *Best Practices* (section 9, Destructuring, Spread and Rest) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-parameter-destructuring.js` - destructure the properties a function needs in its parameters

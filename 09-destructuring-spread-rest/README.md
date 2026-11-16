@@ -1,4 +1,4 @@
-# 9. Destructuring, Spread, Rest
+# 9. Destructuring, Spread and Rest
 
 Taking values out of arrays and objects with destructuring, and the `...` syntax that collects values (rest) or expands them (spread).
 

@@ -1,5 +1,5 @@
 // Task 1: Free shipping
-// Lecture: The "if", "else" and "else if" statements
+// Lecture: The if, else and else if Statements
 //
 // Our shop ships for free when the order total is 50 or more. Smaller orders pay
 // 4.99 for shipping. Write getShippingCost(orderTotal): it takes the order total

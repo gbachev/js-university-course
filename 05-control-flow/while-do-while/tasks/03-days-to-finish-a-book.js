@@ -1,5 +1,5 @@
 // Task 3: Days to finish a book
-// Lecture: The "while" and "do ... while" loops
+// Lecture: The while and do...while Loops
 //
 // Our reading list app tells us how many days a book will take. daysToFinish(pages,
 // pagesPerDay) reads pagesPerDay pages a day until no pages are left and returns

@@ -1,6 +1,6 @@
-# What is the DOM
+# What Is the DOM?
 
-Code for the lecture *What is the DOM* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
+Code for the lecture *What Is the DOM?* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-document-object.html` - `document` and its shortcuts to the main elements

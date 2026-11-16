@@ -1,5 +1,5 @@
 // Task 1: Saved preferences
-// Lecture: Try/Catch/Finally
+// Lecture: try, catch and finally
 //
 // loadPreferences(text) reads the preferences a user saved as JSON text and returns
 // them as an object. When the text is not valid JSON (broken, empty, or plain words),

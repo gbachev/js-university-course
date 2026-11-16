@@ -1,5 +1,5 @@
 // Task 3: Total with VAT
-// Lecture: What is a Function?
+// Lecture: What Is a Function?
 //
 // The cart needs the total of all its prices, with VAT. addVat(price) is already
 // written below, so we do not repeat its logic. Write totalWithVat(prices): it adds up

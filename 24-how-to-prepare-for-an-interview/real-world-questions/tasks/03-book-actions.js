@@ -1,5 +1,5 @@
 // Task 3: One listener for the list
-// Lecture: Real-world Questions
+// Lecture: Real-World Questions
 //
 // "How would you handle clicks on 1000 list items?" handleBookActions(list, onAction)
 // below adds a listener to every button, so it makes one listener per book, and a

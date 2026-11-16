@@ -1,5 +1,5 @@
 // Task 3: Compact mode
-// Lecture: DOM Performance Tips (Reflows, Repaints, DocumentFragment)
+// Lecture: DOM Performance: Reflows, Repaints and DocumentFragment
 //
 // setCompact(list, compact) switches our list between the normal and the compact look.
 // It sets two style properties on every row. The compact look is already in the CSS of

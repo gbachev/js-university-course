@@ -1,5 +1,5 @@
 // Task 3: What lint-staged runs
-// Lecture: Version Control & Collaboration
+// Lecture: Version Control and Collaboration
 //
 // lint-staged maps file patterns to commands, like
 // { '*.js': ['eslint --fix', 'prettier --write'], '*.{json,md}': 'prettier --write' }.

@@ -1,5 +1,5 @@
 // Task 1: Count the unread
-// Lecture: MutationObserver & IntersectionObserver
+// Lecture: MutationObserver and IntersectionObserver
 //
 // A chat widget we do not control adds and removes notifications in our inbox, and
 // changes their data-status from "new" to "seen". Write watchUnread(inbox, counter): it

@@ -1,6 +1,6 @@
-# Timers (setTimeout, setInterval, clearTimeout, clearInterval)
+# Timers: setTimeout and setInterval
 
-Code for the lecture *Timers (setTimeout, setInterval, clearTimeout, clearInterval)* (section 17, Asynchronous JavaScript) of the JavaScript course at gbachev.com.
+Code for the lecture *Timers: setTimeout and setInterval* (section 17, Asynchronous JavaScript) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-set-timeout.js` - a toast that hides itself, with an argument passed to the callback

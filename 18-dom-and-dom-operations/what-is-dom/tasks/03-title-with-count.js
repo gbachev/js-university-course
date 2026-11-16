@@ -1,5 +1,5 @@
 // Task 3: A title with a count
-// Lecture: What is the DOM
+// Lecture: What Is the DOM?
 //
 // The tab of our reading list should tell us how many books are left to read. Write
 // showCount(list), which sets the title of the page to "To Read (N)", where N is the

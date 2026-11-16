@@ -1,5 +1,5 @@
 // Task 2: Season of the month
-// Lecture: The "switch" statement
+// Lecture: The switch Statement
 //
 // The travel page of our booking site groups trips by season. Write getSeason(month):
 // it takes the month as a number from 1 (January) to 12 (December) and returns

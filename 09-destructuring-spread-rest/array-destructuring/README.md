@@ -1,6 +1,6 @@
 # Array Destructuring
 
-Code for the lecture *Array Destructuring* (section 9, Destructuring, Spread, Rest) of the JavaScript course at gbachev.com.
+Code for the lecture *Array Destructuring* (section 9, Destructuring, Spread and Rest) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-basic-syntax.js` - variables get the values by their position in the array

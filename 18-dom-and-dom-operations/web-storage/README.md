@@ -1,6 +1,6 @@
-# Web Storage (localStorage, sessionStorage)
+# Web Storage: localStorage and sessionStorage
 
-Code for the lecture *Web Storage (localStorage, sessionStorage)* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
+Code for the lecture *Web Storage: localStorage and sessionStorage* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
 
 ## Examples
 Every example is a small page with one snippet, in a `.js` file with the same name.

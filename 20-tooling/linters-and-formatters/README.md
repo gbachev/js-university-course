@@ -1,6 +1,6 @@
-# Linters & Formatters
+# Linters and Formatters
 
-Code for the lecture *Linters & Formatters* (section 20, Tooling) of the JavaScript course at gbachev.com.
+Code for the lecture *Linters and Formatters* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-shop/` - the shop project of the lecture, with its own `package.json`:

@@ -1,6 +1,6 @@
 # The Spread Operator
 
-Code for the lecture *The Spread Operator* (section 9, Destructuring, Spread, Rest) of the JavaScript course at gbachev.com.
+Code for the lecture *The Spread Operator* (section 9, Destructuring, Spread and Rest) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-spreading-arrays.js` - merge and copy arrays with spread

@@ -10,7 +10,7 @@ The folders follow the course: one folder per section (`04-operators`), one per 
 
 ## Getting the code
 
-You need [Node.js](https://nodejs.org/) 22.12 or newer (the lecture *Environment setup* shows how to install it, and *A few words on NPM and NVM* how to switch versions). Nothing else: the examples and tasks use only what Node and the browser give us.
+You need [Node.js](https://nodejs.org/) 22.12 or newer (the lecture *Environment Setup* shows how to install it, and *A First Look at npm and nvm* how to switch versions). Nothing else: the examples and tasks use only what Node and the browser give us.
 
 ```bash
 git clone https://github.com/gbachev/js-university-course.git

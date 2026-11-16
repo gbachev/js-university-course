@@ -1,5 +1,5 @@
 // Task 1: Find a free port
-// Lecture: Development Servers & Live Reload
+// Lecture: Development Servers and Live Reload
 //
 // When port 5173 is taken, Vite tries 5174, then 5175, and so on. Write
 // nextFreePort(port, takenPorts): port is the port we ask for, takenPorts an array of

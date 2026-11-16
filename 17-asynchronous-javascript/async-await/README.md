@@ -1,6 +1,6 @@
-# Async/Await
+# async and await
 
-Code for the lecture *Async/Await* (section 17, Asynchronous JavaScript) of the JavaScript course at gbachev.com.
+Code for the lecture *async and await* (section 17, Asynchronous JavaScript) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-async-returns-a-promise.js` - an async function always returns a promise

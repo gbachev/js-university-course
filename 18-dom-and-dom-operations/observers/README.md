@@ -1,6 +1,6 @@
-# MutationObserver & IntersectionObserver
+# MutationObserver and IntersectionObserver
 
-Code for the lecture *MutationObserver & IntersectionObserver* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
+Code for the lecture *MutationObserver and IntersectionObserver* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
 
 ## Examples
 Every example is the inbox page of the lecture with one snippet, in a `.js` file with the same name.

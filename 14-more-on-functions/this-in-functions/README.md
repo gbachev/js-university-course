@@ -1,6 +1,6 @@
-# This in Functions: call(), apply() and bind()
+# this in Functions: call(), apply() and bind()
 
-Code for the lecture *This in Functions: call(), apply() and bind()* (section 14, More on Functions) of the JavaScript course at gbachev.com.
+Code for the lecture *this in Functions: call(), apply() and bind()* (section 14, More on Functions) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-binding-precedence.js` - `call()` on a method wins over the object before the dot

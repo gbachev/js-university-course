@@ -11,6 +11,6 @@ How objects inherit in JavaScript: the prototype chain, `Object.create()`, const
 7. [The super Keyword](the-super-keyword) - `extends`, `super()` and `super.method()`, and extending built-ins
 8. [Private Fields and Static Properties](private-fields-and-static-properties) - `#private` fields and methods, static members and factories
 9. [Polymorphism](polymorphism) - overriding methods, replacing a `switch` on type, and duck typing
-10. [Multiple Inheritance / Mixins](multiple-inheritance-mixins) - object mixins, mixin factories and composition
+10. [Mixins and Multiple Inheritance](multiple-inheritance-mixins) - object mixins, mixin factories and composition
 11. [Best Practices](best-practices) - habits for classes and prototypes that stay easy to read
 12. Section Review (no code)

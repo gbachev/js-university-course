@@ -1,6 +1,6 @@
 # Object Destructuring
 
-Code for the lecture *Object Destructuring* (section 9, Destructuring, Spread, Rest) of the JavaScript course at gbachev.com.
+Code for the lecture *Object Destructuring* (section 9, Destructuring, Spread and Rest) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-basic-syntax.js` - take the properties we need by their names

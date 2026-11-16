@@ -1,5 +1,5 @@
 // Task 2: Stop the spinner
-// Lecture: Try/Catch/Finally
+// Lecture: try, catch and finally
 //
 // saveAddress(form, text) shows a spinner while it reads an address sent as JSON text:
 // it sets form.saving to true, and when the work is done form.saving must be false

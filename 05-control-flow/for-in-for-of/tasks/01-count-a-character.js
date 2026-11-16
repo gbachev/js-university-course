@@ -1,5 +1,5 @@
 // Task 1: Count a character
-// Lecture: The "for ... in" and "for ... of" loops
+// Lecture: The for...in and for...of Loops
 //
 // Our review form warns people who write too many exclamation marks. Write
 // countCharacter(message, character): it goes through the message with for...of

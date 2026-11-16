@@ -1,5 +1,5 @@
 // Task 2: Retry delays
-// Lecture: The "while" and "do ... while" loops
+// Lecture: The while and do...while Loops
 //
 // When a payment fails, our shop tries again later, and every next wait is twice as
 // long as the one before. Write getRetryDelays(firstDelay, maxDelay): it returns an

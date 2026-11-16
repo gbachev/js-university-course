@@ -1,5 +1,5 @@
 // Task 2: Out of the forEach trap
-// Lecture: Async/Await
+// Lecture: async and await
 //
 // cartTotal(ids) should load the price of every book in the cart with loadPrice()
 // and return the sum. Right now it always returns 0: forEach() does not wait for

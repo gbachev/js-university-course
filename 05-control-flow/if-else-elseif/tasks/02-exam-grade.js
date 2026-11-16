@@ -1,5 +1,5 @@
 // Task 2: Exam grade
-// Lecture: The "if", "else" and "else if" statements
+// Lecture: The if, else and else if Statements
 //
 // Write getGrade(score): it takes an exam score from 0 to 100 and returns the grade
 // as a string. 90 and above is 'A', 80 to 89 is 'B', 70 to 79 is 'C', 60 to 69 is

@@ -1,6 +1,6 @@
-# Multiple Inheritance / Mixins
+# Mixins and Multiple Inheritance
 
-Code for the lecture *Multiple Inheritance / Mixins* (section 13, Inheritance and Prototype) of the JavaScript course at gbachev.com.
+Code for the lecture *Mixins and Multiple Inheritance* (section 13, Inheritance and Prototype) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-one-parent-only.js` - `extends` takes one parent, two are a `SyntaxError`

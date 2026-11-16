@@ -1,5 +1,5 @@
 // Task 1: Insert once
-// Lecture: DOM Performance Tips (Reflows, Repaints, DocumentFragment)
+// Lecture: DOM Performance: Reflows, Repaints and DocumentFragment
 //
 // addBooks(list, titles) adds an li for each title at the end of list. It appends the
 // rows one by one, so the live page changes once per book. Change it so the list changes

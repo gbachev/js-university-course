@@ -1,5 +1,5 @@
 // Task 1: The type tag
-// Lecture: This in Functions: call(), apply() and bind()
+// Lecture: this in Functions: call(), apply() and bind()
 //
 // Our order importer gets values of every kind, and typeof says 'object' for arrays,
 // dates and null alike. Write typeTag(value): it borrows Object.prototype.toString

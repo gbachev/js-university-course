@@ -1,5 +1,5 @@
 // Task 2: Mark as seen
-// Lecture: MutationObserver & IntersectionObserver
+// Lecture: MutationObserver and IntersectionObserver
 //
 // A notification counts as seen once half of it shows on the screen. Write
 // markWhenSeen(items): watch every element of items with one IntersectionObserver, and

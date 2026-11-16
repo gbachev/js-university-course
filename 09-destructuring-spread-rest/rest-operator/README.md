@@ -1,6 +1,6 @@
 # The Rest Operator
 
-Code for the lecture *The Rest Operator* (section 9, Destructuring, Spread, Rest) of the JavaScript course at gbachev.com.
+Code for the lecture *The Rest Operator* (section 9, Destructuring, Spread and Rest) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-rest-with-arrays.js` - the first values, then the rest of the array

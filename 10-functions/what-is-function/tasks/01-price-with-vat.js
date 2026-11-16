@@ -1,5 +1,5 @@
 // Task 1: Price with VAT
-// Lecture: What is a Function?
+// Lecture: What Is a Function?
 //
 // Our shop shows prices without VAT, and we need the price with 20% VAT added in
 // many places. Write the function addVat(price) once: it returns the price plus 20%,

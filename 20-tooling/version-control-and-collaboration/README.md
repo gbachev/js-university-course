@@ -1,13 +1,13 @@
-# Version Control & Collaboration
+# Version Control and Collaboration
 
-Code for the lecture *Version Control & Collaboration* (section 20, Tooling) of the JavaScript course at gbachev.com.
+Code for the lecture *Version Control and Collaboration* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-reading-list/` - the reading list project of the lecture, with its own `package.json`:
   - `.gitignore` - `node_modules/`, `dist/`, `coverage/`, `.env` and `.DS_Store`
   - `.husky/pre-commit` - the hook that runs `npx lint-staged`
   - `package.json` - the `prepare`, `lint` and `format` scripts and the `lint-staged` config
-  - `eslint.config.js` and `.prettierrc` - the setup from *Linters & Formatters*
+  - `eslint.config.js` and `.prettierrc` - the setup from *Linters and Formatters*
   - `src/books.js` - the book list, and `src/stats.js` with the `book.read == true` the hook stops
 - `examples/02-merge-conflict/books.js.txt` - `src/books.js` during the conflict, with Git's marker lines. It ends in `.txt` because the markers are not valid JavaScript.
 

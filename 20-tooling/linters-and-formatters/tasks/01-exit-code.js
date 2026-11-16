@@ -1,5 +1,5 @@
 // Task 1: Pass or fail?
-// Lecture: Linters & Formatters
+// Lecture: Linters and Formatters
 //
 // A CI run fails when ESLint exits with code 1. Write lintExitCode(problems,
 // maxWarnings). problems is the list ESLint found, each like

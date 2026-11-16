@@ -1,5 +1,5 @@
 // Task 2: The newest version
-// Lecture: Package Management & npm
+// Lecture: Package Management and npm
 //
 // npm outdated shows the Latest version of a package, the newest one published. Write
 // newestVersion(versions): it takes an array of versions written as 'MAJOR.MINOR.PATCH'

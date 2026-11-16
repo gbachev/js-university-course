@@ -1,5 +1,5 @@
 // Task 2: Read all, then write all
-// Lecture: DOM Performance Tips (Reflows, Repaints, DocumentFragment)
+// Lecture: DOM Performance: Reflows, Repaints and DocumentFragment
 //
 // growRows(rows, extra) makes every row extra pixels taller than it is now. rows is an
 // array of elements. It works, but it reads offsetHeight and sets style.height in turn,

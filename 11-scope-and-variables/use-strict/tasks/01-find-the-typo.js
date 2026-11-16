@@ -1,5 +1,5 @@
 // Task 1: Find the typo
-// Lecture: 'use strict'
+// Lecture: Strict Mode (use strict)
 //
 // orderTotal(prices) adds up the prices of an order and returns the sum. Our file is a
 // module, so it runs in strict mode, and the call throws a ReferenceError: one name in

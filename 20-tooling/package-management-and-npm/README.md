@@ -1,6 +1,6 @@
-# Package Management & npm
+# Package Management and npm
 
-Code for the lecture *Package Management & npm* (section 20, Tooling) of the JavaScript course at gbachev.com.
+Code for the lecture *Package Management and npm* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
 Each example is a small project with its own `package.json`. We install its packages inside its folder; the rest of the repository stays without dependencies.

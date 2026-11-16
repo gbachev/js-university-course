@@ -1,6 +1,6 @@
 # Best Practices
 
-Code for the lecture *Best Practices* (section 5, Control flow) of the JavaScript course at gbachev.com.
+Code for the lecture *Best Practices* (section 5, Control Flow) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-choose-the-loop.js` - `for` for a range of numbers, `for...of` when we only need the values

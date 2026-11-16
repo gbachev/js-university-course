@@ -1,5 +1,5 @@
 // Task 3: Load the list safely
-// Lecture: Web Storage (localStorage, sessionStorage)
+// Lecture: Web Storage: localStorage and sessionStorage
 //
 // Our reading list lives in localStorage under the key "reading-list", as JSON. Fix the
 // two functions. loadBooks() must always return an array: an empty one when the key is

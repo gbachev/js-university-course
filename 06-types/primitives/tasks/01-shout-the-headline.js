@@ -1,5 +1,5 @@
 // Task 1: Shout the headline
-// Lecture: Primitive types
+// Lecture: Primitive Types
 //
 // Our blog shows the title of the featured post in capital letters. A colleague wrote
 // toHeadline(title), which should return the title in uppercase, but it returns the

@@ -1,5 +1,5 @@
 // Task 1: CommonJS or ES module?
-// Lecture: Node and NVM
+// Lecture: Node.js and nvm
 //
 // Write moduleSystem(fileName, packageType), which answers the question Node asks
 // before it runs a file. fileName is a name like 'app.js', packageType is the "type"

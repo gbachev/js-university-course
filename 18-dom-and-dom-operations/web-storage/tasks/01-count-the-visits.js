@@ -1,5 +1,5 @@
 // Task 1: Count the visits
-// Lecture: Web Storage (localStorage, sessionStorage)
+// Lecture: Web Storage: localStorage and sessionStorage
 //
 // countVisit() adds one to the number of visits saved in localStorage under the key
 // "visits", saves the new number and returns it as a number. The first visit gives 1 and

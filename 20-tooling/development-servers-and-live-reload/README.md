@@ -1,6 +1,6 @@
-# Development Servers & Live Reload
+# Development Servers and Live Reload
 
-Code for the lecture *Development Servers & Live Reload* (section 20, Tooling) of the JavaScript course at gbachev.com.
+Code for the lecture *Development Servers and Live Reload* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-reading-list/` - the reading list page of the lecture, as a Vite project with its own `package.json`:

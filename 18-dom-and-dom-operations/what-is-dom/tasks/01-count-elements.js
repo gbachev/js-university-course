@@ -1,5 +1,5 @@
 // Task 1: Count the elements
-// Lecture: What is the DOM
+// Lecture: What Is the DOM?
 //
 // Our reading list has three books, but childNodes counts more: the whitespace between
 // the tags and the comment are nodes too. Write countElements(parent), which returns how

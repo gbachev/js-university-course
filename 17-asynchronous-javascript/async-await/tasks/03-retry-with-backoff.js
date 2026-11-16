@@ -1,5 +1,5 @@
 // Task 3: Retry with backoff
-// Lecture: Async/Await
+// Lecture: async and await
 //
 // A payment service sometimes fails for a moment. Write the async function
 // retry(task, attempts, delayMs). task is a function that returns a promise. Call it

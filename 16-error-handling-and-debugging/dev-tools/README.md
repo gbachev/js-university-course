@@ -1,6 +1,6 @@
-# Dev Tools (Features, Debugging, Breakpoints)
+# DevTools: Breakpoints and Debugging
 
-Code for the lecture *Dev Tools (Features, Debugging, Breakpoints)* (section 16, Error Handling and Debugging) of the JavaScript course at gbachev.com.
+Code for the lecture *DevTools: Breakpoints and Debugging* (section 16, Error Handling and Debugging) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-cart-bug.html` with `examples/01-cart.js` - the cart that totals 1540 instead of 55, to hunt with breakpoints, watch expressions, conditional breakpoints and logpoints

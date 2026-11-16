@@ -1,5 +1,5 @@
 // Task 3: Every file in a project
-// Lecture: Generators (function*)
+// Lecture: Generators: function* and yield
 //
 // A project folder holds files and folders, and folders can nest to any depth. Write the
 // recursive generator function filePaths(folder, parent). folder is

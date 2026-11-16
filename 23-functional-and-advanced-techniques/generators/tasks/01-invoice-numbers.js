@@ -1,5 +1,5 @@
 // Task 1: Endless invoice numbers
-// Lecture: Generators (function*)
+// Lecture: Generators: function* and yield
 //
 // Write the generator function invoiceNumbers(year, start). It yields invoice numbers
 // without end: 'INV-2026-0001', 'INV-2026-0002' and so on, the number padded to four

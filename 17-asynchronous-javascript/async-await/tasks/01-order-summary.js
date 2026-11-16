@@ -1,5 +1,5 @@
 // Task 1: The order summary
-// Lecture: Async/Await
+// Lecture: async and await
 //
 // Write the async function getOrderSummary(orderId) with await. It finds the order
 // with findOrder(), then its customer with findCustomer(order.customerId), and

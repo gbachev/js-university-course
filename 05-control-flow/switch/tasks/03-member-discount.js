@@ -1,5 +1,5 @@
 // Task 3: Member discount
-// Lecture: The "switch" statement
+// Lecture: The switch Statement
 //
 // getDiscountPercent(memberLevel) should give gold members 20 percent off, silver
 // members 10 and bronze members 5. Everyone else, guests included, gets 0. Right

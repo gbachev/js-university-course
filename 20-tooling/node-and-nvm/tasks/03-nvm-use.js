@@ -1,5 +1,5 @@
 // Task 3: What nvm use picks
-// Lecture: Node and NVM
+// Lecture: Node.js and nvm
 //
 // Inside a project folder, nvm use reads .nvmrc and switches to the newest installed
 // version that matches it. Write pickVersion(installed, nvmrc). installed is the list

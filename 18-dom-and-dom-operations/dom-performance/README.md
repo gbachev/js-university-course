@@ -1,6 +1,6 @@
-# DOM Performance Tips (Reflows, Repaints, DocumentFragment)
+# DOM Performance: Reflows, Repaints and DocumentFragment
 
-Code for the lecture *DOM Performance Tips (Reflows, Repaints, DocumentFragment)* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
+Code for the lecture *DOM Performance: Reflows, Repaints and DocumentFragment* (section 18, DOM and DOM Operations) of the JavaScript course at gbachev.com.
 
 ## Examples
 Every example is the reading list page of the lecture with one snippet, in a `.js` file with the same name.

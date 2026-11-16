@@ -1,5 +1,5 @@
 // Task 2: Which rules win?
-// Lecture: Linters & Formatters
+// Lecture: Linters and Formatters
 //
 // ESLint's flat config is an array, and later entries override earlier ones. Write
 // finalRules(configs), which takes such an array and returns one object with the rule

@@ -1,6 +1,6 @@
-# HTTP or how the web works?
+# HTTP: How the Web Works
 
-Code for the lecture *HTTP or how the web works?* (section 2, First Steps) of the JavaScript course at gbachev.com.
+Code for the lecture *HTTP: How the Web Works* (section 2, First Steps) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-server.cjs` - the tiny Node.js server from the lecture, which answers every request with three headers and a line of text

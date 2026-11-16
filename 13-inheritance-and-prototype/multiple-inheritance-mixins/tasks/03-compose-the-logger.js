@@ -1,5 +1,5 @@
 // Task 3: Compose instead of inherit
-// Lecture: Multiple Inheritance / Mixins
+// Lecture: Mixins and Multiple Inheritance
 //
 // Our Checkout extends ConsoleLogger only to get a log() method. Now we want to log to
 // a file in production and to a fake logger in tests, and the parent class is in the

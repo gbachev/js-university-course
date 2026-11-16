@@ -1,6 +1,6 @@
-# JavaScript Engine
+# The JavaScript Engine
 
-Code for the lecture *JavaScript Engine* (section 3, JavaScript Foundations) of the JavaScript course at gbachev.com.
+Code for the lecture *The JavaScript Engine* (section 3, JavaScript Foundations) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-engine-and-runtime.js` - what comes from the language and what from the runtime (`setTimeout`, `document`)

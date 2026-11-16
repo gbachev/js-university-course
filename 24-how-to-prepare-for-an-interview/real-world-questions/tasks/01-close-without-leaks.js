@@ -1,5 +1,5 @@
 // Task 1: Close without leaks
-// Lecture: Real-world Questions
+// Lecture: Real-World Questions
 //
 // "Our single-page app gets slower the longer it is open." Here is one of the
 // reasons. openOrdersView(win, render) opens the orders view: every second it calls

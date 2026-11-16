@@ -1,6 +1,6 @@
-# What is an Array?
+# What Is an Array?
 
-Code for the lecture *What is an Array?* (section 8, Arrays and Keyed Collections) of the JavaScript course at gbachev.com.
+Code for the lecture *What Is an Array?* (section 8, Arrays and Keyed Collections) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-array-basics.js` - read elements by index, and an array is an object

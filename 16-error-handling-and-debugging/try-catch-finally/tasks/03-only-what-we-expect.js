@@ -1,5 +1,5 @@
 // Task 3: Only what we expect
-// Lecture: Try/Catch/Finally
+// Lecture: try, catch and finally
 //
 // readDiscount(text) reads a coupon saved as JSON text and returns its percent, as in
 // '{"coupon":{"percent":15}}'. Broken JSON is a case we plan for: then the discount is

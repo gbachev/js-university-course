@@ -1,5 +1,5 @@
 // Task 1: Shipping from a form
-// Lecture: Dev Tools (Features, Debugging, Breakpoints)
+// Lecture: DevTools: Breakpoints and Debugging
 //
 // orderTotal(order) adds up the lines of an order (price times quantity) and the
 // shipping. The shipping comes from a form, so sometimes it is a string like '5.5',

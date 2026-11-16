@@ -1,5 +1,5 @@
 // Task 3: Our own eqeqeq
-// Lecture: Linters & Formatters
+// Lecture: Linters and Formatters
 //
 // Let's write a tiny version of the eqeqeq rule. findLooseEquality(source) takes the
 // code of a file as a string and returns where it uses == or !=, as a list of

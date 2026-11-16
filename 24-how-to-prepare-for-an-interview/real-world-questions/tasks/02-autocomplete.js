@@ -1,5 +1,5 @@
 // Task 2: The autocomplete core
-// Lecture: Real-world Questions
+// Lecture: Real-World Questions
 //
 // The heart of the autocomplete from the lecture, with fetch passed in so the tests
 // can give it a fake server. createAutocomplete(fetch, onResults, wait) returns

@@ -1,6 +1,6 @@
-# Primitive types
+# Primitive Types
 
-Code for the lecture *Primitive types* (section 6, Types) of the JavaScript course at gbachev.com.
+Code for the lecture *Primitive Types* (section 6, Types) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-immutability.js` - `toUpperCase()` creates a new string and leaves the original as it was

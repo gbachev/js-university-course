@@ -1,5 +1,5 @@
 // Task 2: Countdown to the sale
-// Lecture: Timers (setTimeout, setInterval, clearTimeout, clearInterval)
+// Lecture: Timers: setTimeout and setInterval
 //
 // Write startCountdown(seconds, onTick, onDone) with setInterval(). Every second it
 // calls onTick with the seconds left, counting down: 3, then 2, then 1. One second

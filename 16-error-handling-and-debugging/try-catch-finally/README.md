@@ -1,6 +1,6 @@
-# Try/Catch/Finally
+# try, catch and finally
 
-Code for the lecture *Try/Catch/Finally* (section 16, Error Handling and Debugging) of the JavaScript course at gbachev.com.
+Code for the lecture *try, catch and finally* (section 16, Error Handling and Debugging) of the JavaScript course at gbachev.com.
 
 ## Examples
 - `examples/01-the-syntax.js` - broken JSON in `try`, a message in `catch`, and the app keeps going

@@ -1,5 +1,5 @@
 // Task 3: Cinema ticket
-// Lecture: The "if", "else" and "else if" statements
+// Lecture: The if, else and else if Statements
 //
 // A colleague wrote getTicketPrice(age, isStudent) for our cinema, and customers
 // complain about the prices. The rules: children under 12 pay 5, teenagers from 12
