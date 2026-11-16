@@ -11,5 +11,5 @@ function printUser({ name = 'Anonymous', active = false } = {}) {
 }
 
 printUser(); // Anonymous is inactive
-printUser({ name: 'Ava' }); // Ava is inactive
+printUser({ name: 'Jane' }); // Jane is inactive
 printUser({ active: true }); // Anonymous is active

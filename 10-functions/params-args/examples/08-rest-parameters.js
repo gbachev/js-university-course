@@ -15,7 +15,6 @@ function greetAll(greeting, ...names) {
     });
 }
 
-greetAll('Hello', 'Luna', 'Kai', 'Jo');
-// Hello, Luna
-// Hello, Kai
-// Hello, Jo
+greetAll('Hello', 'John', 'Jane');
+// Hello, John
+// Hello, Jane
