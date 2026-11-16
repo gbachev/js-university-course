@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Load the list safely</title>
+</head>
+<!--
+    Task 3: Load the list safely
+    Our code goes in 03-load-the-list-safely.js, the checks are in 03-load-the-list-safely.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Load the list safely</h1>
+    <p>Fix loadBooks() and saveBooks() in 03-load-the-list-safely.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <p>The checks save and delete their own keys in localStorage. Open DevTools, Application, Local Storage to watch them.</p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-load-the-list-safely.js'));
+        await import('./03-load-the-list-safely.check.js');
+    </script>
+</body>
+</html>

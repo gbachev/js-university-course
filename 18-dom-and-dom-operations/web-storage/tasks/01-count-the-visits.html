@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Count the visits</title>
+</head>
+<!--
+    Task 1: Count the visits
+    Our code goes in 01-count-the-visits.js, the checks are in 01-count-the-visits.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Count the visits</h1>
+    <p>Fix countVisit() in 01-count-the-visits.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <p>The checks save and delete their own keys in localStorage. Open DevTools, Application, Local Storage to watch them.</p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-count-the-visits.js'));
+        await import('./01-count-the-visits.check.js');
+    </script>
+</body>
+</html>
