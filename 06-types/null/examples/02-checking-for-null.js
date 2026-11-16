@@ -14,8 +14,8 @@ if (a) {
 if (b) {
     console.log('never gets here');
 } else {
-    // Prints: b is null, but is it really -> no
-    console.log('b is null, but is it really -> no');
+    // Prints: b is falsy, but it is undefined, not null
+    console.log('b is falsy, but it is undefined, not null');
 }
 
 // A strict comparison checks for null only.
