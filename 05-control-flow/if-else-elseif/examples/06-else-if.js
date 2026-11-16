@@ -1,5 +1,5 @@
 function printAgeStageMessage(age) {
-    if (age > 18) {
+    if (age >= 18) {
         console.log('You are an adult.');
     } else if (age >= 12 && age < 18) {
         console.log('You are a teenager.');
