@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Array.from() for array-like values</title>
+</head>
+<body>
+    <h1>Array.from() for array-like values</h1>
+    <p>Open the console. Array.from() turns the NodeList of the two boxes below into a
+        real array, so we can use map() on it.</p>
+    <div>First box</div>
+    <div>Second box</div>
+
+    <script>
+        const divs = Array.from(document.querySelectorAll('div'));
+
+        console.log(Array.isArray(divs)); // true
+        console.log(divs.map(div => div.textContent)); // ['First box', 'Second box']
+    </script>
+</body>
+</html>
