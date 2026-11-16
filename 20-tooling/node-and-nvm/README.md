@@ -3,7 +3,7 @@
 Code for the lecture *Node and NVM* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
-Each example is a folder with the files of the lecture. The ES module examples have their own `package.json` with `"type": "module"`, as in the lecture.
+Example 01 is the version pinning of the lecture. Examples 02-06 demonstrate the module rules from the Modules section in Node; the ES module ones have their own `package.json` with `"type": "module"`.
 
 - `examples/01-pin-the-version/` - the shop API's `.nvmrc` (24) and the `engines` field of its `package.json` (`>=24`)
 - `examples/02-es-modules/` - `prices.js` exports `addVat`, `app.js` imports it
