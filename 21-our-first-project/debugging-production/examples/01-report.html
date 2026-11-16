@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporting errors from the page</title>
+</head>
+<body>
+    <h1>Reporting errors from the page</h1>
+    <p>This page plays the imagined release 1.1.0 of the lecture, where a book saved by
+        1.0.0 has no date. Click Search a few times, then one of the two buttons that
+        break the page. Each report our report.js sends shows below and in the console.
+        There is no error tracker here: a fake sendBeacon() catches the report instead
+        of sending it.</p>
+    <button type="button" id="search">Search</button>
+    <button type="button" id="break">Show the date (throws an error)</button>
+    <button type="button" id="reject">Load covers (rejects a promise)</button>
+
+    <h2>Sent reports</h2>
+    <pre id="reports"></pre>
+
+    <script type="module" src="./01-report-page.js"></script>
+</body>
+</html>
