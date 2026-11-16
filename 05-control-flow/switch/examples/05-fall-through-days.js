@@ -19,7 +19,7 @@ function printDayMessage(day) {
             console.log('Invalid day.');
     }
 
-    console.log('\n'); // used to add empty line and separate the output
+    console.log(''); // used to add an empty line and separate the output
 }
 
 printDayMessage(3);

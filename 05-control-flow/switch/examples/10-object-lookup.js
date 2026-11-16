@@ -7,9 +7,10 @@ const locations = {
         NY: 'New York, USA',
         default: 'Other state in the USA'
     },
-    Canada: 'Canada',
+    Canada: { default: 'Canada' },
     default: 'Other country'
 };
 
-console.log(locations[country]?.[state] ?? locations[country] ?? locations.default);
+const countryInfo = locations[country];
+console.log(countryInfo?.[state] ?? countryInfo?.default ?? locations.default);
 // California, USA

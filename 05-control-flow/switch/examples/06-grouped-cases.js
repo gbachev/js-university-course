@@ -1,4 +1,4 @@
-let fruit = 'kiwi';
+const fruit = 'kiwi';
 
 switch (fruit) {
     case 'apple':
