@@ -19,9 +19,5 @@ Run one with `node 24-how-to-prepare-for-an-interview/coding-challenges/examples
 3. **Flatten to a depth** (`tasks/03-flatten-to-depth.js`) - flatten a nested array to a given depth without `flat()`
 4. **A deeper clone** (`tasks/04-deep-clone.js`) - a deep clone that also copies dates and circular references
 5. **Fix once()** (`tasks/05-fix-once.js`) - fix a `once()` that forgets its result and overflows the stack when it calls itself
-6. **Group by** (`tasks/06-group-by.js`) - group orders by a key without `Object.groupBy()`
-7. **An LRU cache** (`tasks/07-lru-cache.js`) - a cache with a size limit that drops the entry used longest ago
-
-Tasks 6 and 7 are not solved in the lecture, so we meet them fresh, as in an interview.
 
 Run the tests with `npm test -- 24-how-to-prepare-for-an-interview/coding-challenges`. They fail until the task is solved. Compare with `solutions/` after you try.
