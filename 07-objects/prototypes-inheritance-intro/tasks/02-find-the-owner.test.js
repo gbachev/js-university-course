@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 // Our code from this folder, or the solution with npm run test:solutions.
 const { findOwner } = await import(
-    process.env.SOLUTIONS ? '../solutions/01-find-the-owner.js' : './01-find-the-owner.js'
+    process.env.SOLUTIONS ? '../solutions/02-find-the-owner.js' : './02-find-the-owner.js'
 );
 
 function createChain() {

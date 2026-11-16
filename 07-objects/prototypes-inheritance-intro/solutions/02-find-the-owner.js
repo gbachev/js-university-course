@@ -3,7 +3,7 @@ export function findOwner(obj, key) {
 
     // The chain ends with null, so the loop stops there.
     while (current !== null) {
-        if (current.hasOwnProperty(key)) {
+        if (Object.hasOwn(current, key)) {
             return current;
         }
         current = Object.getPrototypeOf(current);
