@@ -8,6 +8,7 @@ let user = {
 };
 
 console.log(user.profile?.bio); // undefined
+console.log(user.profile?.bio ?? 'No bio yet'); // No bio yet - ?? gives the default
 console.log(user['profile']?.['bio']); // undefined
 
 user.settings?.update?.(); // only calls update if settings and update exist
