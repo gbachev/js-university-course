@@ -1,7 +1,7 @@
 // setTimeout calls the regular function on its own, not as a method of person,
 // so this inside it is not person.
 const person = {
-    name: 'Sam',
+    name: 'John',
     greet: function() {
         setTimeout(function() {
             console.log(`Hello, I'm ${this.name}`); // this is not person here
