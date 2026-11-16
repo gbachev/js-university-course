@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Mark as read</title>
+    <style>
+        .read { color: #888; text-decoration: line-through; }
+    </style>
+</head>
+<!--
+    Task 2: Mark as read
+    Our code goes in 02-mark-as-read.js, the checks are in 02-mark-as-read.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Mark as read</h1>
+    <p>Finish toggleRead() in 02-mark-as-read.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li class="book" data-book-id="1">Dune <span class="status">To read</span></li>
+        <li class="book read" data-book-id="2">Emma <span class="status">Read</span></li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-mark-as-read.js'));
+        await import('./02-mark-as-read.check.js');
+    </script>
+</body>
+</html>

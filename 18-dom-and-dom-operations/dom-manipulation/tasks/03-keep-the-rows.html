@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Keep the rows</title>
+</head>
+<!--
+    Task 3: Keep the rows
+    Our code goes in 03-keep-the-rows.js, the checks are in 03-keep-the-rows.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Keep the rows</h1>
+    <p>Fix addBooks() in 03-keep-the-rows.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li><label><input type="checkbox"> Dune</label></li>
+        <li><label><input type="checkbox"> Emma</label></li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-keep-the-rows.js'));
+        await import('./03-keep-the-rows.check.js');
+    </script>
+</body>
+</html>
