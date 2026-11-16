@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Search as we type</title>
+</head>
+<!--
+    Task 2: Search as we type
+    Our code goes in 02-live-search.js, the checks are in 02-live-search.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Search as we type</h1>
+    <p>Fix setUpSearch() in 02-live-search.js, then reload this page.</p>
+
+    <input id="search" type="text" placeholder="Search your books">
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+        <li>Neuromancer</li>
+        <li>Persuasion</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-live-search.js'));
+        await import('./02-live-search.check.js');
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>input vs change</title>
+        <script src="03-input-vs-change.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console, then type in the title box and press Tab.</p>
+        <ul id="books">
+            <li>Dune</li>
+        </ul>
+        <form id="add-book">
+            <input name="title" required minlength="2">
+            <input name="isbn" pattern="\d{13}">
+            <select name="shelf">
+                <option value="to-read">To read</option>
+                <option value="reading">Reading</option>
+            </select>
+            <label>
+                <input type="checkbox" name="tags" value="classic">
+                Classic
+            </label>
+            <label>
+                <input type="checkbox" name="tags" value="sci-fi">
+                Sci-fi
+            </label>
+            <input name="friend" type="email">
+            <button>Add</button>
+        </form>
+    </body>
+</html>

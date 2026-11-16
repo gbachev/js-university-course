@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Add a book with FormData</title>
+</head>
+<!--
+    Task 1: Add a book with FormData
+    Our code goes in 01-add-book-form.js, the checks are in 01-add-book-form.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Add a book with FormData</h1>
+    <p>Finish setUpForm() in 01-add-book-form.js, then reload this page.</p>
+
+    <ul id="books"></ul>
+    <form id="add-book">
+        <input name="title" required>
+        <select name="shelf">
+            <option value="to-read">To read</option>
+            <option value="reading">Reading</option>
+        </select>
+        <label><input type="checkbox" name="tags" value="classic"> Classic</label>
+        <label><input type="checkbox" name="tags" value="sci-fi"> Sci-fi</label>
+        <button>Add</button>
+    </form>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-add-book-form.js'));
+        await import('./01-add-book-form.check.js');
+    </script>
+</body>
+</html>

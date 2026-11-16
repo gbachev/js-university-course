@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Keyboard events</title>
+        <script src="04-keyboard-events.js" defer></script>
+    </head>
+    <body>
+        <p>Open the console, click this text, then press Shift + A.</p>
+        <ul id="books">
+            <li>Dune</li>
+        </ul>
+        <form id="add-book">
+            <input name="title" required minlength="2">
+            <input name="isbn" pattern="\d{13}">
+            <select name="shelf">
+                <option value="to-read">To read</option>
+                <option value="reading">Reading</option>
+            </select>
+            <label>
+                <input type="checkbox" name="tags" value="classic">
+                Classic
+            </label>
+            <label>
+                <input type="checkbox" name="tags" value="sci-fi">
+                Sci-fi
+            </label>
+            <input name="friend" type="email">
+            <button>Add</button>
+        </form>
+    </body>
+</html>

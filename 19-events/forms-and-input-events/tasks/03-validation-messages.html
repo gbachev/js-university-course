@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Our own validation messages</title>
+</head>
+<!--
+    Task 3: Our own validation messages
+    Our code goes in 03-validation-messages.js, the checks are in 03-validation-messages.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Our own validation messages</h1>
+    <p>Finish setUpValidation() in 03-validation-messages.js, then reload this page.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+    </ul>
+    <form id="add-book">
+        <input name="title" required>
+        <button>Add</button>
+        <p id="error" role="alert"></p>
+    </form>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-validation-messages.js'));
+        await import('./03-validation-messages.check.js');
+    </script>
+</body>
+</html>
