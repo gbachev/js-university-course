@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Tell the page about the rating</title>
+</head>
+<!--
+    Task 3: Tell the page about the rating
+    Our code goes in 03-book-rated.js, the checks are in 03-book-rated.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Tell the page about the rating</h1>
+    <p>Fix setUpRating() in 03-book-rated.js, then reload this page.</p>
+
+    <ul id="books">
+        <li data-key="dune">
+            <span class="title">Dune</span>
+            <span class="rating">
+                <button data-stars="1">★</button>
+                <button data-stars="2">★</button>
+                <button data-stars="3">★</button>
+            </span>
+        </li>
+        <li data-key="emma">
+            <span class="title">Emma</span>
+            <span class="rating">
+                <button data-stars="1">★</button>
+                <button data-stars="2">★</button>
+                <button data-stars="3">★</button>
+            </span>
+        </li>
+    </ul>
+    <p>Last rating: <output id="last-rating">none</output></p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-book-rated.js'));
+        await import('./03-book-rated.check.js');
+    </script>
+</body>
+</html>
