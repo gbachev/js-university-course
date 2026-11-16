@@ -9,3 +9,9 @@ if ('') console.log('true'); // does not print anything, because '' is falsy
 console.log(!'world'); // false, because 'world' is truthy
 console.log(NaN === NaN); // false, NaN is not equal to anything, not even itself
 console.log(Number.isNaN(NaN)); // true
+
+// Loose equality (==) coerces, too, by its own rules.
+console.log(null == 0); // false, null is loosely equal only to undefined
+console.log('' == 0); // true, '' becomes 0
+console.log([] == false); // true, [] becomes '', then 0, and false becomes 0
+console.log('0' == false); // true, both become 0
