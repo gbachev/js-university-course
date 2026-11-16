@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>var globals are duplicated</title>
+    <title>var globals live on the global object</title>
 </head>
 <body>
-    <h1>var globals are duplicated</h1>
-    <p>Open the console. The var global is a variable and a property of globalThis at the
-        same time.</p>
+    <h1>var globals live on the global object</h1>
+    <p>Open the console. The var global is a property of globalThis, and we read it as a
+        plain variable too.</p>
 
     <!-- A classic script, not a module: its top-level var declarations end up on window,
          which is what this example is about. -->

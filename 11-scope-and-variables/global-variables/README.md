@@ -10,7 +10,7 @@ Code for the lecture *Global Variables* (section 11, Scope and Variables) of the
 - `examples/05-how-they-work-together.html` - names resolve through both parts of the global scope (browser)
 - `examples/06-builtins-on-global-object.js` - `Math` and `setTimeout` without importing anything
 - `examples/07-globalthis.js` - a property of `globalThis` works like a global variable
-- `examples/08-var-globals-duplicated.html` - a `var` global is a variable and a property of `globalThis` (browser)
+- `examples/08-var-globals-on-window.html` - a `var` global lives on the global object, and we read it as a plain variable too (browser)
 - `examples/09-shadowing-alert.html` - a global `var alert` breaks `alert()` (browser)
 - `examples/10-implicit-globals.cjs` - in sloppy mode, an undeclared variable becomes a global
 - `examples/11-implicit-globals-strict.js` - in strict mode, the same assignment throws a `ReferenceError`

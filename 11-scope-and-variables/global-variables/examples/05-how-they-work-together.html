@@ -17,10 +17,10 @@
         let y = 2;
 
         console.log(Math.random()); // from global object, a random number like 0.3141
-        console.log(y);             // from global lexical environment: 2
-        console.log(x);             // from lexical environment, also via global object: 1
-        console.log(globalThis.x);  // 1
-        console.log(globalThis.y);  // undefined
+        console.log(y); // from global lexical environment: 2
+        console.log(x); // from global object (a var global): 1
+        console.log(globalThis.x); // 1
+        console.log(globalThis.y); // undefined
     </script>
 </body>
 </html>
