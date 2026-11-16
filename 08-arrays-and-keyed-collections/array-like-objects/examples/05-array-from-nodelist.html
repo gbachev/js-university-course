@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Array.from() with a NodeList</title>
+</head>
+<body>
+    <h1>Array.from() with a NodeList</h1>
+    <p>Open the console. The page has <span>three</span> <span>span</span>
+        <span>elements</span>, and Array.from() turns their NodeList into an array.</p>
+
+    <script>
+        const spans = document.querySelectorAll('span');
+        const spanArray = Array.from(spans);
+
+        console.log(spans.map); // undefined - a NodeList has no map()
+        console.log(spanArray.map(span => span.textContent)); // ['three', 'span', 'elements']
+    </script>
+</body>
+</html>
