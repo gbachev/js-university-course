@@ -10,3 +10,6 @@ myFunction(2); // 2 undefined
 myFunction(undefined, 2); // undefined 2
 
 console.log(returned); // undefined
+
+// The void operator gives undefined, too.
+console.log(void 0); // undefined
