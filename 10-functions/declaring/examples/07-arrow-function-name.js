@@ -3,5 +3,5 @@ const sayHi = (name) => {
     return `Hi, ${name}`;
 };
 
-console.log(sayHi('Anna')); // Hi, Anna
+console.log(sayHi('Jane')); // Hi, Jane
 console.log(sayHi.name); // sayHi
