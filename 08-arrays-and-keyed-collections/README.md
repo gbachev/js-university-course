@@ -11,7 +11,7 @@ Lists of values in JavaScript: creating and changing arrays, their methods, loop
 7. [Transforming Arrays](transforming) - `map()`, `filter()`, `reduce()`, `flat()`, `some()`, `every()` and chaining
 8. [Searching and Sorting Arrays](search-sort) - `find()`, `findIndex()`, `lastIndexOf()` and `sort()` with a compare function
 9. [Copying and Merging Arrays](copying-merging) - shallow copies and merges with spread, `slice()` and `concat()`
-10. Newer Array Methods: at(), findLast(), toSorted() and More (code coming)
+10. [Newer Array Methods: at(), findLast(), toSorted() and More](newer-array-methods) - `at()`, `findLast()`, the copying methods `toSorted()`, `toReversed()`, `toSpliced()` and `with()`, and `Object.groupBy()`
 11. [Multidimensional Arrays](multidimensional) - grids, nested loops, jagged arrays and matrices
 12. [Array-Like Objects and Array.from()](array-like-objects) - `arguments`, NodeLists and turning them into arrays
 13. [Map and Set](map-and-set) - `Map`, `Set`, the ES2025 set methods and `Map.groupBy()`
