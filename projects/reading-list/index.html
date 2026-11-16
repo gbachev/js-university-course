@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reading List</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <h1>Reading List</h1>
+        </header>
+
+        <main class="layout">
+            <section class="panel" aria-labelledby="search-heading">
+                <h2 id="search-heading">Find a book</h2>
+                <search>
+                    <label for="search-input">Search by title or author</label>
+                    <input
+                        id="search-input"
+                        type="search"
+                        autocomplete="off"
+                        placeholder="For example: Dune"
+                    />
+                </search>
+                <p id="search-status" class="status" aria-live="polite"></p>
+                <ul id="results" class="books"></ul>
+            </section>
+
+            <section class="panel" aria-labelledby="list-heading">
+                <!-- tabindex="-1": script can focus it, Tab skips it -->
+                <h2 id="list-heading" tabindex="-1">My list</h2>
+                <p id="counts" class="counts"></p>
+                <ul id="book-list" class="books"></ul>
+
+                <form id="add-form" class="add-form">
+                    <h3>Add a book by hand</h3>
+                    <label for="add-title">Title</label>
+                    <input id="add-title" name="title" required />
+                    <label for="add-author">Author</label>
+                    <input id="add-author" name="author" />
+                    <button type="submit">Add book</button>
+                </form>
+            </section>
+        </main>
+
+        <template id="result-template">
+            <li class="book">
+                <img class="cover" width="36" height="54" alt="" />
+                <div class="details">
+                    <p class="title"></p>
+                    <p class="author"></p>
+                </div>
+                <div class="actions">
+                    <button type="button" data-action="add">Add to list</button>
+                </div>
+            </li>
+        </template>
+
+        <template id="book-template">
+            <li class="book">
+                <img class="cover" width="36" height="54" alt="" />
+                <div class="details">
+                    <p class="title"></p>
+                    <p class="author"></p>
+                </div>
+                <div class="actions">
+                    <button type="button" data-action="toggle"></button>
+                    <button type="button" data-action="remove">Remove</button>
+                </div>
+            </li>
+        </template>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
