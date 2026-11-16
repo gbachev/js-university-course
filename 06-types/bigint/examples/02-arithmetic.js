@@ -15,3 +15,19 @@ try {
     // TypeError: Cannot mix BigInt and other types, use explicit conversions
     console.log(error.name + ': ' + error.message);
 }
+
+// The unary + cannot convert a BigInt to a number.
+try {
+    console.log(+a);
+} catch (error) {
+    // TypeError: Cannot convert a BigInt value to a number
+    console.log(error.name + ': ' + error.message);
+}
+
+// JSON.stringify() cannot serialize a BigInt.
+try {
+    console.log(JSON.stringify({ n: 1n }));
+} catch (error) {
+    // TypeError: Do not know how to serialize a BigInt
+    console.log(error.name + ': ' + error.message);
+}
