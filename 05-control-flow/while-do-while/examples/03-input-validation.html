@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input validation with do...while</title>
+</head>
+<body>
+    <h1>Input validation with do...while</h1>
+    <p>Open the console, then click the button. The prompt keeps asking until we enter a
+        number greater than 10.</p>
+    <p>Cancel asks again; enter a number above 10 to finish.</p>
+    <button type="button" id="start">Ask for a number</button>
+
+    <script>
+        document.getElementById('start').addEventListener('click', () => {
+            let userInput;
+
+            do {
+                userInput = prompt('Enter a number greater than 10:');
+            } while (userInput <= 10);
+
+            console.log('You entered a valid number:', userInput);
+            // You entered a valid number: 42 (when we enter 42)
+        });
+    </script>
+</body>
+</html>
