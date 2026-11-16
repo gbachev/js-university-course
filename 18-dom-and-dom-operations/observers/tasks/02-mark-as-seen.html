@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Mark as seen</title>
+    <style>
+        li { height: 200px; margin-bottom: 100vh; }
+        [data-status="seen"] { color: #888; }
+    </style>
+</head>
+<!--
+    Task 2: Mark as seen
+    Our code goes in 02-mark-as-seen.js, the checks are in 02-mark-as-seen.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Mark as seen</h1>
+    <p>Finish markWhenSeen() in 02-mark-as-seen.js, then reload this page. The checks scroll the page for us and list what still fails at the bottom.</p>
+
+    <ul id="inbox">
+        <li data-status="new">Your order has shipped</li>
+        <li data-status="new">Jane Doe replied to you</li>
+        <li data-status="new">A book you like is on sale</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-mark-as-seen.js'));
+        await import('./02-mark-as-seen.check.js');
+    </script>
+</body>
+</html>

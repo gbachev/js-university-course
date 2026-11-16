@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inbox</title>
+    <style>
+        li { height: 200px; margin-bottom: 100vh; }
+    </style>
+</head>
+<body>
+    <p>Open the console. The observer reports the changes a widget makes to the inbox.</p>
+
+    <h1>Inbox (<span id="unread">3</span> unread)</h1>
+    <ul id="inbox">
+        <li data-status="new">Your order has shipped</li>
+        <li data-status="new">Jane Doe replied to you</li>
+        <li data-status="new">A book you like is on sale</li>
+    </ul>
+
+    <script src="01-mutation-observer.js"></script>
+</body>
+</html>

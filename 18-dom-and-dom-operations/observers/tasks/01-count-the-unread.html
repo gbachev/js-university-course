@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Count the unread</title>
+</head>
+<!--
+    Task 1: Count the unread
+    Our code goes in 01-count-the-unread.js, the checks are in 01-count-the-unread.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Count the unread</h1>
+    <p>Finish watchUnread() in 01-count-the-unread.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <h2>Inbox (<span id="unread">0</span> unread)</h2>
+    <ul id="inbox">
+        <li data-status="new">Your order has shipped</li>
+        <li data-status="seen">Jane Doe replied to you</li>
+        <li data-status="new">A book you like is on sale</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-count-the-unread.js'));
+        await import('./01-count-the-unread.check.js');
+    </script>
+</body>
+</html>
