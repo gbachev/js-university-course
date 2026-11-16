@@ -3,6 +3,6 @@ function greet(name) {
     console.log(`Hello, ${name}!`);
 }
 
-greet('Ben'); // Hello, Ben!
-greet('Luna'); // Hello, Luna!
+greet('John'); // Hello, John!
+greet('Jane'); // Hello, Jane!
 greet('World'); // Hello, World!

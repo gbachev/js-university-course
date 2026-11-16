@@ -5,5 +5,5 @@ function createGreeting(name) {
     };
 }
 
-const greetSam = createGreeting('Sam');
-greetSam(); // Hi, Sam
+const greetJohn = createGreeting('John');
+greetJohn(); // Hi, John

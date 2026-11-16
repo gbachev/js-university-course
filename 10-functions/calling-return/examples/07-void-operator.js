@@ -1,7 +1,7 @@
 function doNothing() {
     return void 0; // explicitly returns undefined
 }
-console.log(doNothing()); // undefined - void is used inside the function
+console.log(doNothing()); // undefined - void 0 is a short way to write undefined
 
 function doSomething() {
     return 'I did something!';
@@ -11,4 +11,4 @@ function doSomething() {
 console.log(void doSomething()); // undefined
 
 let a = 5;
-console.log(void a); // undefined - void is not applicable to functions only
+console.log(void a); // undefined - void works on any expression, not only calls

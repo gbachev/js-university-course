@@ -3,7 +3,7 @@ const sayHi = function(name) {
     console.log(`Hi, ${name}`);
 };
 
-sayHi('Ella'); // Hi, Ella
+sayHi('Jane'); // Hi, Jane
 
 // Arrow functions are function expressions too.
 const shout = (word) => {
