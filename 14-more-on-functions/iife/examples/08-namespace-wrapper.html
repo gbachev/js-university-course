@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Namespace wrapper</title>
+</head>
+<body>
+    <h1>Namespace wrapper</h1>
+    <p>Open the console. The IIFE puts only answer() on window.App and keeps secret
+        to itself.</p>
+
+    <script>
+        (function (ns) {
+            const secret = 42;
+
+            ns.answer = function () {
+                return secret;
+            };
+        })(window.App = window.App || {});
+
+        console.log(App.answer()); // 42
+
+        try {
+            console.log(secret);
+        } catch (error) {
+            console.log(error.name + ': ' + error.message);
+            // ReferenceError: secret is not defined
+        }
+    </script>
+</body>
+</html>

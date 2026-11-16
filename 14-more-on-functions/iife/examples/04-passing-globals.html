@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passing globals to an IIFE</title>
+</head>
+<body>
+    <h1>Passing globals to an IIFE</h1>
+    <p>Open the console. The IIFE gets window and document as win and doc, and logs the
+        title of this page.</p>
+
+    <script>
+        (function (win, doc) {
+            const title = doc.title;
+            win.console.log(title); // Passing globals to an IIFE
+        })(window, document);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A library in an IIFE</title>
+</head>
+<body>
+    <h1>A library in an IIFE</h1>
+    <p>Open the console. Like jQuery before modules, the IIFE exposes only $.</p>
+
+    <script>
+        var jQuery = (function () {
+            function $(selector) {
+                return document.querySelector(selector);
+            }
+            return $;
+        })();
+
+        console.log(jQuery('h1').textContent); // A library in an IIFE
+    </script>
+</body>
+</html>

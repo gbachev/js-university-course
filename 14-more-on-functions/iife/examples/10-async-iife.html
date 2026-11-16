@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Async IIFE</title>
+</head>
+<body>
+    <h1>Async IIFE</h1>
+    <p>Open the console. A classic script has no top-level await, so the async IIFE
+        gives us a place to use it. The lecture fetches /api/data; this page fetches the
+        small data.json file next to it.</p>
+
+    <script>
+        (async function () {
+            const response = await fetch('data.json');
+            const data = await response.json();
+            console.log(data); // { course: 'JavaScript', lectures: 9 }
+        })();
+    </script>
+</body>
+</html>

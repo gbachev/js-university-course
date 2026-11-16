@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One-time setup</title>
+</head>
+<body>
+    <h1>One-time setup</h1>
+    <p>Open the console. The IIFE finds the app element, runs its setup once, and leaves
+        no variables behind.</p>
+    <div id="app"></div>
+
+    <script>
+        (function () {
+            const root = document.getElementById('app');
+            if (!root) return;
+
+            // run initialization code here
+            console.log('Setting up', root.id); // Setting up app
+        })();
+
+        console.log(typeof root); // undefined
+    </script>
+</body>
+</html>
