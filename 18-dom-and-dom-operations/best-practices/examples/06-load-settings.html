@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Shop</title>
+</head>
+<body>
+    <h1 id="shop-title">Book Shop</h1>
+    <ul id="products">
+        <li class="product" data-product-id="101" data-price="32.5">
+            <span class="name">Clean Code</span>
+            <button data-action="add">Add</button>
+        </li>
+        <li class="product sale" data-product-id="102" data-price="28">
+            <span class="name">Eloquent JavaScript</span>
+            <button data-action="add">Add</button>
+        </li>
+        <li class="product" data-product-id="103" data-price="41">
+            <span class="name">Refactoring</span>
+            <button data-action="add">Add</button>
+        </li>
+    </ul>
+    <label><input type="checkbox" name="gift" checked> Gift wrap</label>
+    <label><input type="checkbox" name="express"> Express</label>
+
+    <p>Open the console. The settings load through one function with defaults.</p>
+
+    <script src="06-load-settings.js"></script>
+</body>
+</html>
