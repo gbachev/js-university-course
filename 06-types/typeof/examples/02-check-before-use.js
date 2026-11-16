@@ -1,6 +1,9 @@
 // typeof checks the type before we call a string method on the value.
-let variable = 'some text';
+const input = 'john';
 
-if (typeof variable === 'string') {
-    console.log(variable.toUpperCase()); // SOME TEXT
+if (typeof input === 'string') {
+    console.log(input.toUpperCase()); // JOHN
 }
+
+// typeof does not throw for a name that was never declared.
+console.log(typeof notDeclared); // undefined (no ReferenceError)

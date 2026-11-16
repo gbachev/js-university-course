@@ -20,3 +20,7 @@ console.log(typeof strWrapper); // object
 console.log(typeof n); // object
 console.log(typeof undefined); // undefined
 console.log(typeof f); // function
+
+// For arrays, the standard check is Array.isArray().
+console.log(Array.isArray(arr)); // true
+console.log(Array.isArray(obj)); // false
