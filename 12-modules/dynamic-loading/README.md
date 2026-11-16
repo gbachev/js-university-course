@@ -8,7 +8,7 @@ Each example is a folder of modules. We run its `main.js`.
 - `examples/01-import-returns-a-promise/` - `import()` returns a promise, and main.js goes on without waiting
 - `examples/02-top-level-await/` - `await import()` with destructuring that renames `default`
 - `examples/03-conditional-loading/` - `import()` with a path built from a language checked against a list
-- `examples/04-loading-on-a-click/` - a page that loads size-guide.js on the first click (browser)
+- `examples/04-loading-on-a-click/` - the hands-on companion to the lecture's pointer to *Lazy Loading*: a page that loads size-guide.js on the first click (browser)
 - `examples/05-failed-load/` - `.catch()` when the module file is missing
 - `examples/06-import-meta/` - `import.meta.url`, `import.meta.resolve()`, `filename` and `dirname`
 
