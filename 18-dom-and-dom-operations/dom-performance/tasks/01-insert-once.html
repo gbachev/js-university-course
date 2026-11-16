@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: Insert once</title>
+</head>
+<!--
+    Task 1: Insert once
+    Our code goes in 01-insert-once.js, the checks are in 01-insert-once.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: Insert once</h1>
+    <p>Fix addBooks() in 01-insert-once.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-insert-once.js'));
+        await import('./01-insert-once.check.js');
+    </script>
+</body>
+</html>

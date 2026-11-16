@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Compact mode</title>
+    <style>
+        li {
+            padding: 6px;
+            font-size: 16px;
+        }
+
+        .compact li {
+            padding: 2px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<!--
+    Task 3: Compact mode
+    Our code goes in 03-compact-mode.js, the checks are in 03-compact-mode.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Compact mode</h1>
+    <p>Change setCompact() in 03-compact-mode.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+        <li>Persuasion</li>
+        <li>Neuromancer</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-compact-mode.js'));
+        await import('./03-compact-mode.check.js');
+    </script>
+</body>
+</html>

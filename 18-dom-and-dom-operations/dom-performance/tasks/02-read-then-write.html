@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Read all, then write all</title>
+</head>
+<!--
+    Task 2: Read all, then write all
+    Our code goes in 02-read-then-write.js, the checks are in 02-read-then-write.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Read all, then write all</h1>
+    <p>Fix growRows() in 02-read-then-write.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li>Dune</li>
+        <li>Emma</li>
+        <li>Persuasion</li>
+        <li>Neuromancer</li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-read-then-write.js'));
+        await import('./02-read-then-write.check.js');
+    </script>
+</body>
+</html>
