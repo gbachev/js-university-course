@@ -2,9 +2,9 @@
 let num = 5;
 
 function addTen(num) {
-    num *= 4; // Modifying num does not affect the original value
+    num += 10; // Modifying num does not affect the original value
     return num;
 }
 
-console.log(addTen(num)); // 20
+console.log(addTen(num)); // 15
 console.log(num); // 5
