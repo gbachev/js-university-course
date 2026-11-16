@@ -2,13 +2,12 @@
 let user = {
     name: 'John',
     bornIn: 2000,
-    age() {
-        // Gets the current year and subtracts the year of birth
-        return new Date().getFullYear() - this.bornIn;
+    ageIn(year) {
+        return year - this.bornIn; // subtracts the year of birth from the given year
     },
     greet() {
-        console.log(`Hello, I am ${this.name} and I am ${this.age()} years old`);
+        console.log(`Hello, I am ${this.name} and in 2030 I will be ${this.ageIn(2030)} years old`);
     }
 };
 
-user.greet(); // Hello, I am John and I am 26 years old (in 2026)
+user.greet(); // Hello, I am John and in 2030 I will be 30 years old

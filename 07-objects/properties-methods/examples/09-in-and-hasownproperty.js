@@ -1,6 +1,6 @@
 // in finds inherited properties too, hasOwnProperty() only the object's own ones.
 let obj = {
-    name: 'Zoe',
+    name: 'Jane',
     age: 35
 };
 
@@ -21,7 +21,7 @@ console.log(derived.hasOwnProperty('shared')); // false - it is inherited
 
 // An object without a prototype has no hasOwnProperty() method.
 let bare = Object.create(null);
-bare.name = 'Zoe';
+bare.name = 'Jane';
 console.log('name' in bare); // true
 try {
     bare.hasOwnProperty('name');
@@ -29,3 +29,6 @@ try {
     console.log(error.name + ': ' + error.message);
     // TypeError: bare.hasOwnProperty is not a function
 }
+
+// Object.hasOwn() (ES2022) works on every object, so we prefer it.
+console.log(Object.hasOwn(bare, 'name')); // true

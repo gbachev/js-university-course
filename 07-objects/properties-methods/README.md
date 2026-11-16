@@ -3,7 +3,7 @@
 Code for the lecture *Object Properties and Methods* (section 7, Objects) of the JavaScript course at gbachev.com.
 
 ## Examples
-- `examples/01-defining-properties.js` - key-value pairs and the property shorthand
+- `examples/01-defining-properties.js` - key-value pairs
 - `examples/02-property-naming.js` - string keys with spaces or dashes, number keys and symbol keys
 - `examples/03-dot-and-bracket-notation.js` - reading and changing a property with `.` and `[]`
 - `examples/04-bracket-notation-with-variables.js` - bracket notation with the key in a variable
@@ -19,8 +19,7 @@ Code for the lecture *Object Properties and Methods* (section 7, Objects) of the
 - `examples/14-keys-values-entries.js` - `Object.keys()`, `Object.values()` and `Object.entries()`
 - `examples/15-symbols-not-included.js` - symbol keys are left out of `Object.keys()`
 - `examples/16-getters-and-setters.js` - a `fullName` getter and setter
-- `examples/17-computed-property-names.js` - a property name from a variable
-- `examples/18-method-chaining.js` - methods that return `this` so the calls can be chained
+- `examples/17-method-chaining.js` - methods that return `this` so the calls can be chained
 
 Run one with `node 07-objects/properties-methods/examples/01-defining-properties.js` from the repository folder.
 
