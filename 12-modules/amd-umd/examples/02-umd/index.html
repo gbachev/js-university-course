@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A UMD file in a plain script tag</title>
+</head>
+<body>
+    <h1>A UMD file in a plain script tag</h1>
+    <p>Open the console. With no AMD loader and no CommonJS, the UMD file creates the global window.prices.</p>
+
+    <!-- Classic scripts, not modules: at their top level this is window. -->
+    <script src="prices.umd.js"></script>
+    <script>
+        console.log(prices.formatPrice(9.5)); // €9.50
+    </script>
+</body>
+</html>
