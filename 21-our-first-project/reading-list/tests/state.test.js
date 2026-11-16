@@ -13,7 +13,7 @@ const dune = {
     title: 'Dune',
     author: 'Frank Herbert',
 };
-const emma = { key: '/works/OL66554W', title: 'Emma', author: 'Jane Austen' };
+const emma = { key: '/works/OL66513W', title: 'Emma', author: 'Jane Austen' };
 
 describe('addBook', () => {
     it('adds the book as unread', () => {

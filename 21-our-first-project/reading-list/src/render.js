@@ -26,7 +26,7 @@ function fromTemplate(template, book) {
 
 // Every row has the same short button text. The aria-label starts
 // with that text and adds the title, so a screen reader says
-// "Remove Dune", not just "Remove", and voice control still
+// "Add to list: Dune", not just "Add to list", and voice control still
 // matches the words on the button.
 function resultItem(book, books) {
     const item = fromTemplate(resultTemplate, book);
