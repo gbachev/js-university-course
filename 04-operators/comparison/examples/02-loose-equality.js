@@ -1,6 +1,6 @@
 // Loose equality: JavaScript converts the operands before it compares them.
-var var1 = 3;
-var var2 = 4;
+let var1 = 3;
+let var2 = 4;
 
 console.log(3 == var1); // true
 console.log('3' == var1); // true

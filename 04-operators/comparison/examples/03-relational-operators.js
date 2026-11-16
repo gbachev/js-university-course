@@ -1,5 +1,5 @@
-var var1 = 3;
-var var2 = 4;
+let var1 = 3;
+let var2 = 4;
 
 // Greater than
 console.log(var2 > var1); // true
