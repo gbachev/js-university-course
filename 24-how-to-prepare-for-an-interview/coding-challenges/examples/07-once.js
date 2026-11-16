@@ -10,12 +10,15 @@ function once(fn) {
     };
 }
 
-const placeOrder = once((orderId) => {
-    console.log(`Order ${orderId} placed`);
-    return orderId;
-});
+const cart = {
+    id: 7,
+    checkout: once(function () {
+        console.log(`Charging cart ${this.id}`);
+        return `order-${this.id}`;
+    }),
+};
 
-console.log(placeOrder(42));
-// Order 42 placed
-// 42
-console.log(placeOrder(43)); // 42
+console.log(cart.checkout());
+// Charging cart 7
+// order-7
+console.log(cart.checkout()); // order-7

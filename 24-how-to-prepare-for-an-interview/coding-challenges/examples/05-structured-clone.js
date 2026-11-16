@@ -1,7 +1,7 @@
 class Order {
     constructor(items) {
         this.items = items;
-        this.createdAt = new Date("2026-11-16");
+        this.createdAt = new Date('2026-11-16');
     }
 
     total() {
@@ -9,7 +9,7 @@ class Order {
     }
 }
 
-const order = new Order([{ title: "Dune", price: 12 }]);
+const order = new Order([{ title: 'Dune', price: 12 }]);
 const copy = structuredClone(order);
 
 copy.items[0].price = 20;

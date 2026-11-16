@@ -25,7 +25,7 @@ function flattenWithStack(list) {
     return result.reverse();
 }
 
-const boxes = ["book", ["pen", ["ink", ["nib"]]], "mug"];
+const boxes = ['book', ['pen', ['ink', ['nib']]], 'mug'];
 
 console.log(flatten(boxes));
 // [ 'book', 'pen', 'ink', 'nib', 'mug' ]
