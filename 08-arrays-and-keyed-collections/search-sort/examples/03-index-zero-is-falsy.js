@@ -8,3 +8,11 @@ if (!index) {
 }
 // Output: Not found
 // This results in wrong logic, as 0 is falsy in JS.
+
+// The fix: compare with -1 explicitly.
+if (index !== -1) {
+    console.log('Found at index:', index);
+} else {
+    console.log('Not found');
+}
+// Output: Found at index: 0

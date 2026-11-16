@@ -1,13 +1,13 @@
-const names = ['alice', 'Bob', 'Charlie', 'bob', 'ALICE', 'charlie'];
+const names = ['john', 'Jane', 'JOHN', 'jane'];
 
 // Default case-sensitive sort
 const caseSensitive = [...names].sort();
 console.log(caseSensitive);
-// [ 'ALICE', 'Bob', 'Charlie', 'alice', 'bob', 'charlie' ]
+// [ 'JOHN', 'Jane', 'jane', 'john' ]
 
 // Case-insensitive sort
 const caseInsensitive = [...names].sort((a, b) =>
     a.localeCompare(b, undefined, { sensitivity: 'base' })
 );
 console.log(caseInsensitive);
-// [ 'alice', 'ALICE', 'Bob', 'bob', 'Charlie', 'charlie' ]
+// [ 'Jane', 'jane', 'john', 'JOHN' ]

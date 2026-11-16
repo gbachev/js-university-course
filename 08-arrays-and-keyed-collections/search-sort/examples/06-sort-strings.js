@@ -1,4 +1,4 @@
-const users = ['Charlie', 'Alice', 'Bob'];
+const users = ['John Doe', 'Jane Doe'];
 
 users.sort();
-console.log(users); // [ 'Alice', 'Bob', 'Charlie' ]
+console.log(users); // [ 'Jane Doe', 'John Doe' ]
