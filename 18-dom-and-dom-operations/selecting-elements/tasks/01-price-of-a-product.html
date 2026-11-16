@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: The price of a product</title>
+</head>
+<!--
+    Task 1: The price of a product
+    Our code goes in 01-price-of-a-product.js, the checks are in 01-price-of-a-product.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: The price of a product</h1>
+    <p>Finish priceOf() in 01-price-of-a-product.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <header>
+        <button data-action="subscribe">Get the newsletter</button>
+    </header>
+    <ul id="products">
+        <li class="product" data-product-id="101" data-price="32.5">
+            <span class="name">Clean Code</span>
+            <button data-action="add">Add</button>
+        </li>
+        <li class="product sale" data-product-id="102" data-price="28">
+            <span class="name">Eloquent JavaScript</span>
+            <button data-action="add">Add</button>
+        </li>
+        <li class="product" data-product-id="103" data-price="41">
+            <span class="name">Refactoring</span>
+            <div class="actions">
+                <button data-action="add">Add</button>
+            </div>
+        </li>
+        <li class="product sale" data-product-id="104" data-price="19.9">
+            <span class="name">JavaScript: The Good Parts</span>
+            <button data-action="add">Add</button>
+        </li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-price-of-a-product.js'));
+        await import('./01-price-of-a-product.check.js');
+    </script>
+</body>
+</html>
