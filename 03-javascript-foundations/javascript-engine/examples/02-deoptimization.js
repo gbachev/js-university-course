@@ -11,4 +11,4 @@ for (let i = 0; i < 100000; i++) {
 
 console.log(total); // 200000
 
-console.log(addToTotal("Total: ", total)); // Total: 200000
+console.log(addToTotal('Total: ', total)); // Total: 200000
