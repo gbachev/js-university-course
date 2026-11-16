@@ -1,0 +1,22 @@
+{
+    "name": "shop",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "webpack"
+    },
+    "dependencies": {
+        "date-fns": "^4.4.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^8.1.2",
+        "@babel/preset-env": "^8.0.7",
+        "babel-loader": "^10.1.1",
+        "css-loader": "^7.1.5",
+        "html-webpack-plugin": "^5.6.8",
+        "mini-css-extract-plugin": "^2.10.2",
+        "webpack": "^5.112.2",
+        "webpack-cli": "^7.3.1"
+    }
+}
