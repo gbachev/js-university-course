@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 // Our code from this folder, or the solution with npm run test:solutions.
 const { createCounter, getClickHandler } = await import(
-    process.env.SOLUTIONS ? '../solutions/02-click-counter.js' : './02-click-counter.js'
+    process.env.SOLUTIONS ? '../solutions/03-click-counter.js' : './03-click-counter.js'
 );
 
 test('the handler returns the new count', () => {

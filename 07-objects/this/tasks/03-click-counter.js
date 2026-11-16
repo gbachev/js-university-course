@@ -1,12 +1,12 @@
-// Task 2: The click counter
-// Lecture: The "this" Keyword
+// Task 3: The click counter
+// Lecture: The this Keyword
 //
 // The "Like" button of our blog counts its clicks with a counter object: its click()
 // method adds 1 to this.clicks and returns the new count. The button does not call
 // counter.click() itself: it gets a function from getClickHandler(counter) and calls
 // that function on its own, as handler(). Right now the handler throws, because it has
 // lost its this. Fix getClickHandler so the handler always works on the counter we
-// pass in.
+// pass in: return an arrow function that calls the method on the counter.
 //
 // Examples:
 //   const counter = createCounter();

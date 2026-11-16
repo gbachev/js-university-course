@@ -9,6 +9,6 @@ export function createCounter() {
 }
 
 export function getClickHandler(counter) {
-    // bind fixes this to the counter, however the handler is called later.
-    return counter.click.bind(counter);
+    // The arrow function calls click() on the counter, however the handler is called.
+    return () => counter.click();
 }
