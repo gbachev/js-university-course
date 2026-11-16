@@ -1,5 +1,5 @@
 function loadUser(id) {
-    return Promise.resolve({ id, name: "Jane Doe" });
+    return Promise.resolve({ id, name: 'Jane Doe' });
 }
 
 function showWithThen(id) {

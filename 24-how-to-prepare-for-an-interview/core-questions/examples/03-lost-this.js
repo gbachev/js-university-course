@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 const user = {
-    name: "John Doe",
+    name: 'John Doe',
     greet() {
         return `Hi, ${this.name}`;
     }
