@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modules in the browser</title>
+    <script type="module" src="./main.js"></script>
+    <script type="module">
+        import { formatPrice } from './prices.js';
+        console.log(formatPrice(9.5)); // €9.50
+    </script>
+</head>
+<body>
+    <h1>Shop</h1>
+    <p>Open the console. Start <code>npm run serve</code> first: module scripts do not work from file://.</p>
+</body>
+</html>
