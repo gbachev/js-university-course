@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: One listener for the list</title>
+</head>
+<!--
+    Task 3: One listener for the list
+    Our code goes in 03-book-actions.js, the checks are in 03-book-actions.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: One listener for the list</h1>
+    <p>Rewrite handleBookActions() in 03-book-actions.js with event delegation, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="books">
+        <li data-id="41">Dune <button data-action="remove"><span>Remove</span></button></li>
+        <li data-id="42">Emma <button data-action="favorite"><span>Favorite</span></button></li>
+    </ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-book-actions.js'));
+        await import('./03-book-actions.check.js');
+    </script>
+</body>
+</html>
