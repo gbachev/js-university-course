@@ -6,3 +6,4 @@ console.log(numbers[1]); // 20
 console.log(typeof numbers); // object
 console.log(numbers instanceof Array); // true
 console.log(numbers instanceof Object); // true
+console.log(Array.isArray(numbers)); // true
