@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 // Our code from this folder, or the solution with npm run test:solutions.
 const { getGreeter } = await import(
-    process.env.SOLUTIONS ? '../solutions/01-lost-greeting.js' : './01-lost-greeting.js'
+    process.env.SOLUTIONS ? '../solutions/03-lost-greeting.js' : './03-lost-greeting.js'
 );
 
 function createUser(name) {
