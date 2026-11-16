@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Answer the message</title>
+</head>
+<!--
+    Task 2: Answer the message
+    Our code goes in 02-answer-the-message.js. The tests run it with npm test, and this
+    page runs it in a real worker (02-answer-the-message.worker.js).
+    Run npm run serve, open this page and look at the answers below.
+    Add ?solutions to the address to run the solution instead.
+-->
+<body>
+    <h1>Task 2: Answer the message</h1>
+    <p>This page sends three messages to a worker that runs our handleMessage(). The answers
+        appear below as they come back. Before the task is solved, the worker answers with
+        nothing.</p>
+
+    <ol id="answers"></ol>
+
+    <script type="module">
+        const books = [{ title: 'Dune' }, { title: 'Emma' }, { title: 'Dracula' }];
+        const answers = document.querySelector('#answers');
+
+        // The worker reads ?solutions from its own address, like the page does.
+        const worker = new Worker(
+            new URL(`./02-answer-the-message.worker.js${location.search}`, import.meta.url),
+            { type: 'module' }
+        );
+
+        worker.addEventListener('message', (event) => {
+            const item = document.createElement('li');
+            item.textContent = JSON.stringify(event.data) ?? 'no answer';
+            answers.append(item);
+        });
+
+        worker.postMessage({ type: 'search', books, query: 'd' });
+        worker.postMessage({ type: 'count', books });
+        worker.postMessage({ type: 'sort', books });
+    </script>
+</body>
+</html>

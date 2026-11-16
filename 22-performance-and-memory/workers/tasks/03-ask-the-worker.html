@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: Ask the worker</title>
+</head>
+<!--
+    Task 3: Ask the worker
+    Our code goes in 03-ask-the-worker.js, the checks are in 03-ask-the-worker.check.js.
+    The worker, 03-ask-the-worker.worker.js, is finished.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: Ask the worker</h1>
+    <p>Finish askWorker() in 03-ask-the-worker.js, then reload this page. The checks at the
+        bottom of the page tell us what still fails.</p>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-ask-the-worker.js'));
+        await import('./03-ask-the-worker.check.js');
+    </script>
+</body>
+</html>
