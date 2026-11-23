@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1: A rating that follows its attribute</title>
+</head>
+<!--
+    Task 1: A rating that follows its attribute
+    Our code goes in 01-rating-attribute.js, the checks are in 01-rating-attribute.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 1: A rating that follows its attribute</h1>
+    <p>Finish the element in 01-rating-attribute.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <star-rating value="3"></star-rating>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('01-rating-attribute.js'));
+        await import('./01-rating-attribute.check.js');
+    </script>
+</body>
+</html>

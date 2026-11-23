@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2: Clean up on remove</title>
+</head>
+<!--
+    Task 2: Clean up on remove
+    Our code goes in 02-clean-up-on-remove.js, the checks are in 02-clean-up-on-remove.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 2: Clean up on remove</h1>
+    <p>Finish the element in 02-clean-up-on-remove.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <div id="spot"></div>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('02-clean-up-on-remove.js'));
+        await import('./02-clean-up-on-remove.check.js');
+    </script>
+</body>
+</html>

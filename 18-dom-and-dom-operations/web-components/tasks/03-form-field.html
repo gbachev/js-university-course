@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 3: A form-associated rating field</title>
+</head>
+<!--
+    Task 3: A form-associated rating field
+    Our code goes in 03-form-field.js, the checks are in 03-form-field.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 3: A form-associated rating field</h1>
+    <p>Finish the element in 03-form-field.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <form id="review">
+        <input name="title" value="Dune">
+        <rating-field name="rating"></rating-field>
+    </form>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('03-form-field.js'));
+        await import('./03-form-field.check.js');
+    </script>
+</body>
+</html>
