@@ -24,7 +24,8 @@ export function readConfig(env) {
     const databasePath = env.DATABASE_PATH || './data/job-tracker.db';
 
     // A Secure cookie only travels over https. Production has https, so it is on
-    // there; on http://localhost the browser would drop it, so it is off elsewhere.
+    // there. Most browsers let http://localhost keep one, but some drop it, so it
+    // is off elsewhere.
     let cookieSecure = nodeEnv === 'production';
     if (env.COOKIE_SECURE === 'true') {
         cookieSecure = true;

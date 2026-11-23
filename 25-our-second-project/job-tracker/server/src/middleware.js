@@ -2,10 +2,11 @@ import { HttpError } from './http-error.js';
 
 const SAFE_METHODS = ['GET', 'HEAD', 'OPTIONS'];
 
-// A second guard against cross-site request forgery, next to the SameSite=Lax
-// cookie. Browsers send an Origin header with every POST, PATCH and DELETE. When
-// it names another site, the request came from a page that is not ours, so we
-// refuse it before it touches any data. SameSite alone does not cover a page on a
+// One of our two guards against cross-site request forgery, next to the
+// JSON-only check, with the SameSite=Lax cookie under both. Browsers send an
+// Origin header with every POST, PATCH and DELETE. When it names another
+// origin, the request came from a page that is not ours, so we refuse it before
+// it touches any data. SameSite alone does not cover a page on a
 // sibling subdomain, which counts as the same site. Clients that send no Origin,
 // such as curl, are not browsers and cannot carry a user's cookie by accident.
 export function checkOrigin(req, res, next) {

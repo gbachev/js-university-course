@@ -32,7 +32,8 @@ test('sign-up answers 201 with the user and an HttpOnly, SameSite=Lax cookie', a
     assert.match(setCookie, /; SameSite=Lax/);
     assert.match(setCookie, /; Path=\//);
     assert.match(setCookie, /; Max-Age=604800/);
-    // Outside production the cookie is not Secure, or http://localhost would lose it.
+    // Outside production the cookie is not Secure: some browsers drop a Secure
+    // cookie on http://localhost.
     assert.doesNotMatch(setCookie, /Secure/);
 });
 

@@ -6,7 +6,7 @@ import { promisify } from 'node:util';
 const scryptAsync = promisify(scrypt);
 
 // The cost settings. OWASP's Password Storage Cheat Sheet gives five settings with
-// the same minimum strength; N = 2^14, r = 8, p = 5 is the one that needs 16 MB of
+// a similar minimum strength; N = 2^14, r = 8, p = 5 is the one that needs 16 MB of
 // memory per hash, where N = 2^17, p = 1 needs 128 MB and more than Node allows
 // by default.
 const COST = { N: 16384, r: 8, p: 5 };
