@@ -13,7 +13,7 @@
 //   fib(90)      // 2880067194370816120n
 //   fib(10000)   // a BigInt with 2090 digits, at once
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/coding-challenges
 
 export function fib(n, memo = new Map()) {
     if (n < 2) {

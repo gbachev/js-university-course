@@ -13,7 +13,7 @@
 //   // ['Emma', 'Dune']
 //   repeatedTitles(['Dune', 'dune'])   // []
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/big-o
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/big-o
 
 export function repeatedTitles(titles) {
     const repeated = [];

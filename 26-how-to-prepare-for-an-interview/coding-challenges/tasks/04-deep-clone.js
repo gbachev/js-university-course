@@ -15,7 +15,7 @@
 //   order.items[0].title   // 'Dune'
 //   copy.placedAt instanceof Date   // true
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/coding-challenges
 
 export function deepClone(value) {
     // Your code here

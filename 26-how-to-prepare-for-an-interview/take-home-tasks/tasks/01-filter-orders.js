@@ -16,7 +16,7 @@
 //   filterOrders(undefined, 'all')  // []
 //   filterOrders(orders, 'lost')    // throws Error: Unknown status: lost
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/take-home-tasks
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/take-home-tasks
 
 export const STATUSES = ['paid', 'shipped', 'cancelled'];
 

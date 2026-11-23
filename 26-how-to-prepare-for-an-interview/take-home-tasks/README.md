@@ -11,7 +11,7 @@ Code for the lecture *Take-Home Tasks and Your Project* (section 24, How to Prep
 We install the packages of `01-orders` inside its folder; the rest of the repository stays without dependencies.
 
 ```bash
-cd 24-how-to-prepare-for-an-interview/take-home-tasks/examples/01-orders
+cd 26-how-to-prepare-for-an-interview/take-home-tasks/examples/01-orders
 npm install
 npm test                      # 1 test file, 4 tests passed
 ```
@@ -21,4 +21,4 @@ npm test                      # 1 test file, 4 tests passed
 ## Tasks
 1. **Finish filterOrders** (`tasks/01-filter-orders.js`) - make `filterOrders` throw for an unknown status and give `[]` for an empty or missing list
 
-Run the tests with `npm test -- 24-how-to-prepare-for-an-interview/take-home-tasks`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests with `npm test -- 26-how-to-prepare-for-an-interview/take-home-tasks`. They fail until the task is solved. Compare with `solutions/` after you try.

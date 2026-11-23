@@ -13,7 +13,7 @@
 //   // ['Dune', 'Emma']
 //   inBothLists([], ['Emma'])   // []
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/big-o
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/big-o
 
 export function inBothLists(wishlist, inStock) {
     return wishlist.filter((title) => inStock.includes(title));

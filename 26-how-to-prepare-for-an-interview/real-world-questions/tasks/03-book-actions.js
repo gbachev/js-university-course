@@ -16,7 +16,7 @@
 //   // clicks do nothing now
 //
 // Open the page: npm run serve, then
-//   24-how-to-prepare-for-an-interview/real-world-questions/tasks/03-book-actions.html
+//   26-how-to-prepare-for-an-interview/real-world-questions/tasks/03-book-actions.html
 
 export function handleBookActions(list, onAction) {
     for (const button of list.querySelectorAll('button[data-action]')) {

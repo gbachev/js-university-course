@@ -11,7 +11,7 @@ Code for the lecture *More Coding Challenges* (section 24, How to Prepare for an
 - `examples/06-lru-cache.js` - an LRU cache on a `Map`, with `O(1)` `get()` and `set()`
 - `examples/07-throttle.js` - throttle from memory: at most one call every `wait` milliseconds
 
-Run one with `node 24-how-to-prepare-for-an-interview/more-coding-challenges/examples/01-promise-all.js` from the repository folder.
+Run one with `node 26-how-to-prepare-for-an-interview/more-coding-challenges/examples/01-promise-all.js` from the repository folder.
 
 ## Tasks
 1. **Group by** (`tasks/01-group-by.js`) - group books by a key into a plain object, without `Object.groupBy()` or `Map.groupBy()`
@@ -20,4 +20,4 @@ Run one with `node 24-how-to-prepare-for-an-interview/more-coding-challenges/exa
 
 The lecture does not solve these versions, so we meet them fresh, as in an interview.
 
-Run the tests with `npm test -- 24-how-to-prepare-for-an-interview/more-coding-challenges`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests with `npm test -- 26-how-to-prepare-for-an-interview/more-coding-challenges`. They fail until the task is solved. Compare with `solutions/` after you try.

@@ -14,7 +14,7 @@
 //   placeOrder(42)   // 42
 //   placeOrder(43)   // 42, and fn did not run again
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/coding-challenges
 
 export function once(fn) {
     let called = false;

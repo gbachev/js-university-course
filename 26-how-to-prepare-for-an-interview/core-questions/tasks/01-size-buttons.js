@@ -12,7 +12,7 @@
 //   handlers[0]()   // 'Size 40'
 //   handlers[2]()   // 'Size 42'
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/core-questions
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/core-questions
 
 export function createSizeHandlers(sizes) {
     const handlers = [];

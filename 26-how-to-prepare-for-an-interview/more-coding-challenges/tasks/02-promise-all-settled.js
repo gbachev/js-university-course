@@ -16,7 +16,7 @@
 //   //     { status: 'fulfilled', value: 42 },
 //   // ]
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/more-coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/more-coding-challenges
 
 export function promiseAllSettled(items) {
     // Your code here

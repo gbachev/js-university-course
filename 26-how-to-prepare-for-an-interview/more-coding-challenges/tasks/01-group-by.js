@@ -17,7 +17,7 @@
 //   // { 'sci-fi': [{ title: 'Dune', ... }, { title: 'Neuromancer', ... }],
 //   //   classic: [{ title: 'Emma', ... }] }
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/more-coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/more-coding-challenges
 
 export function groupBy(items, getKey) {
     // Your code here

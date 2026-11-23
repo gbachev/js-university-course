@@ -14,7 +14,7 @@
 //   handler()     // 2
 //   post.likes    // 2
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/core-questions
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/core-questions
 
 export function likeHandler(post) {
     return post.like;

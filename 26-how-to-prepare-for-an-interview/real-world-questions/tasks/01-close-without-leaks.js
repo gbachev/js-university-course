@@ -14,7 +14,7 @@
 //   close();
 //   // nothing more, however long the page stays open
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/real-world-questions
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/real-world-questions
 
 export function openOrdersView(win, render) {
     setInterval(() => render('refresh'), 1000);

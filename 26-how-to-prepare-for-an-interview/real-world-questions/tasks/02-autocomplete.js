@@ -22,7 +22,7 @@
 //   // 300 ms later one request to /api/books?q=dune, then:
 //   // [ 'Dune', 'Dune Messiah', 'Children of Dune' ]
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/real-world-questions
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/real-world-questions
 
 export function createAutocomplete(fetch, onResults, wait = 300) {
     return function type(text) {

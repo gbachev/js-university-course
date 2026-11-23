@@ -17,7 +17,7 @@
 //   covers.get('dune');                    // 'dune.jpg', now the most recent
 //   covers.set('ulysses', 'ulysses.jpg');  // dropped emma
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/more-coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/more-coding-challenges
 
 export class LRUCache {
     constructor(limit, onEvict) {

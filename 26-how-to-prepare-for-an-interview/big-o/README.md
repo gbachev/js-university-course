@@ -13,7 +13,7 @@ Code for the lecture *Big O Notation* (section 24, How to Prepare for an Intervi
 
 The timing scripts print the times of our own machine, and they change from run to run: we compare how they grow, not the numbers.
 
-Run one with `node 24-how-to-prepare-for-an-interview/big-o/examples/01-constant-and-linear.js` from the repository folder.
+Run one with `node 26-how-to-prepare-for-an-interview/big-o/examples/01-constant-and-linear.js` from the repository folder.
 
 ## Tasks
 1. **Repeated titles** (`tasks/01-repeated-titles.js`) - make an `O(n²)` search for repeated titles `O(n)` with a `Set`
@@ -22,4 +22,4 @@ Run one with `node 24-how-to-prepare-for-an-interview/big-o/examples/01-constant
 
 Each starter already gives the right results, slowly. The tests check the results and the edge cases, and time one long list, so they fail until our version is fast and still gives the same answers.
 
-Run the tests with `npm test -- 24-how-to-prepare-for-an-interview/big-o`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests with `npm test -- 26-how-to-prepare-for-an-interview/big-o`. They fail until the task is solved. Compare with `solutions/` after you try.

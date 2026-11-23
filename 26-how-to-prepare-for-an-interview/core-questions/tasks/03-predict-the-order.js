@@ -12,7 +12,7 @@
 //   // for console.log(1); setTimeout(() => console.log(2), 0); console.log(3);
 //   // the order would be [1, 3, 2]
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/core-questions
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/core-questions
 
 export function placeOrder(log) {
     log('start');

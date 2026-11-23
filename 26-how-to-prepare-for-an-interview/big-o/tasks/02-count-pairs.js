@@ -14,7 +14,7 @@
 //   countPairs([25, 25, 25], 50)              // 3
 //   countPairs([25], 50)                      // 0
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/big-o
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/big-o
 
 export function countPairs(prices, budget) {
     let pairs = 0;

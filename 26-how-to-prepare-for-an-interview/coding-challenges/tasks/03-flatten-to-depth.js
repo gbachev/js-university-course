@@ -12,7 +12,7 @@
 //   flatten(boxes, 1)   // ['book', 'pen', ['ink', ['nib']], 'mug']
 //   flatten([])         // []
 //
-// Run the tests: npm test -- 24-how-to-prepare-for-an-interview/coding-challenges
+// Run the tests: npm test -- 26-how-to-prepare-for-an-interview/coding-challenges
 
 export function flatten(list, depth = Infinity) {
     // Your code here

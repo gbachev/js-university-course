@@ -1,4 +1,4 @@
-# 24. How to Prepare for an Interview
+# 26. How to Prepare for an Interview
 
 How JavaScript interviews run, and practice for each part of them: core questions to explain, the cost of our code in Big O, live coding challenges, open real-world questions and take-home tasks, then the CV and GitHub profile an employer sees first.
 

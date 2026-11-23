@@ -11,7 +11,7 @@ Code for the lecture *Coding Challenges* (section 24, How to Prepare for an Inte
 - `examples/06-deep-clone-by-hand.js` - a hand-written deep clone for plain objects, arrays and primitives
 - `examples/07-once.js` - `once()` runs a function only the first time
 
-Run one with `node 24-how-to-prepare-for-an-interview/coding-challenges/examples/01-fibonacci-three-ways.js` from the repository folder.
+Run one with `node 26-how-to-prepare-for-an-interview/coding-challenges/examples/01-fibonacci-three-ways.js` from the repository folder.
 
 ## Tasks
 1. **The big Fibonacci** (`tasks/01-big-fibonacci.js`) - turn the memoized `fib()` into a loop with `BigInt` that handles `fib(10000)`
@@ -20,4 +20,4 @@ Run one with `node 24-how-to-prepare-for-an-interview/coding-challenges/examples
 4. **A deeper clone** (`tasks/04-deep-clone.js`) - a deep clone that also copies dates and circular references
 5. **Fix once()** (`tasks/05-fix-once.js`) - fix a `once()` that forgets its result and overflows the stack when it calls itself
 
-Run the tests with `npm test -- 24-how-to-prepare-for-an-interview/coding-challenges`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests with `npm test -- 26-how-to-prepare-for-an-interview/coding-challenges`. They fail until the task is solved. Compare with `solutions/` after you try.
