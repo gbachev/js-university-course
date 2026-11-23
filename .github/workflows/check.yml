@@ -12,6 +12,9 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                   node-version: 22
+            - name: Install Express for the Node.js on the Server section
+              run: npm ci
+              working-directory: 24-node-on-the-server
             - name: Every solution passes its tests
               run: npm run test:solutions
 
