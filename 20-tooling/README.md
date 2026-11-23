@@ -15,5 +15,6 @@ Most examples here are small projects with their own `package.json`. We run `npm
 9. [Development Servers and Live Reload](development-servers-and-live-reload) - the Vite dev server, hot updates, the API proxy and `.env`
 10. [Testing Setup](testing-setup) - Vitest, matchers, mocks and coverage
 11. [Continuous Integration Basics](continuous-integration) - a GitHub Actions workflow, a Node matrix and failing steps
-12. [Best Practices](best-practices) - a pinned Node version, one check script, and one tool for each job
-13. Section Review (no code)
+12. Coding with AI Assistants (no code) - where an assistant helps and hurts, and checking its code with the tools of this section
+13. [Best Practices](best-practices) - a pinned Node version, one check script, and one tool for each job
+14. Section Review (no code)
