@@ -29,5 +29,6 @@ Run one with `node 08-arrays-and-keyed-collections/transforming/examples/01-map.
 1. **The names of the active users** (`tasks/01-active-users.js`) - keep the active users with `filter()` and take their names with `map()`
 2. **The order total** (`tasks/02-order-total.js`) - add up price times quantity with `reduce()`
 3. **Orders by status** (`tasks/03-orders-by-status.js`) - count the orders of each status into an object with `reduce()`
+4. **Names on the page** (`tasks/04-render-names.js`, page `tasks/04-render-names.html`) - turn an array of names into list items with `map()`, a first look at the page (browser)
 
-Run the tests with `npm test -- 08-arrays-and-keyed-collections/transforming`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests of tasks 1-3 with `npm test -- 08-arrays-and-keyed-collections/transforming`. Task 4 runs in the browser: run `npm run serve`, open the task page and read the checks at the bottom of it. The DOM itself comes in section 18; the task file shows the few tools it needs. The tests and checks fail until the task is solved. Compare with `solutions/` after you try, or add `?solutions` to the address of the task page to run its checks against the solution.

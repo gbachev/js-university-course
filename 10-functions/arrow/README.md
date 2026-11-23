@@ -21,5 +21,6 @@ Run one with `node 10-functions/arrow/examples/01-basic-syntax.js` from the repo
 1. **In stock** (`tasks/01-in-stock-names.js`) - list the names of the products in stock with short arrow callbacks
 2. **Lost this** (`tasks/02-lost-this.js`) - fix a `map()` callback that loses the `this` of its method
 3. **Average rating** (`tasks/03-average-rating.js`) - fix an arrow function that reads `arguments` by using a rest parameter
+4. **The price list** (`tasks/04-price-list.js`, page `tasks/04-price-list.html`) - show prices on the page with short arrow callbacks, a first look at the page (browser)
 
-Run the tests with `npm test -- 10-functions/arrow`. They fail until the task is solved. Compare with `solutions/` after you try.
+Run the tests of tasks 1-3 with `npm test -- 10-functions/arrow`. Task 4 runs in the browser: run `npm run serve`, open the task page and read the checks at the bottom of it. The DOM itself comes in section 18; the task file shows the few tools it needs. The tests and checks fail until the task is solved. Compare with `solutions/` after you try, or add `?solutions` to the address of the task page to run its checks against the solution.

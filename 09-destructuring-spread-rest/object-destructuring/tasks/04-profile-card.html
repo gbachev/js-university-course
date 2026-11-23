@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4: A profile card</title>
+</head>
+<!--
+    Task 4: A profile card
+    Our code goes in 04-profile-card.js, the checks are in 04-profile-card.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 4: A profile card</h1>
+    <p>Finish fillCard() in 04-profile-card.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <article id="card">
+        <h2 class="name"></h2>
+        <p class="role"></p>
+        <p class="city"></p>
+    </article>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('04-profile-card.js'));
+        await import('./04-profile-card.check.js');
+    </script>
+</body>
+</html>

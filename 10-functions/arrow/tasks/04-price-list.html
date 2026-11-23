@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4: The price list</title>
+</head>
+<!--
+    Task 4: The price list
+    Our code goes in 04-price-list.js, the checks are in 04-price-list.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 4: The price list</h1>
+    <p>Finish showPrices() in 04-price-list.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="prices"></ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('04-price-list.js'));
+        await import('./04-price-list.check.js');
+    </script>
+</body>
+</html>

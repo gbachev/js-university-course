@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4: Names on the page</title>
+</head>
+<!--
+    Task 4: Names on the page
+    Our code goes in 04-render-names.js, the checks are in 04-render-names.check.js.
+    Run npm run serve, open this page and read the checks at the bottom.
+    Add ?solutions to the address to run the checks against the solution.
+-->
+<body>
+    <h1>Task 4: Names on the page</h1>
+    <p>Finish renderNames() in 04-render-names.js, then reload this page. The checks at the bottom of the page tell us what still fails.</p>
+
+    <ul id="team"></ul>
+
+    <script type="module">
+        import { source } from '/lib/browser-check.js';
+        await import(source('04-render-names.js'));
+        await import('./04-render-names.check.js');
+    </script>
+</body>
+</html>
