@@ -1,12 +1,14 @@
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import express from 'express';
+import { requireUser } from './auth/require-user.js';
 import {
     checkOrigin,
     errorHandler,
     notFound,
     requireJsonBody,
 } from './middleware.js';
+import { applicationRoutes } from './routes/applications.js';
 import { authRoutes } from './routes/auth.js';
 
 // The front end after `npm run build` in client/.
@@ -32,6 +34,7 @@ export function createApp({ db, config }) {
     app.use(express.json({ limit: '32kb' }));
 
     app.use('/api/auth', authRoutes({ db, config }));
+    app.use('/api/applications', requireUser(db), applicationRoutes({ db }));
 
     // In production, the same server sends the built front end, so the whole app
     // is one Node service on one origin. In development, Vite serves it instead.

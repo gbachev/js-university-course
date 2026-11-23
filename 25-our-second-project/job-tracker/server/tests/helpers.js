@@ -78,3 +78,13 @@ export async function signUp(
     }
     return cookieFrom(response);
 }
+
+// Adds an application for the user of `cookie` and gives back the parsed response.
+export async function addApplication(app, cookie, values = {}) {
+    const response = await send(`${app.url}/api/applications`, {
+        method: 'POST',
+        cookie,
+        body: { company: 'Acme', role: 'Frontend Developer', ...values },
+    });
+    return { response, body: await response.json() };
+}
