@@ -6,6 +6,7 @@
 //   npm test -- 04-operators/comparison/tasks/01-strict-or-loose.test.js
 //
 // npm run test:solutions runs the same tests against the solutions folders.
+// --test-force-exit ends the run once the tests finish, even if a task left a server open.
 import { spawnSync } from 'node:child_process';
 
 const args = process.argv.slice(2);
@@ -17,7 +18,7 @@ const patterns = (targets.length ? targets : ['.']).map((target) => {
     return path.endsWith('.js') ? path : `${path}/**/tasks/*.test.js`;
 });
 
-const result = spawnSync(process.execPath, ['--test', ...patterns], {
+const result = spawnSync(process.execPath, ['--test', '--test-force-exit', ...patterns], {
     stdio: 'inherit',
     env: solutions ? { ...process.env, SOLUTIONS: '1' } : process.env,
 });
