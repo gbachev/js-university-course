@@ -62,4 +62,4 @@ Try each task before opening `solutions/`. A solution is one way to solve it, no
 
 ## License
 
-All rights reserved. You may download and run this code to follow the course and practice. Copying, publishing or reusing it anywhere else needs written permission. See [LICENSE](LICENSE).
+All rights reserved. You may download and run this code to follow the course and practice, and use what you learn and short pieces of the example code in your own projects. Copying, publishing or reusing anything more needs written permission. See [LICENSE](LICENSE).
