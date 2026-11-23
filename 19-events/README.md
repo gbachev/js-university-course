@@ -1,6 +1,6 @@
 # 19. Events
 
-How a page reacts to the user: listeners and the event object, bubbling and capturing, event delegation, passive listeners, forms and keyboard input, the basics of accessibility, our own custom events and the basics of web security.
+How a page reacts to the user: listeners and the event object, bubbling and capturing, event delegation, passive listeners, forms and keyboard input, the basics of accessibility, our own custom events, URLs and the browser history, and the basics of web security.
 
 1. Section Overview (no code)
 2. [Events Basics](events-basics) - `addEventListener()`, the event object, `preventDefault()`, the `once` and `signal` options, and `DOMContentLoaded` vs `load`
@@ -10,6 +10,7 @@ How a page reacts to the user: listeners and the event object, bubbling and capt
 6. [Forms and Input Events](forms-and-input-events) - `submit`, `FormData`, `input` vs `change`, keyboard events and validation
 7. [Accessibility Basics](accessibility) - native elements first, keyboard and focus, accessible names, `aria-live` and `hidden` vs `aria-hidden`
 8. [Custom Events and EventTarget](custom-events) - `CustomEvent`, `dispatchEvent()`, `detail`, `bubbles`, `cancelable` and `EventTarget` for our own objects
-9. [Web Security Basics](web-security) - XSS and `textContent`, cookie attributes and CSRF, CORS, CSP and preflight requests
-10. [Best Practices](best-practices) - removing listeners with a signal, delegating with `closest()`, `submit` with `FormData` and small listeners
-11. Section Review (no code)
+9. [URLs and the History API](urls-and-history) - `URL` and `URLSearchParams`, `location`, `pushState()`, `replaceState()`, `popstate` and a tiny router
+10. [Web Security Basics](web-security) - XSS and `textContent`, cookie attributes and CSRF, CORS, CSP and preflight requests
+11. [Best Practices](best-practices) - removing listeners with a signal, delegating with `closest()`, `submit` with `FormData` and small listeners
+12. Section Review (no code)
