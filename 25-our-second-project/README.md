@@ -12,6 +12,6 @@ We build a full-stack app: the Job Tracker, where each user signs up, logs in an
 6. Accounts and Logging In - passwords hashed with scrypt, a session in an `HttpOnly`, `SameSite=Lax` cookie, `requireUser`, 401 and 404 for someone else's data, and the `Origin` check against cross-site requests
 7. Connecting the Front End - every call in `api.js`, cookies with `fetch()`, field messages in the forms, rows from a `<template>` with `textContent`
 8. Testing the API - `node:test` and `fetch()` against the real app on a free port with a fresh database in memory, and Vitest with a fake `fetch` for the front end
-9. Deploying with CI - the GitHub Actions job, the build, and one Node service that sends both the front end and `/api`
+9. Running the Server in Production - the build, the environment variables, a disk that keeps the database, and one Node service that sends both the front end and `/api`
 10. Best Practices - the habits of the project; their code is in [`job-tracker/`](job-tracker)
 11. Section Review (no code)

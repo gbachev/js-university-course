@@ -176,11 +176,12 @@ The "Our Second Project" module walks through this code. Each lesson presents th
 - `server/tests/*.test.js`: status codes, headers and bodies; a second user; an expired session; a foreign `Origin`
 - `client/tests/api.test.js`: a fake `fetch` that returns real `Response` objects; `client/tests/state.test.js`
 
-### 8. Deploying with CI
+### 8. Running the Server in Production
 
-- The `job-tracker` job in `.github/workflows/check.yml`: `npm ci`, lint, test and build for both parts
 - Production: `npm run build` in `client/`, then `NODE_ENV=production npm start` in `server/`, with `PORT` and `DATABASE_PATH` from the host, and the database file on a disk that survives a new deploy
 - `app.js`: `express.static()` for `client/dist`, a year of caching for the hashed files in `assets/`, and `trust proxy` behind the host's proxy
+- `server/src/config.js`: `NODE_ENV=production` turns on `Secure` cookies; `COOKIE_SECURE` overrides it
+- `server/src/server.js`: `migrate(db)` runs at start-up, so a new deploy updates the database before the first request
 
 ### 9. Best Practices
 
