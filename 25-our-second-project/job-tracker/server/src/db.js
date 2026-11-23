@@ -13,8 +13,9 @@ export function openDatabase(path) {
     }
 
     const db = new Database(path);
-    // SQLite ignores REFERENCES and ON DELETE CASCADE until we switch this on,
-    // and the setting lasts only as long as this connection.
+    // SQLite starts each connection with foreign keys off, and then ignores
+    // REFERENCES and ON DELETE CASCADE. better-sqlite3 builds its SQLite with
+    // them on; we switch them on anyway, so we never depend on that build.
     db.pragma('foreign_keys = ON');
     if (!inMemory) {
         // Write-ahead logging: readers no longer wait for a writer to finish.
