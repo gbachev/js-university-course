@@ -18,6 +18,6 @@ npm test -- 24-node-on-the-server
 5. [Configuration with process.env](configuration-env) - `process.env`, `node --env-file` and keeping secrets out of the repository
 6. [CORS from the Server Side](cors-on-the-server) - the CORS headers by hand, then the `cors` package
 7. [HTTP Caching: Cache-Control, ETag and 304](http-caching) - `Cache-Control` per route, `ETag`, `If-None-Match` and 304 Not Modified, hashed files with `express.static()`
-8. Real-Time: WebSockets and Server-Sent Events - Server-Sent Events with Express, WebSockets in brief (optional)
+8. [Real-Time: WebSockets and Server-Sent Events](real-time) - Server-Sent Events with Express, WebSockets in brief (optional)
 9. Best Practices (no code)
 10. Section Review (no code)

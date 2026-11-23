@@ -7,6 +7,8 @@
 //
 // It takes an Express app or a server from http.createServer(): both have listen().
 // Port 0 asks the system for any free port, so tests never fight over port 3000.
+// close() also ends the connections still open, such as an event stream of Real-Time:
+// WebSockets and Server-Sent Events, so a test run never waits for them.
 export function start(app) {
     return new Promise((resolve, reject) => {
         const server = app.listen(0);
@@ -17,7 +19,11 @@ export function start(app) {
 
             resolve({
                 url: `http://localhost:${port}`,
-                close: () => new Promise((done) => server.close(done)),
+                close: () =>
+                    new Promise((done) => {
+                        server.close(done);
+                        server.closeAllConnections();
+                    }),
             });
         });
     });
