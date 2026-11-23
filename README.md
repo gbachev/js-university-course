@@ -60,7 +60,7 @@ Try each task before opening `solutions/`. A solution is one way to solve it, no
 
 ## The projects
 
-`21-our-first-project/reading-list` is the Reading List app the *Our First Project* section builds, lecture by lecture. `25-our-second-project/job-tracker` is the Job Tracker of *Our Second Project*: a front end and an Express API with accounts and a SQLite database, in `client/` and `server/`. Each app has its own README and its own `npm install` (the Job Tracker one in each of its two parts). Their tests run with `npm test` inside the app's folders, not with the repository's `npm test`.
+`21-our-first-project/reading-list` is the Reading List app the *Our First Project* section builds, lecture by lecture. `25-our-second-project/job-tracker` is the Job Application Tracker of *Our Second Project*: a front end and an Express API with accounts and a SQLite database, in `client/` and `server/`. Each app has its own README and its own `npm install` (the Job Application Tracker one in each of its two parts). Their tests run with `npm test` inside the app's folders, not with the repository's `npm test`.
 
 ## License
 

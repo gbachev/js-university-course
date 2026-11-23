@@ -1,4 +1,4 @@
-// Starts the Job Tracker API. From the server folder:
+// Starts the Job Application Tracker API. From the server folder:
 //   npm start      (node --env-file-if-exists=.env src/server.js)
 //   npm run dev    (the same, and restarts when we save a file)
 // Stop it with Ctrl+C.

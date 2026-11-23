@@ -1,4 +1,4 @@
-# Job Tracker
+# Job Application Tracker
 
 A small full-stack app for keeping track of job applications. Each user signs up, logs in and keeps their own list: the company, the role, the status (wishlist, applied, interview, offer, rejected), the day they applied, a link to the job posting and notes. The list can be filtered by status and shows how many applications have each one.
 

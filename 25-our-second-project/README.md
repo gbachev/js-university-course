@@ -1,6 +1,6 @@
 # 25. Our Second Project
 
-We build a full-stack app: the Job Tracker, where each user signs up, logs in and keeps a list of job applications with their status, the day they applied, a link and notes. An Express API keeps the data in a SQLite database; a plain JavaScript front end, built with Vite, talks to it.
+We build a full-stack app: the Job Application Tracker, where each user signs up, logs in and keeps a list of job applications with their status, the day they applied, a link and notes. An Express API keeps the data in a SQLite database; a plain JavaScript front end, built with Vite, talks to it.
 
 **The finished app is in [`job-tracker/`](job-tracker).** It has two parts, each with its own `package.json`: `server/` (the API) and `client/` (the front end). Its README shows how to run them: `npm install` and `npm run dev` in each.
 
