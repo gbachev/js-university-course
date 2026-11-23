@@ -11,7 +11,7 @@ We build a full-stack app: the Job Application Tracker, where each user signs up
 5. [Validating Input and Handling Errors](validation-and-errors) - one check per field, a 400 with a message for each field, `HttpError`, 415 for a body that is not JSON and the error handler
 6. [Accounts and Logging In](accounts-and-login) - passwords hashed with scrypt, a session in an `HttpOnly`, `SameSite=Lax` cookie, 401 and `requireUser`, and the `Origin` check against cross-site requests
 7. [Connecting the Front End](connecting-the-front-end) - every call in `api.js`, the session cookie on one origin, field messages in the forms, rows from a `<template>` with `textContent`
-8. Testing the API - `node:test` and `fetch()` against the real app on a free port with a fresh database in memory, and Vitest with a fake `fetch` for the front end
+8. [Testing the API](testing-the-api) - `node:test` and `fetch()` against the real app on a free port with a fresh database in memory, and Vitest with a fake `fetch` for the front end
 9. Running the Server in Production - the build, the environment variables, a disk that keeps the database, and one Node service that sends the front end and answers `/api`
 10. Best Practices - the habits of the project; their code is in [`job-tracker/`](job-tracker)
 11. Section Review (no code)
