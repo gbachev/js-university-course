@@ -1,0 +1,23 @@
+# 24. Node.js on the Server
+
+We write the server side ourselves: a small JSON API for books with Express 5, called from `curl`, the browser and tests in Node.
+
+This section needs one install, because Express and the `cors` package are not part of Node. We run it once inside this folder; the tasks then run from the repository folder as usual:
+
+```bash
+cd 24-node-on-the-server
+npm install
+cd ..
+npm test -- 24-node-on-the-server
+```
+
+1. Section Overview (no code)
+2. An HTTP Server with Express - from `http.createServer()` to Express 5: `app.get()`, `res.json()` and `app.listen()`
+3. Routing and JSON APIs - route parameters, the query string, `express.json()`, routers and the order of middleware
+4. REST Conventions and Status Codes - resources and methods, the common status codes and error bodies
+5. Configuration with process.env - `process.env`, `node --env-file` and keeping secrets out of the repository
+6. CORS from the Server Side - the CORS headers by hand, then the `cors` package
+7. HTTP Caching: Cache-Control, ETag and 304 - how long a response is kept, and 304 Not Modified
+8. Real-Time: WebSockets and Server-Sent Events - Server-Sent Events with Express, WebSockets in brief (optional)
+9. Best Practices (no code)
+10. Section Review (no code)

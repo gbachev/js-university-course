@@ -10,7 +10,7 @@ The folders follow the course: one folder per section (`04-operators`), one per 
 
 ## Getting the code
 
-You need [Node.js](https://nodejs.org/) 22.12 or newer (the lecture *Environment Setup* shows how to install it, and *A First Look at npm and nvm* how to switch versions). Nothing else: the examples and tasks use only what Node and the browser give us.
+You need [Node.js](https://nodejs.org/) 22.12 or newer (the lecture *Environment Setup* shows how to install it, and *A First Look at npm and nvm* how to switch versions). Nothing else: the tasks use only what Node and the browser give us, apart from the *Node.js on the Server* section, which installs Express and `cors` in its own folder (`cd 24-node-on-the-server && npm install`, once).
 
 ```bash
 git clone https://github.com/gbachev/js-university-course.git
@@ -51,6 +51,8 @@ npm test -- 04-operators/comparison      # the tasks of one lecture
 npm test -- 04-operators                 # a whole section
 npm test                                 # everything
 ```
+
+The tasks of *Node.js on the Server* need Express, so `npm test` for everything also needs `npm install` in `24-node-on-the-server` first.
 
 The tests fail until the task is solved. Browser tasks show their checks at the bottom of the page.
 

@@ -1,0 +1,13 @@
+{
+    "name": "node-on-the-server",
+    "private": true,
+    "description": "The examples and tasks of the section Node.js on the Server",
+    "type": "module",
+    "engines": {
+        "node": ">=22.12"
+    },
+    "dependencies": {
+        "cors": "^2.8.6",
+        "express": "^5.3.0"
+    }
+}
