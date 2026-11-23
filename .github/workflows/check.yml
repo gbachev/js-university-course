@@ -32,3 +32,32 @@ jobs:
             - run: npm run lint
             - run: npm test
             - run: npm run build
+
+    job-tracker:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+            - name: Client - install
+              run: npm ci
+              working-directory: 25-our-second-project/job-tracker/client
+            - name: Client - lint
+              run: npm run lint
+              working-directory: 25-our-second-project/job-tracker/client
+            - name: Client - test
+              run: npm test
+              working-directory: 25-our-second-project/job-tracker/client
+            - name: Client - build
+              run: npm run build
+              working-directory: 25-our-second-project/job-tracker/client
+            - name: Server - install
+              run: npm ci
+              working-directory: 25-our-second-project/job-tracker/server
+            - name: Server - lint
+              run: npm run lint
+              working-directory: 25-our-second-project/job-tracker/server
+            - name: Server - test
+              run: npm test
+              working-directory: 25-our-second-project/job-tracker/server

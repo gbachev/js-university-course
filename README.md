@@ -58,9 +58,9 @@ The tests fail until the task is solved. Browser tasks show their checks at the 
 
 Try each task before opening `solutions/`. A solution is one way to solve it, not the only one: if our tests pass, our answer is right. `npm run test:solutions` runs the same tests against the solutions.
 
-## The project
+## The projects
 
-`21-our-first-project/reading-list` is the Reading List app the *Our First Project* section builds, lecture by lecture. It has its own README and its own `npm install`.
+`21-our-first-project/reading-list` is the Reading List app the *Our First Project* section builds, lecture by lecture. `25-our-second-project/job-tracker` is the Job Tracker of *Our Second Project*: a front end and an Express API with accounts and a SQLite database, in `client/` and `server/`. Each app has its own README and its own `npm install` (the Job Tracker one in each of its two parts). Their tests run with `npm test` inside the app's folders, not with the repository's `npm test`.
 
 ## License
 
