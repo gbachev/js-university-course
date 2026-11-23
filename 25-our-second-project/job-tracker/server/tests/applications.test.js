@@ -17,7 +17,7 @@ test('POST creates an application: 201, a Location and the saved row', async () 
         status: 'applied',
         appliedOn: '2026-11-20',
         url: 'https://jobs.example.com/42',
-        notes: 'Referred by Grace.\nFollow up on Monday.',
+        notes: 'Referred by John.\nFollow up on Monday.',
     });
 
     assert.equal(response.status, 201);
@@ -30,7 +30,7 @@ test('POST creates an application: 201, a Location and the saved row', async () 
         status: 'applied',
         appliedOn: '2026-11-20',
         url: 'https://jobs.example.com/42',
-        notes: 'Referred by Grace.\nFollow up on Monday.',
+        notes: 'Referred by John.\nFollow up on Monday.',
     });
     assert.match(createdAt, ISO_TIME);
     assert.equal(updatedAt, createdAt);
@@ -164,7 +164,7 @@ test('an id that is not a whole number answers 404', async () => {
 
 test("another user's application is 404 for every method, and not in their list", async () => {
     await addApplication(app, cookie, { company: 'Acme' });
-    const otherCookie = await signUp(app, 'grace@example.com');
+    const otherCookie = await signUp(app, 'john@example.com');
     const url = `${app.url}/api/applications/1`;
 
     const read = await send(url, { cookie: otherCookie });
@@ -183,7 +183,7 @@ test("another user's application is 404 for every method, and not in their list"
     assert.equal(remove.status, 404);
     assert.deepEqual(await list.json(), { applications: [] });
 
-    // And Ada's application is still there, unchanged.
+    // And Jane's application is still there, unchanged.
     const own = await send(url, { cookie });
     assert.equal((await own.json()).application.company, 'Acme');
 });

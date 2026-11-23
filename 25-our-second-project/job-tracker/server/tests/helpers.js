@@ -66,7 +66,7 @@ export function cookieFrom(response) {
 // Creates an account and gives back the cookie of its session.
 export async function signUp(
     app,
-    email = 'ada@example.com',
+    email = 'jane@example.com',
     password = 'correct horse',
 ) {
     const response = await send(`${app.url}/api/auth/signup`, {

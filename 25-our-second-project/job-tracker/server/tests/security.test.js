@@ -118,7 +118,7 @@ test('behind the proxy in production, our https origin is allowed', async () => 
                 ...headers,
             },
             body: JSON.stringify({
-                email: 'ada@example.com',
+                email: 'jane@example.com',
                 password: 'correct horse',
             }),
         });

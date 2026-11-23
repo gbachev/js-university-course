@@ -39,7 +39,7 @@ test('foreign keys are on: deleting a user deletes their applications', () => {
     const user = db
         .prepare(
             `INSERT INTO users (email, password_hash, created_at)
-             VALUES ('ada@example.com', 'x', ?) RETURNING id`,
+             VALUES ('jane@example.com', 'x', ?) RETURNING id`,
         )
         .get(now);
     db.prepare(
@@ -65,7 +65,7 @@ test('a file database gets its folder created and keeps its data', () => {
         first
             .prepare(
                 `INSERT INTO users (email, password_hash, created_at)
-                 VALUES ('ada@example.com', 'x', '2026-11-23T10:00:00.000Z')`,
+                 VALUES ('jane@example.com', 'x', '2026-11-23T10:00:00.000Z')`,
             )
             .run();
         first.close();
@@ -75,7 +75,7 @@ test('a file database gets its folder created and keeps its data', () => {
         assert.equal(second.pragma('journal_mode', { simple: true }), 'wal');
         assert.equal(
             second.prepare('SELECT email FROM users').get().email,
-            'ada@example.com',
+            'jane@example.com',
         );
         second.close();
     } finally {

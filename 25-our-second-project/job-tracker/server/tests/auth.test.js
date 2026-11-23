@@ -19,12 +19,12 @@ const me = (cookie) => send(`${app.url}/api/auth/me`, { cookie });
 test('sign-up answers 201 with the user and an HttpOnly, SameSite=Lax cookie', async () => {
     const response = await send(`${app.url}/api/auth/signup`, {
         method: 'POST',
-        body: { email: '  Ada@Example.com ', password: 'correct horse' },
+        body: { email: '  Jane@Example.com ', password: 'correct horse' },
     });
 
     assert.equal(response.status, 201);
     assert.deepEqual(await response.json(), {
-        user: { id: 1, email: 'ada@example.com' },
+        user: { id: 1, email: 'jane@example.com' },
     });
     const [setCookie] = response.headers.getSetCookie();
     assert.match(setCookie, /^sid=[\w-]{43};/);
@@ -42,7 +42,7 @@ test('the cookie is Secure when cookieSecure is true', async () => {
     try {
         const response = await send(`${secureApp.url}/api/auth/signup`, {
             method: 'POST',
-            body: { email: 'ada@example.com', password: 'correct horse' },
+            body: { email: 'jane@example.com', password: 'correct horse' },
         });
         assert.match(response.headers.getSetCookie()[0], /; Secure/);
     } finally {
@@ -65,7 +65,7 @@ test('/me answers with the user of the cookie', async () => {
 
     assert.equal(response.status, 200);
     assert.deepEqual(await response.json(), {
-        user: { id: 1, email: 'ada@example.com' },
+        user: { id: 1, email: 'jane@example.com' },
     });
 });
 
@@ -128,19 +128,19 @@ test('an expired session is refused and deleted', async () => {
 
 test('log-in with the right password answers 200 with a new session', async () => {
     await signUp(app);
-    const response = await login('ADA@example.com', 'correct horse');
+    const response = await login('JANE@example.com', 'correct horse');
 
     assert.equal(response.status, 200);
     assert.deepEqual(await response.json(), {
-        user: { id: 1, email: 'ada@example.com' },
+        user: { id: 1, email: 'jane@example.com' },
     });
     assert.equal((await me(cookieFrom(response))).status, 200);
 });
 
 test('a wrong password and an unknown email get the very same answer', async () => {
     await signUp(app);
-    const wrongPassword = await login('ada@example.com', 'wrong horse');
-    const unknownEmail = await login('grace@example.com', 'correct horse');
+    const wrongPassword = await login('jane@example.com', 'wrong horse');
+    const unknownEmail = await login('john@example.com', 'correct horse');
 
     assert.equal(wrongPassword.status, 401);
     assert.equal(unknownEmail.status, 401);
@@ -154,13 +154,14 @@ test('a wrong password and an unknown email get the very same answer', async () 
         error: 'Wrong email or password',
     });
     assert.deepEqual(wrongPassword.headers.getSetCookie(), []);
+    assert.deepEqual(unknownEmail.headers.getSetCookie(), []);
 });
 
 test('a second sign-up with the same email, in any case, answers 409', async () => {
-    await signUp(app, 'ada@example.com');
+    await signUp(app, 'jane@example.com');
     const response = await send(`${app.url}/api/auth/signup`, {
         method: 'POST',
-        body: { email: 'ADA@EXAMPLE.COM', password: 'another horse' },
+        body: { email: 'JANE@EXAMPLE.COM', password: 'another horse' },
     });
 
     assert.equal(response.status, 409);
