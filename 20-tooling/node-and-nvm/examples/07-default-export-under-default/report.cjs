@@ -1,4 +1,4 @@
-// Run with: node 12-modules/commonjs/examples/09-require-an-es-module/report.cjs
+// Run with: node 20-tooling/node-and-nvm/examples/07-default-export-under-default/report.cjs
 // Needs Node 22.12 or newer. require() returns the module namespace object,
 // so the default export sits under .default.
 const cart = require('./cart.mjs');

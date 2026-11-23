@@ -13,13 +13,13 @@ Each example is a folder of modules that require each other. We run its `main.cj
 - `examples/06-dirname-and-filename/` - `__dirname` finds the VERSION file next to the module
 - `examples/07-no-dirname-in-esm.js` - `__dirname` does not exist in an ES module
 - `examples/08-import-commonjs-from-esm/` - `main.mjs` imports two CommonJS files, default and named
-- `examples/09-require-an-es-module/` - `report.cjs` requires an ES module and finds its default export under `.default`
 
 Run one with `node 12-modules/commonjs/examples/01-require-and-module-exports/main.cjs` from the repository folder.
 
 ## Tasks
 1. **Coupons that export nothing** (`tasks/01-coupons.cjs`) - fix a CommonJS module that assigns to `exports`
-2. **A report from an ES module** (`tasks/02-cart-report.cjs`) - require an ES module from CommonJS and use its default export
-3. **Finish the migration** (`tasks/03-finish-the-migration.js`) - replace the last `require()` calls of an ES module with `import`
+2. **Finish the migration** (`tasks/02-finish-the-migration.js`) - replace the last `require()` calls of an ES module with `import`
+
+Requiring an ES module from CommonJS comes later, in *Node.js and nvm* (`20-tooling/node-and-nvm`).
 
 Run the tests with `npm test -- 12-modules/commonjs`. They fail until the task is solved. Compare with `solutions/` after you try.

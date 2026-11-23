@@ -1,8 +1,8 @@
-// Task 3: Finish the migration
+// Task 2: Finish the migration
 // Lecture: CommonJS
 //
 // The shop is moving from CommonJS to ES modules. The locale files in
-// 03-finish-the-migration/ are already ES modules, and this file already uses export,
+// 02-finish-the-migration/ are already ES modules, and this file already uses export,
 // but loadTexts(language) still calls require(), which does not exist in an ES module:
 // it throws a ReferenceError. Rewrite it with import. loadTexts('de') returns the
 // German texts, any other language the English ones. Every call for the same language
@@ -17,7 +17,7 @@
 
 export function loadTexts(language) {
     if (language === 'de') {
-        return require('./03-finish-the-migration/de.js');
+        return require('./02-finish-the-migration/de.js');
     }
-    return require('./03-finish-the-migration/en.js');
+    return require('./02-finish-the-migration/en.js');
 }

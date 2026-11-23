@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 // Our code from this folder, or the solution with npm run test:solutions.
 // The default import of a CommonJS file is its module.exports.
 const { default: report } = await import(
-    process.env.SOLUTIONS ? '../solutions/02-cart-report.cjs' : './02-cart-report.cjs'
+    process.env.SOLUTIONS ? '../solutions/04-cart-report.cjs' : './04-cart-report.cjs'
 );
 
 test('the report shows the total and the currency', () => {

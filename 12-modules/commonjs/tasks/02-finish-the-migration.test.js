@@ -4,8 +4,8 @@ import assert from 'node:assert/strict';
 // Our code from this folder, or the solution with npm run test:solutions.
 const { loadTexts } = await import(
     process.env.SOLUTIONS
-        ? '../solutions/03-finish-the-migration.js'
-        : './03-finish-the-migration.js'
+        ? '../solutions/02-finish-the-migration.js'
+        : './02-finish-the-migration.js'
 );
 
 test('German gives the German texts', () => {

@@ -3,7 +3,7 @@
 Code for the lecture *Node.js and nvm* (section 20, Tooling) of the JavaScript course at gbachev.com.
 
 ## Examples
-Example 01 is the version pinning of the lecture. Examples 02-06 demonstrate the module rules from the Modules section in Node; the ES module ones have their own `package.json` with `"type": "module"`.
+Example 01 is the version pinning of the lecture. Examples 02-08 demonstrate the module rules from the Modules section in Node. The ES module ones in 02-06 have their own `package.json` with `"type": "module"`; 07 and 08 use the `.mjs` extension instead.
 
 - `examples/01-pin-the-version/` - the shop API's `.nvmrc` (24) and the `engines` field of its `package.json` (`>=24`)
 - `examples/02-es-modules/` - `prices.js` exports `addVat`, `app.js` imports it
@@ -11,6 +11,8 @@ Example 01 is the version pinning of the lecture. Examples 02-06 demonstrate the
 - `examples/04-missing-extension/` - an import without `.js` fails with `ERR_MODULE_NOT_FOUND`
 - `examples/05-import-meta/` - `import.meta.url`, `import.meta.filename` and `import.meta.dirname` instead of `__dirname`
 - `examples/06-require-an-es-module/` - `report.cjs` requires the ES module `prices.js` (Node 22.12 or newer)
+- `examples/07-default-export-under-default/` - `require()` returns the namespace object, so the default export of `cart.mjs` sits under `.default`
+- `examples/08-require-async-module/` - `require()` throws `ERR_REQUIRE_ASYNC_MODULE` on a module with top-level `await`, and `import()` loads it
 
 Run one with `node 20-tooling/node-and-nvm/examples/02-es-modules/app.js` from the repository folder.
 
@@ -26,5 +28,6 @@ npm install    # npm WARN EBADENGINE Unsupported engine (on Node 22)
 1. **CommonJS or ES module?** (`tasks/01-module-system.js`) - decide how Node runs a file from its extension and the `type` field
 2. **Is this Node supported?** (`tasks/02-supported-engine.js`) - check a Node version against an `engines` range like `>=22.12`
 3. **What nvm use picks** (`tasks/03-nvm-use.js`) - find the newest installed version that matches `.nvmrc`
+4. **A report from an ES module** (`tasks/04-cart-report.cjs`) - require an ES module from CommonJS and use its default export
 
 Run the tests with `npm test -- 20-tooling/node-and-nvm`. They fail until the task is solved. Compare with `solutions/` after you try.
