@@ -1,0 +1,8 @@
+node_modules
+*.log
+
+# The settings of this computer. .env.example is the file we commit.
+.env
+
+# The SQLite database file, with its -wal and -shm files next to it.
+data
