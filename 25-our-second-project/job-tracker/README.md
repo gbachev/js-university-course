@@ -130,32 +130,32 @@ Both parts have `.prettierrc.json` (4 spaces, single quotes), `.prettierignore`,
 
 The "Our Second Project" module walks through this code. Each lesson presents these files and functions.
 
-### 1. Project Setup
+### 2. Project Setup
 
 - The two folders, `client/` and `server/`, each with its own `package.json`, and why the browser should see one origin
 - `client/vite.config.js`: the proxy for `/api`, and why `changeOrigin` stays off
 - `server/package.json`: `"type": "module"`, the `start`, `dev` and `test` scripts, `node --env-file-if-exists=.env`
 - `eslint.config.js`, `.prettierrc.json` and `.gitignore` in both parts; `server/.env.example`
 
-### 2. A Database with SQLite
+### 3. A Database with SQLite
 
 - `server/migrations/`: the three tables, `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `REFERENCES ... ON DELETE CASCADE`, the `CHECK` on `status`
 - `server/src/db.js`: `openDatabase` (`foreign_keys = ON`, WAL for a file, `:memory:`), `migrate` (`PRAGMA user_version`, one transaction per file)
 - `server/src/server.js`: open, migrate, listen; closing the database on `SIGTERM` and `SIGINT`
 
-### 3. Building the API
+### 4. Building the API
 
 - `server/src/app.js`: `createApp({ db, config })` and the order of the middleware
 - `server/src/routes/applications.js`: `express.Router()`, `db.prepare()` with `?` and `@name` parameters, `.all()`, `.get()`, `.run()` and `RETURNING`, `toApplication`, 201 with `Location`, 204, `parseId` and the 404, `user_id` in every query
 - Why SQL is never built from strings: the `'); DROP TABLE applications; --` test
 
-### 4. Validating Input and Handling Errors
+### 5. Validating Input and Handling Errors
 
 - `server/src/validate.js`: one check per field, `{ value }` or `{ error }`, default parameters, `isRealDate`, `URL.parse` and the http/https rule, `rejectUnknownFields` and `Object.hasOwn`, one 400 with `fields`
 - `server/src/http-error.js`: `HttpError`
 - `server/src/middleware.js`: `requireJsonBody` (415), the JSON 404, the error handler (broken JSON, 4xx, 500 without details)
 
-### 5. Accounts and Logging In
+### 6. Accounts and Logging In
 
 - `server/src/auth/passwords.js`: scrypt, the salt, the cost settings, `timingSafeEqual`, `DUMMY_HASH`
 - `server/src/auth/sessions.js` and `cookies.js`: the random token, its SHA-256 hash in the database, expiry, `res.cookie()` with `httpOnly`, `secure`, `sameSite` and `maxAge`
@@ -163,26 +163,26 @@ The "Our Second Project" module walks through this code. Each lesson presents th
 - `server/src/auth/require-user.js`; 401 with `WWW-Authenticate`; 404 instead of 403 for someone else's application
 - `server/src/middleware.js`: `checkOrigin` (403) next to `SameSite=Lax`; `trust proxy` in `app.js`
 
-### 6. Connecting the Front End
+### 7. Connecting the Front End
 
 - `client/src/api.js`: `request()`, relative `/api` paths, cookies on same-origin `fetch()`, `ApiError` with `status` and `fields`, 204, an answer that is not JSON, no answer at all
 - `client/src/main.js`: start with `currentUser()`, the two views, `submitForm` (disabled button, field errors, focus), the edit mode, event delegation on the list, a 401 that ends the session
 - `client/src/render.js`: the row `<template>`, `textContent`, the link only for http and https with `rel="noopener noreferrer"`, `aria-invalid` and `aria-describedby`
 - `client/eslint.config.js`: `no-restricted-properties` against `innerHTML`, `outerHTML` and `insertAdjacentHTML`
 
-### 7. Testing the API
+### 8. Testing the API
 
 - `server/tests/helpers.js`: port 0, a fresh `:memory:` database for every test, `getSetCookie()`
 - `server/tests/*.test.js`: status codes, headers and bodies; a second user; an expired session; a foreign `Origin`
 - `client/tests/api.test.js`: a fake `fetch` that returns real `Response` objects; `client/tests/state.test.js`
 
-### 8. Running the Server in Production
+### 9. Running the Server in Production
 
 - Production: `npm run build` in `client/`, then `NODE_ENV=production npm start` in `server/`, with `PORT` and `DATABASE_PATH` from the host, and the database file on a disk that survives a new deploy
 - `app.js`: `express.static()` for `client/dist`, a year of caching for the hashed files in `assets/`, and `trust proxy` behind the host's proxy
 - `server/src/config.js`: `NODE_ENV=production` turns on `Secure` cookies; `COOKIE_SECURE` overrides it
 - `server/src/server.js`: `migrate(db)` runs at start-up, so a new deploy updates the database before the first request
 
-### 9. Best Practices
+### 10. Best Practices
 
 - The habits of the project, in one place: config checked at start-up, one error shape, every value checked on the server, bound parameters, user ids in every query, hashed passwords and tokens, cookies a script cannot read, `textContent` for data, tests that start the real app
