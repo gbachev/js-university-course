@@ -12,7 +12,7 @@ npm test -- 24-node-on-the-server
 ```
 
 1. Section Overview (no code)
-2. An HTTP Server with Express - from `http.createServer()` to Express 5: `app.get()`, `res.json()` and `app.listen()`
+2. [An HTTP Server with Express](express-server) - from `http.createServer()` to Express 5: `app.get()`, `res.json()` and `app.listen()`
 3. Routing and JSON APIs - route parameters, the query string, `express.json()`, routers and the order of middleware
 4. REST Conventions and Status Codes - resources and methods, the common status codes and error bodies
 5. Configuration with process.env - `process.env`, `node --env-file` and keeping secrets out of the repository
