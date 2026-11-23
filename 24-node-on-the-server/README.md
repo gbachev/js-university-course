@@ -19,5 +19,5 @@ npm test -- 24-node-on-the-server
 6. [CORS from the Server Side](cors-on-the-server) - the CORS headers by hand, then the `cors` package
 7. [HTTP Caching: Cache-Control, ETag and 304](http-caching) - `Cache-Control` per route, `ETag`, `If-None-Match` and 304 Not Modified, hashed files with `express.static()`
 8. [Real-Time: WebSockets and Server-Sent Events](real-time) - Server-Sent Events with Express, WebSockets in brief (optional)
-9. Best Practices (no code)
+9. [Best Practices](best-practices) - the habits of the section in one app: `createApp()`, the order of the middleware, one error shape, checked values and config, an allow-list and `Cache-Control` per route
 10. Section Review (no code)
